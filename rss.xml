@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+			<rss version="2.0"
+				xmlns:content="http://purl.org/rss/1.0/modules/content/"
+				xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+				xmlns:dc="http://purl.org/dc/elements/1.1/"
+				xmlns:atom="http://www.w3.org/2005/Atom"
+				xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+				xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+				xmlns:georss="http://www.georss.org/georss" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:media="http://search.yahoo.com/mrss/"
+				>
+
+				<channel>
+					<title>Matt Walters</title>
+					<atom:link href="http://mattwalters.net/feed.rss" rel="self" type="application/rss+xml" />
+					<link>http://mattwalters.net</link>
+					<description>Senior Web &amp; PHP Developer in Richmond, VA</description>
+					<lastBuildDate>Sun, 29 Jan 2012 19:33:10 +0000</lastBuildDate>
+					<language>en</language>
+					<sy:updatePeriod>hourly</sy:updatePeriod>
+					<sy:updateFrequency>1</sy:updateFrequency>
+					<generator>markd</generator>
+						<item>
+							<title>Why are software development task estimations regularly off by a factor of 2-3?</title>
+							<link>http://mattwalters.net/why-are-software-development-task-estimations-regularly-off-by-a-factor-of-2-3.html</link>
+							<pubDate>January 29th, 2012</pubDate>
+							<dc:creator>Matt</dc:creator>
+							<guid isPermaLink="false">http://mattwalters.net/why-are-software-development-task-estimations-regularly-off-by-a-factor-of-2-3.html</guid>
+							<description><![CDATA[<p>Definitely worth a read whether you're a developer or one who commonly interacts with developers.</p>]]></description>
+							<content:encoded><![CDATA[<p>Definitely worth a read whether you're a developer or one who commonly interacts with developers.</p>]]></content:encoded>
+						</item>
+				
+						<item>
+							<title>Updates to markd</title>
+							<link>http://mattwalters.net/updates-to-markd.html</link>
+							<pubDate>January 23rd, 2012</pubDate>
+							<dc:creator>Matt</dc:creator>
+							<guid isPermaLink="false">http://mattwalters.net/updates-to-markd.html</guid>
+							<description><![CDATA[<p>After releasing the first version of markd over the weekend, I'm following it up with a reasonable amount of changes and new features.  </p>
+
+<p>There is now support for Pages.  They're created from a file/directory hierarchy in your content/pages directory.  Along with this a menu with support to up to 2 levels deep can be generated.  This might be easier to explain by example.  Let's assume you have a directory structure that looks like this:</p>
+
+<ul>
+<li>/content
+
+<ul>
+<li>/pages
+
+<ul>
+<li>/about.md</li>
+<li>/Projects
+
+<ul>
+<li>/markd.md</li>
+</ul></li>
+<li>/contact.md</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>This would generate code that looks like this:</p>
+
+<pre class="prettyprint">&lt;ul class="nav"&gt;
+    &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="dropdown" data-dropdown="dropdown"&gt;
+        &lt;a class="dropdown-toggle" href="#"&gt;Projects&lt;/a&gt;
+        &lt;ul class="dropdown-menu"&gt;
+            &lt;li&gt;&lt;a href="markd.html"&gt;markd&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href="contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<p>The link names are pulled from the directory name (e.g. "Projects") or from the Title in the markdown file (e.g. "About").  Essentially all you need to do is create a structure and markd will take care of making a menu system for it and linking things up properly.</p>
+
+<p>Also with the support of pages comes support for page templates.  If you need a page to look different, then create a corresponding template file with the same file name inside your theme.  For example, if you wanted your "about.md" page to use a special template, then you can create an "about.tpl" inside the theme and alter the HTML for that page only.  If there's not a specific page template in the theme directory, then it will default to using a generic "page.tpl" from the theme directory.</p>
+
+<p>There's also a simple (for the time being) hook system that was introduced which allows themes/plugins to do some manipulation of the generated site.  Along with markd comes a plugin called Twitter Timeline Widget to show how this can be used to add something to the sidebar of posts/pages.  There is another example in the default theme which depending on whether a JotForm ID is provided, it will either add the Contact Me button (that you see on the right hand side of this page) or not.  This is a little crude at the moment, but I hope to flush it out and make things a little smoother as time goes on.</p>
+
+<p>A lot of other tweaks were made along the way with these features, but you can read commits over on github if you really need to know about that boring stuff :)</p>
+
+<p>Up next:</p>
+
+<ul>
+<li>Support for categories</li>
+<li>Restructuring of pages in the published site (need to build a directory structure rather than cramming it all into the site root)</li>
+<li>Child theme system (mainly for me to be able to apply customizations to the default theme)</li>
+<li>Post formats (make things like Links or Tweets look different)</li>
+<li>Future dated posts won't be published until the proper time even if their published status is set to true</li>
+</ul>]]></description>
+							<content:encoded><![CDATA[<p>After releasing the first version of markd over the weekend, I'm following it up with a reasonable amount of changes and new features.  </p>
+
+<p>There is now support for Pages.  They're created from a file/directory hierarchy in your content/pages directory.  Along with this a menu with support to up to 2 levels deep can be generated.  This might be easier to explain by example.  Let's assume you have a directory structure that looks like this:</p>
+
+<ul>
+<li>/content
+
+<ul>
+<li>/pages
+
+<ul>
+<li>/about.md</li>
+<li>/Projects
+
+<ul>
+<li>/markd.md</li>
+</ul></li>
+<li>/contact.md</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>This would generate code that looks like this:</p>
+
+<pre class="prettyprint">&lt;ul class="nav"&gt;
+    &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="dropdown" data-dropdown="dropdown"&gt;
+        &lt;a class="dropdown-toggle" href="#"&gt;Projects&lt;/a&gt;
+        &lt;ul class="dropdown-menu"&gt;
+            &lt;li&gt;&lt;a href="markd.html"&gt;markd&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href="contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<p>The link names are pulled from the directory name (e.g. "Projects") or from the Title in the markdown file (e.g. "About").  Essentially all you need to do is create a structure and markd will take care of making a menu system for it and linking things up properly.</p>
+
+<p>Also with the support of pages comes support for page templates.  If you need a page to look different, then create a corresponding template file with the same file name inside your theme.  For example, if you wanted your "about.md" page to use a special template, then you can create an "about.tpl" inside the theme and alter the HTML for that page only.  If there's not a specific page template in the theme directory, then it will default to using a generic "page.tpl" from the theme directory.</p>
+
+<p>There's also a simple (for the time being) hook system that was introduced which allows themes/plugins to do some manipulation of the generated site.  Along with markd comes a plugin called Twitter Timeline Widget to show how this can be used to add something to the sidebar of posts/pages.  There is another example in the default theme which depending on whether a JotForm ID is provided, it will either add the Contact Me button (that you see on the right hand side of this page) or not.  This is a little crude at the moment, but I hope to flush it out and make things a little smoother as time goes on.</p>
+
+<p>A lot of other tweaks were made along the way with these features, but you can read commits over on github if you really need to know about that boring stuff :)</p>
+
+<p>Up next:</p>
+
+<ul>
+<li>Support for categories</li>
+<li>Restructuring of pages in the published site (need to build a directory structure rather than cramming it all into the site root)</li>
+<li>Child theme system (mainly for me to be able to apply customizations to the default theme)</li>
+<li>Post formats (make things like Links or Tweets look different)</li>
+<li>Future dated posts won't be published until the proper time even if their published status is set to true</li>
+</ul>]]></content:encoded>
+						</item>
+				
+						<item>
+							<title>Apparently pictures are needed</title>
+							<link>http://mattwalters.net/apparently-pictures-are-needed.html</link>
+							<pubDate>January 21st, 2012</pubDate>
+							<dc:creator>Matt</dc:creator>
+							<guid isPermaLink="false">http://mattwalters.net/apparently-pictures-are-needed.html</guid>
+							<description><![CDATA[<p><a href="http://carriefleck.com/">Carrie</a> told me I needed pictures on my site, so here's a repeat of an old post, "<a href="http://mwalters8.wordpress.com/2011/12/24/sleeping-dog/">Sleeping Dog</a>"</p>
+
+<p><img src="http://distilleryimage10.instagram.com/6d6ed3542e6811e1abb01231381b65e3_7.jpg" alt="image" /></p>]]></description>
+							<content:encoded><![CDATA[<p><a href="http://carriefleck.com/">Carrie</a> told me I needed pictures on my site, so here's a repeat of an old post, "<a href="http://mwalters8.wordpress.com/2011/12/24/sleeping-dog/">Sleeping Dog</a>"</p>
+
+<p><img src="http://distilleryimage10.instagram.com/6d6ed3542e6811e1abb01231381b65e3_7.jpg" alt="image" /></p>]]></content:encoded>
+						</item>
+				
+						<item>
+							<title>Welcome To My New Site</title>
+							<link>http://mattwalters.net/welcome-to-my-new-site.html</link>
+							<pubDate>January 20th, 2012</pubDate>
+							<dc:creator>Matt</dc:creator>
+							<guid isPermaLink="false">http://mattwalters.net/welcome-to-my-new-site.html</guid>
+							<description><![CDATA[<p><img src="https://sites.google.com/site/mwalters8/home/Screen%20Shot%202012-01-21%20at%2011.36.54%20AM.png" alt="Complete" /></p>
+
+<p>So here it is.  I've been working on a static site generator for the past couple of weeks and I finally have things put together enough to start running my site off of it.  The project is called <a href="https://github.com/mwalters/markd">markd</a> and it's hosted on <a href="https://github.com/">github</a>.</p>
+
+<p>The overview of how the system works is you create files (posts) that are written in <a href="http://daringfireball.net/projects/markdown/">Markdown</a> syntax.  markd will then generate a static HTML version of your blog from those files.  It makes everything you see here.</p>
+
+<p>I would say it's still very alpha at the moment, and even when it is stable it will still be something of more interest to developers rather than the average blogger.  The installation and setup instructions basically don't exist, but will be coming in the future.</p>
+
+<p>Here are the basic reasons why I wrote it:</p>
+
+<ul>
+<li>I needed a new hobby project :)</li>
+<li>Having a static HTML site just seemed to make sense for various reasons</li>
+<li>It was a bit of an exercise in some development areas that I wanted to work out</li>
+<li>Creating Markdown files is so easy and the way I have this all set up, makes writing a new post both simple and something I can easily enjoy in my favorite text editor</li>
+<li>Really, it's just something that I had a strong interest in and decided to run with it.  I'm happy with how it's turned out.</li>
+</ul>
+
+<p>If you're curious how it works, here is how I have things set up:</p>
+
+<ul>
+<li>I write blog posts in a text editor, with the Markdown syntax.  They're saved on Dropbox so I can access them from any computer.</li>
+<li>I run markd which is a PHP-CLI set of scripts that generates the HTML for my home page, single post pages, archives, etc.</li>
+<li>Those files are then automatically published to my web server using a set of not-included shell scripting.</li>
+</ul>
+
+<p>I'm enjoying working on it and have <a href="https://github.com/mwalters/markd/issues?labels=&amp;milestone=&amp;page=1&amp;state=open">plans for things to do in the future</a> like enhancing the theme engine, adding hooks for a plugin system and support for some different post formats.  At this point you might be thinking this is starting to sound a lot like <a href="http://wordpress.org/">WordPress</a>, or many of the other blogging engines, including the others that create static sites.  Well, you'd be correct.</p>
+
+<p>I wanted this project to do things the way <em>I</em> wanted them done.  It's definitely taking hints from WordPress, and I also intend to take some hints from the <a href="http://carringtontheme.com/">Carrington Theme Framework</a> for the theme engine.</p>
+
+<p>I'm looking forward to where this might go.  Who knows, maybe working on markd might get me blogging frequently again since I'll be developing it and want to try things out.</p>]]></description>
+							<content:encoded><![CDATA[<p><img src="https://sites.google.com/site/mwalters8/home/Screen%20Shot%202012-01-21%20at%2011.36.54%20AM.png" alt="Complete" /></p>
+
+<p>So here it is.  I've been working on a static site generator for the past couple of weeks and I finally have things put together enough to start running my site off of it.  The project is called <a href="https://github.com/mwalters/markd">markd</a> and it's hosted on <a href="https://github.com/">github</a>.</p>
+
+<p>The overview of how the system works is you create files (posts) that are written in <a href="http://daringfireball.net/projects/markdown/">Markdown</a> syntax.  markd will then generate a static HTML version of your blog from those files.  It makes everything you see here.</p>
+
+<p>I would say it's still very alpha at the moment, and even when it is stable it will still be something of more interest to developers rather than the average blogger.  The installation and setup instructions basically don't exist, but will be coming in the future.</p>
+
+<p>Here are the basic reasons why I wrote it:</p>
+
+<ul>
+<li>I needed a new hobby project :)</li>
+<li>Having a static HTML site just seemed to make sense for various reasons</li>
+<li>It was a bit of an exercise in some development areas that I wanted to work out</li>
+<li>Creating Markdown files is so easy and the way I have this all set up, makes writing a new post both simple and something I can easily enjoy in my favorite text editor</li>
+<li>Really, it's just something that I had a strong interest in and decided to run with it.  I'm happy with how it's turned out.</li>
+</ul>
+
+<p>If you're curious how it works, here is how I have things set up:</p>
+
+<ul>
+<li>I write blog posts in a text editor, with the Markdown syntax.  They're saved on Dropbox so I can access them from any computer.</li>
+<li>I run markd which is a PHP-CLI set of scripts that generates the HTML for my home page, single post pages, archives, etc.</li>
+<li>Those files are then automatically published to my web server using a set of not-included shell scripting.</li>
+</ul>
+
+<p>I'm enjoying working on it and have <a href="https://github.com/mwalters/markd/issues?labels=&amp;milestone=&amp;page=1&amp;state=open">plans for things to do in the future</a> like enhancing the theme engine, adding hooks for a plugin system and support for some different post formats.  At this point you might be thinking this is starting to sound a lot like <a href="http://wordpress.org/">WordPress</a>, or many of the other blogging engines, including the others that create static sites.  Well, you'd be correct.</p>
+
+<p>I wanted this project to do things the way <em>I</em> wanted them done.  It's definitely taking hints from WordPress, and I also intend to take some hints from the <a href="http://carringtontheme.com/">Carrington Theme Framework</a> for the theme engine.</p>
+
+<p>I'm looking forward to where this might go.  Who knows, maybe working on markd might get me blogging frequently again since I'll be developing it and want to try things out.</p>]]></content:encoded>
+						</item>
+				
+						<item>
+							<title>Finding my previous content</title>
+							<link>http://mattwalters.net/finding-my-previous-content.html</link>
+							<pubDate>January 20th, 2012</pubDate>
+							<dc:creator>Matt</dc:creator>
+							<guid isPermaLink="false">http://mattwalters.net/finding-my-previous-content.html</guid>
+							<description><![CDATA[<p>When I switched over to markd, I considered migrating all of my content to it, but at the time of this writing, I'm just not sure that I feel like it's worth it.  So for an archive of my postings before this post, please use the link below.</p>
+
+<p>My previous content can be found <a href="http://mwalters8.wordpress.com/">here</a>.</p>]]></description>
+							<content:encoded><![CDATA[<p>When I switched over to markd, I considered migrating all of my content to it, but at the time of this writing, I'm just not sure that I feel like it's worth it.  So for an archive of my postings before this post, please use the link below.</p>
+
+<p>My previous content can be found <a href="http://mwalters8.wordpress.com/">here</a>.</p>]]></content:encoded>
+						</item>
+				
+				</channel>
+			</rss>

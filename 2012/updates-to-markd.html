@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Matt Walters - Senior Web &amp; PHP Developer in Richmond, VA</title>
+<meta property="og:title" content="Matt Walters" />
+<meta property="og:url" content="http://mattwalters.net" />
+<meta property="og:description" content="Senior Web &amp; PHP Developer in Richmond, VA" />
+<meta property="og:site_name" content="Matt Walters" />
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/prettify.css">
+<link rel="stylesheet" href="/css/style.css">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-69817-15']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+
+<meta name="generator" content="markd" />
+</head>
+
+<body>
+
+<div class="topbar">
+	<div class="fill">
+		<div class="container">
+			<a class="brand" href="/">Matt Walters</a>
+			<ul class="nav">
+	<li class="dropdown" data-dropdown="dropdown">
+		<a class="dropdown-toggle" href="#">Projects</a>
+		<ul class="dropdown-menu">
+			<li><a href="/projects/markd.html">markd</a></li>
+		</ul>
+	</li>
+	<li><a href="/search.html">Search</a></li>
+</ul>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="content">
+		<div class="row">
+			<div class="span10">
+				<div class="post-wrap single">
+					<h1 class="post-title">Updates to markd</h1>
+					<div class="post-meta">
+						Posted <a href="/2012/updates-to-markd.html
+">January 23rd, 2012</a>
+						 in <a href="/category/development-0.html">Development</a>					</div>
+					<div class="post-content"><p>After releasing the first version of markd over the weekend, I'm following it up with a reasonable amount of changes and new features.  </p>
+
+<p>There is now support for Pages.  They're created from a file/directory hierarchy in your content/pages directory.  Along with this a menu with support to up to 2 levels deep can be generated.  This might be easier to explain by example.  Let's assume you have a directory structure that looks like this:</p>
+
+<ul>
+<li>/content
+
+<ul>
+<li>/pages
+
+<ul>
+<li>/about.md</li>
+<li>/Projects
+
+<ul>
+<li>/markd.md</li>
+</ul></li>
+<li>/contact.md</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>This would generate code that looks like this:</p>
+
+<pre class="prettyprint">&lt;ul class="nav"&gt;
+    &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="dropdown" data-dropdown="dropdown"&gt;
+        &lt;a class="dropdown-toggle" href="#"&gt;Projects&lt;/a&gt;
+        &lt;ul class="dropdown-menu"&gt;
+            &lt;li&gt;&lt;a href="markd.html"&gt;markd&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href="contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<p>The link names are pulled from the directory name (e.g. "Projects") or from the Title in the markdown file (e.g. "About").  Essentially all you need to do is create a structure and markd will take care of making a menu system for it and linking things up properly.</p>
+
+<p>Also with the support of pages comes support for page templates.  If you need a page to look different, then create a corresponding template file with the same file name inside your theme.  For example, if you wanted your "about.md" page to use a special template, then you can create an "about.tpl" inside the theme and alter the HTML for that page only.  If there's not a specific page template in the theme directory, then it will default to using a generic "page.tpl" from the theme directory.</p>
+
+<p>There's also a simple (for the time being) hook system that was introduced which allows themes/plugins to do some manipulation of the generated site.  Along with markd comes a plugin called Twitter Timeline Widget to show how this can be used to add something to the sidebar of posts/pages.  There is another example in the default theme which depending on whether a JotForm ID is provided, it will either add the Contact Me button (that you see on the right hand side of this page) or not.  This is a little crude at the moment, but I hope to flush it out and make things a little smoother as time goes on.</p>
+
+<p>A lot of other tweaks were made along the way with these features, but you can read commits over on github if you really need to know about that boring stuff :)</p>
+
+<p>Up next:</p>
+
+<ul>
+<li>Support for categories</li>
+<li>Restructuring of pages in the published site (need to build a directory structure rather than cramming it all into the site root)</li>
+<li>Child theme system (mainly for me to be able to apply customizations to the default theme)</li>
+<li>Post formats (make things like Links or Tweets look different)</li>
+<li>Future dated posts won't be published until the proper time even if their published status is set to true</li>
+</ul></div>
+					<div id="disqus_thread"></div>
+					<script type="text/javascript">
+					    var disqus_shortname = 'mattwalters';
+						var disqus_identifier = '4a09432bdf397981b7954f740a629949';
+					    (function() {
+					        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+					        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+					        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+					    })();
+					</script>
+				</div>			</div> <!-- span10 -->
+			<div class="span4">
+				
+		<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<script>
+		new TWTR.Widget({
+		  version: 2,
+		  type: 'profile',
+		  rpp: 4,
+		  interval: 30000,
+		  width: 'auto',
+		  theme: {
+		    shell: {
+		      background: '#ffffff',
+		      color: '#000000'
+		    },
+		    tweets: {
+		      background: '#ffffff',
+		      color: '#666666',
+		      links: '#0067d6'
+		    }
+		  },
+		  features: {
+		    scrollbar: false,
+		    loop: false,
+		    live: true,
+		    behavior: 'all'
+		  }
+		}).render().setUser('mwalters').start();
+		</script>
+					<div class="side-buttons">
+					<a class="btn primary" href="/feed">RSS</a>
+				</div>
+			</div> <!-- span4 -->
+		</div> <!-- row -->
+		<div class="row">
+			<div class="span12">
+				<div class="pagination">
+					<ul><li></li><li></li></ul>				</div>
+			</div>
+			<div class="span4"></div>
+		</div> <!-- row -->
+	</div> <!-- content -->
+
+    <footer>
+      	<p>&copy; Matt Walters 2012 - 2012</p>
+		
+                <script src="http://www.jotform.com/min/g=feedback" type="text/javascript">
+                  new JotformFeedback({
+                     formId             : "20201232841",
+                     buttonText : "Contact Me",
+                     base               : "http://www.jotform.com/",
+                     background : "#0064CD",
+                     fontColor  : "#FFFFFF",
+                     buttonSide : "right",
+                     buttonAlign        : "center",
+                     type               : 2,
+                     width              : 700,
+                     height             : 500
+                  });
+                </script>
+            </footer>
+
+</div> <!-- container -->
+
+<script src="/js/bootstrap-dropdown.js" type="text/javascript"></script>
+<script src="/js/prettify.js" type="text/javascript"></script>
+<script src="/js/common.js" type="text/javascript"></script>
+
+</body>
+</html>
