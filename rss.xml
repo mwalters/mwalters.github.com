@@ -14,11 +14,93 @@
 					<atom:link href="http://mattwalters.net/feed.rss" rel="self" type="application/rss+xml" />
 					<link>http://mattwalters.net</link>
 					<description>Senior Web &amp; PHP Developer in Richmond, VA</description>
-					<lastBuildDate>Sun, 29 Jan 2012 20:39:21 +0000</lastBuildDate>
+					<lastBuildDate>Mon, 30 Jan 2012 17:08:01 +0000</lastBuildDate>
 					<language>en</language>
 					<sy:updatePeriod>hourly</sy:updatePeriod>
 					<sy:updateFrequency>1</sy:updateFrequency>
 					<generator>markd</generator>
+						<item>
+							<title>Hosted on github</title>
+							<link>http://mattwalters.net/hosted-on-github.html</link>
+							<pubDate>January 30th, 2012</pubDate>
+							<dc:creator>Matt</dc:creator>
+							<guid isPermaLink="false">http://mattwalters.net/hosted-on-github.html</guid>
+							<description><![CDATA[<p>One of the side benefits of markd is that I can now just host my site on github since it's just static HTML.  So I've moved my site over.</p>
+
+<p>Speaking of markd, I've added some more features:</p>
+
+<ul>
+<li><p>Post formats</p>
+
+<p>An example would be my <a href="http://mattwalters.net/category/links-0.html">link posts</a> which you can see are formatted slightly differently than normal posts.  Post formats are defined on the fly based on what you specify in the header section of your markdown files.  If you specify a format then the template engine looks for a corresponding content file in the <code>formats</code> directory inside of your theme.</p></li>
+<li><a href="http://code.google.com/p/google-code-prettify/">Google Code Prettify support</a></li>
+<li><p>Subpages are now in subdirectories on the published site</p>
+
+<p>This makes things a little prettier in the published site.</p></li>
+<li><p>Category support</p>
+
+<p>Categories are created while the site is being published from what you specify in the header section of your markdown files.  Listing (e.g. archive) pages are created for each category.  You can see an example be looking at my <a href="http://mattwalters.net/category/development-0.html">Development</a> category.</p></li>
+<li><p>Template files are now PHP</p>
+
+<p>Using basic string replaces with .tpl files for the theme was going to become painful fast so I switched things up to let template files be PHP which means you can dynamically process things when the site is generated.  This also makes the hook system more straight forward to take advantage of.</p></li>
+<li>Future dated posts are now published until their date</li>
+</ul>
+
+<p>Coming up:</p>
+
+<ul>
+<li><p>Tag support</p>
+
+<p>It's possible I may just rename categories to tags and go with the one taxonomy.</p></li>
+<li><p>WordPress importer</p>
+
+<p>Maybe my previous content will make an appearance here :)</p></li>
+<li>Child theme system</li>
+<li><p>FTP Deployments of your site</p>
+
+<p>This is still a maybe.  I'm not sure how useful it will be for the system.</p></li>
+</ul>
+
+<p>Until next time … take care.</p>]]></description>
+							<content:encoded><![CDATA[<p>One of the side benefits of markd is that I can now just host my site on github since it's just static HTML.  So I've moved my site over.</p>
+
+<p>Speaking of markd, I've added some more features:</p>
+
+<ul>
+<li><p>Post formats</p>
+
+<p>An example would be my <a href="http://mattwalters.net/category/links-0.html">link posts</a> which you can see are formatted slightly differently than normal posts.  Post formats are defined on the fly based on what you specify in the header section of your markdown files.  If you specify a format then the template engine looks for a corresponding content file in the <code>formats</code> directory inside of your theme.</p></li>
+<li><a href="http://code.google.com/p/google-code-prettify/">Google Code Prettify support</a></li>
+<li><p>Subpages are now in subdirectories on the published site</p>
+
+<p>This makes things a little prettier in the published site.</p></li>
+<li><p>Category support</p>
+
+<p>Categories are created while the site is being published from what you specify in the header section of your markdown files.  Listing (e.g. archive) pages are created for each category.  You can see an example be looking at my <a href="http://mattwalters.net/category/development-0.html">Development</a> category.</p></li>
+<li><p>Template files are now PHP</p>
+
+<p>Using basic string replaces with .tpl files for the theme was going to become painful fast so I switched things up to let template files be PHP which means you can dynamically process things when the site is generated.  This also makes the hook system more straight forward to take advantage of.</p></li>
+<li>Future dated posts are now published until their date</li>
+</ul>
+
+<p>Coming up:</p>
+
+<ul>
+<li><p>Tag support</p>
+
+<p>It's possible I may just rename categories to tags and go with the one taxonomy.</p></li>
+<li><p>WordPress importer</p>
+
+<p>Maybe my previous content will make an appearance here :)</p></li>
+<li>Child theme system</li>
+<li><p>FTP Deployments of your site</p>
+
+<p>This is still a maybe.  I'm not sure how useful it will be for the system.</p></li>
+</ul>
+
+<p>Until next time … take care.</p>]]></content:encoded>
+						</item>
+				
 						<item>
 							<title>Why are software development task estimations regularly off by a factor of 2-3?</title>
 							<link>http://mattwalters.net/why-are-software-development-task-estimations-regularly-off-by-a-factor-of-2-3.html</link>
@@ -225,20 +307,6 @@
 <p>I wanted this project to do things the way <em>I</em> wanted them done.  It's definitely taking hints from WordPress, and I also intend to take some hints from the <a href="http://carringtontheme.com/">Carrington Theme Framework</a> for the theme engine.</p>
 
 <p>I'm looking forward to where this might go.  Who knows, maybe working on markd might get me blogging frequently again since I'll be developing it and want to try things out.</p>]]></content:encoded>
-						</item>
-				
-						<item>
-							<title>Finding my previous content</title>
-							<link>http://mattwalters.net/finding-my-previous-content.html</link>
-							<pubDate>January 20th, 2012</pubDate>
-							<dc:creator>Matt</dc:creator>
-							<guid isPermaLink="false">http://mattwalters.net/finding-my-previous-content.html</guid>
-							<description><![CDATA[<p>When I switched over to markd, I considered migrating all of my content to it, but at the time of this writing, I'm just not sure that I feel like it's worth it.  So for an archive of my postings before this post, please use the link below.</p>
-
-<p>My previous content can be found <a href="http://mwalters8.wordpress.com/">here</a>.</p>]]></description>
-							<content:encoded><![CDATA[<p>When I switched over to markd, I considered migrating all of my content to it, but at the time of this writing, I'm just not sure that I feel like it's worth it.  So for an archive of my postings before this post, please use the link below.</p>
-
-<p>My previous content can be found <a href="http://mwalters8.wordpress.com/">here</a>.</p>]]></content:encoded>
 						</item>
 				
 				</channel>
