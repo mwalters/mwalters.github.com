@@ -14,11 +14,21 @@
 					<atom:link href="http://mattwalters.net/rss.xml" rel="self" type="application/rss+xml" />
 					<link>http://mattwalters.net</link>
 					<description>Senior Web &amp; PHP Developer in Richmond, VA</description>
-					<lastBuildDate>Mon, 30 Jan 2012 18:42:14 +0000</lastBuildDate>
+					<lastBuildDate>Tue, 31 Jan 2012 14:13:59 +0000</lastBuildDate>
 					<language>en</language>
 					<sy:updatePeriod>hourly</sy:updatePeriod>
 					<sy:updateFrequency>1</sy:updateFrequency>
 					<generator>markd</generator>
+						<item>
+							<title>Scrollorama</title>
+							<link>http://mattwalters.net/2012/scrollorama.html</link>
+							<pubDate>January 29th, 2012</pubDate>
+							<dc:creator>Matt</dc:creator>
+							<guid isPermaLink="false">http://mattwalters.net/2012/scrollorama.html</guid>
+							<description><![CDATA[<p>If you ever need to do some crazy scrolling affects as the user scrolls down a web page … this is definitely worth checking out.</p>]]></description>
+							<content:encoded><![CDATA[<p>If you ever need to do some crazy scrolling affects as the user scrolls down a web page … this is definitely worth checking out.</p>]]></content:encoded>
+						</item>
+				
 						<item>
 							<title>Hosted on github</title>
 							<link>http://mattwalters.net/2012/hosted-on-github.html</link>
@@ -99,16 +109,6 @@
 </ul>
 
 <p>Until next time … take care.</p>]]></content:encoded>
-						</item>
-				
-						<item>
-							<title>Why are software development task estimations regularly off by a factor of 2-3?</title>
-							<link>http://mattwalters.net/2012/why-are-software-development-task-estimations-regularly-off-by-a-factor-of-2-3.html</link>
-							<pubDate>January 29th, 2012</pubDate>
-							<dc:creator>Matt</dc:creator>
-							<guid isPermaLink="false">http://mattwalters.net/2012/why-are-software-development-task-estimations-regularly-off-by-a-factor-of-2-3.html</guid>
-							<description><![CDATA[<p>Definitely worth a read whether you're a developer or one who commonly interacts with developers.</p>]]></description>
-							<content:encoded><![CDATA[<p>Definitely worth a read whether you're a developer or one who commonly interacts with developers.</p>]]></content:encoded>
 						</item>
 				
 						<item>
