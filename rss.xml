@@ -14,7 +14,7 @@
 					<atom:link href="http://mattwalters.net/rss.xml" rel="self" type="application/rss+xml" />
 					<link>http://mattwalters.net</link>
 					<description>Senior Web &amp; PHP Developer in Richmond, VA</description>
-					<lastBuildDate>Mon, 6 Feb 2012 20:36:42 +0000</lastBuildDate>
+					<lastBuildDate>Tue, 7 Feb 2012 08:12:56 +0000</lastBuildDate>
 					<language>en</language>
 					<sy:updatePeriod>hourly</sy:updatePeriod>
 					<sy:updateFrequency>1</sy:updateFrequency>
@@ -71,11 +71,11 @@
 <p>This makes things a little prettier in the published site.</p></li>
 <li><p>Category support</p>
 
-<p>Categories are created while the site is being published from what you specify in the header section of your markdown files.  Listing (e.g. archive) pages are created for each category.  You can see an example be looking at my <a href="http://mattwalters.net/category/development-0.html">Development</a> category.</p></li>
+<p>Categories are created while the site is being published from what you specify in the header section of your markdown files.  Listing (e.g. archive) pages are created for each category.  You can see an example by looking at my <a href="http://mattwalters.net/category/development-0.html">Development</a> category.</p></li>
 <li><p>Template files are now PHP</p>
 
 <p>Using basic string replaces with .tpl files for the theme was going to become painful fast so I switched things up to let template files be PHP which means you can dynamically process things when the site is generated.  This also makes the hook system more straight forward to take advantage of.</p></li>
-<li>Future dated posts are now published until their date</li>
+<li>Now, future dated posts are not published until the date specified in their source markdown file.</li>
 </ul>
 
 <p>Coming up:</p>
@@ -108,11 +108,11 @@
 <p>This makes things a little prettier in the published site.</p></li>
 <li><p>Category support</p>
 
-<p>Categories are created while the site is being published from what you specify in the header section of your markdown files.  Listing (e.g. archive) pages are created for each category.  You can see an example be looking at my <a href="http://mattwalters.net/category/development-0.html">Development</a> category.</p></li>
+<p>Categories are created while the site is being published from what you specify in the header section of your markdown files.  Listing (e.g. archive) pages are created for each category.  You can see an example by looking at my <a href="http://mattwalters.net/category/development-0.html">Development</a> category.</p></li>
 <li><p>Template files are now PHP</p>
 
 <p>Using basic string replaces with .tpl files for the theme was going to become painful fast so I switched things up to let template files be PHP which means you can dynamically process things when the site is generated.  This also makes the hook system more straight forward to take advantage of.</p></li>
-<li>Future dated posts are now published until their date</li>
+<li>Now, future dated posts are not published until the date specified in their source markdown file.</li>
 </ul>
 
 <p>Coming up:</p>
