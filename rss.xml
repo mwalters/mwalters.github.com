@@ -14,11 +14,41 @@
 					<atom:link href="http://mattwalters.net/rss.xml" rel="self" type="application/rss+xml" />
 					<link>http://mattwalters.net</link>
 					<description>Senior Web &amp; PHP Developer in Richmond, VA</description>
-					<lastBuildDate>Thu, 16 Feb 2012 11:02:10 +0000</lastBuildDate>
+					<lastBuildDate>Fri, 17 Feb 2012 08:37:59 +0000</lastBuildDate>
 					<language>en</language>
 					<sy:updatePeriod>hourly</sy:updatePeriod>
 					<sy:updateFrequency>1</sy:updateFrequency>
 					<generator>markd</generator>
+						<item>
+							<title>Scaling Startups</title>
+							<link>http://mattwalters.net/2012/scaling-startups.html</link>
+							<pubDate>February 17th, 2012</pubDate>
+							<dc:creator>Matt</dc:creator>
+							<guid isPermaLink="false">http://mattwalters.net/2012/scaling-startups.html</guid>
+							<description><![CDATA[<p>Pretty good article about things over at Etsy.  I particularly liked this quote.</p>
+
+<blockquote>
+  <p>If you’re building a technology-driven company, you better have 
+  a culture that loves engineers, and I mean love. All too often, 
+  I see entrepreneurs who say they "just need engineers" to "bang 
+  out the code" for this great idea of theirs. If you view 
+  engineers as interchangeable factory workers instead of partners 
+  and creative people, you’re in for a tough time getting huge in 
+  a world driven by technology.</p>
+</blockquote>]]></description>
+							<content:encoded><![CDATA[<p>Pretty good article about things over at Etsy.  I particularly liked this quote.</p>
+
+<blockquote>
+  <p>If you’re building a technology-driven company, you better have 
+  a culture that loves engineers, and I mean love. All too often, 
+  I see entrepreneurs who say they "just need engineers" to "bang 
+  out the code" for this great idea of theirs. If you view 
+  engineers as interchangeable factory workers instead of partners 
+  and creative people, you’re in for a tough time getting huge in 
+  a world driven by technology.</p>
+</blockquote>]]></content:encoded>
+						</item>
+				
 						<item>
 							<title>Vagrant and Puppet are pretty fun</title>
 							<link>http://mattwalters.net/2012/vagrant-and-puppet-are-pretty-fun.html</link>
@@ -153,16 +183,6 @@
 </ul>
 
 <p>Until next time … take care.</p>]]></content:encoded>
-						</item>
-				
-						<item>
-							<title>Why are software development task estimations regularly off by a factor of 2-3?</title>
-							<link>http://mattwalters.net/2012/why-are-software-development-task-estimations-regularly-off-by-a-factor-of-2-3.html</link>
-							<pubDate>January 29th, 2012</pubDate>
-							<dc:creator>Matt</dc:creator>
-							<guid isPermaLink="false">http://mattwalters.net/2012/why-are-software-development-task-estimations-regularly-off-by-a-factor-of-2-3.html</guid>
-							<description><![CDATA[<p>Definitely worth a read whether you're a developer or one who commonly interacts with developers.</p>]]></description>
-							<content:encoded><![CDATA[<p>Definitely worth a read whether you're a developer or one who commonly interacts with developers.</p>]]></content:encoded>
 						</item>
 				
 				</channel>
