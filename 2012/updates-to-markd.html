@@ -34,19 +34,26 @@
 
 <body>
 
-<div class="topbar">
-	<div class="fill">
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
 		<div class="container">
+			<a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
 			<a class="brand" href="/">Matt Walters</a>
-			<ul class="nav">
-	<li class="dropdown" data-dropdown="dropdown">
-		<a class="dropdown-toggle" href="#">Projects</a>
+			<div class="nav-collapse">
+				<ul class="nav">
+	<li class="dropdown">
+		<a data-toggle="dropdown" class="dropdown-toggle" href="#">Projects</a>
 		<ul class="dropdown-menu">
 			<li><a href="/projects/markd.html">markd</a></li>
 		</ul>
 	</li>
 	<li><a href="/search.html">Search</a></li>
 </ul>
+			</div><!--/.nav-collapse -->
 		</div>
 	</div>
 </div>
@@ -54,7 +61,7 @@
 <div class="container">
 	<div class="content">
 		<div class="row">
-			<div class="span10">
+			<div class="span9">
 				<div class="post-wrap single">
 					<h1 class="post-title">Updates to markd</h1>
 					<div class="post-meta">
@@ -125,7 +132,7 @@
 					    })();
 					</script>
 				</div>			</div> <!-- span10 -->
-			<div class="span4">
+			<div class="span3">
 				<h3>Connect</h3>
 				<div class="side-buttons">
 					<a target="_blank" href="http://about.me/mattwalters"><img src="/images/me_32.png" alt="Matt Walters on about.me" /></a>
