@@ -62,6 +62,64 @@
 	<div class="content">
 		<div class="row">
 			<div class="span9">
+<div class="post-wrap well">
+	<h2 class="post-title"><a href="/2012/hosted-on-github.html
+">Hosted on github</a></h2>
+	<div class="post-meta">
+		Posted <a href="/2012/hosted-on-github.html
+">January 30th, 2012</a>
+		 in <a href="/category/development-0.html">Development</a>	</div>
+	<div class="post-content"><p>One of the side benefits of markd is that I can now just host my site on github since it's just static HTML.  So I've moved my site over.</p>
+
+<p>Speaking of markd, I've added some more features:</p>
+
+<ul>
+<li><p>Post formats</p>
+
+<p>An example would be my <a href="http://mattwalters.net/category/links-0.html">link posts</a> which you can see are formatted slightly differently than normal posts.  Post formats are defined on the fly based on what you specify in the header section of your markdown files.  If you specify a format then the template engine looks for a corresponding content file in the <code>formats</code> directory inside of your theme.</p></li>
+<li><a href="http://code.google.com/p/google-code-prettify/">Google Code Prettify support</a></li>
+<li><p>Subpages are now in subdirectories on the published site</p>
+
+<p>This makes things a little prettier in the published site.</p></li>
+<li><p>Category support</p>
+
+<p>Categories are created while the site is being published from what you specify in the header section of your markdown files.  Listing (e.g. archive) pages are created for each category.  You can see an example by looking at my <a href="http://mattwalters.net/category/development-0.html">Development</a> category.</p></li>
+<li><p>Template files are now PHP</p>
+
+<p>Using basic string replaces with .tpl files for the theme was going to become painful fast so I switched things up to let template files be PHP which means you can dynamically process things when the site is generated.  This also makes the hook system more straight forward to take advantage of.</p></li>
+<li>Now, future dated posts are not published until the date specified in their source markdown file.</li>
+</ul>
+
+<p>Coming up:</p>
+
+<ul>
+<li><p>Tag support</p>
+
+<p>It's possible I may just rename categories to tags and go with the one taxonomy.</p></li>
+<li><p>WordPress importer</p>
+
+<p>Maybe my previous content will make an appearance here :)</p></li>
+<li>Child theme system</li>
+<li><p>FTP Deployments of your site</p>
+
+<p>This is still a maybe.  I'm not sure how useful it will be for the system.</p></li>
+</ul>
+
+<p>Until next time … take care.</p></div>
+	<script type="text/javascript">
+	    var disqus_shortname = 'mattwalters';
+	    (function () {
+	        var s = document.createElement('script'); s.async = true;
+	        s.type = 'text/javascript';
+	        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+	        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+	    }());
+	</script>
+	<div class="comment-count">
+		<a href="/2012/hosted-on-github.html
+#disqus_thread" data-disqus-identifier="2ddc0ad5e96685df95a708ae05ae6f13">Comments</a>
+	</div>
+</div>
 <div class="post-wrap well format-link">
 <h2 class="post-title"><a target="_blank" href=" http://www.quora.com/Engineering-Management/Why-are-software-development-task-estimations-regularly-off-by-a-factor-of-2-3">Why are software development task estimations regularly off by a factor of 2-3?</a></h2>
 	<div class="post-meta">
@@ -237,30 +295,6 @@
 #disqus_thread" data-disqus-identifier="f40e3d1df9f78c375601e81757481d15">Comments</a>
 	</div>
 </div>
-<div class="post-wrap well">
-	<h2 class="post-title"><a href="/2012/finding-my-previous-content.html
-">Finding my previous content</a></h2>
-	<div class="post-meta">
-		Posted <a href="/2012/finding-my-previous-content.html
-">January 20th, 2012</a>
-		 in <a href="/category/miscellaneous-0.html">Miscellaneous</a>	</div>
-	<div class="post-content"><p>When I switched over to markd, I considered migrating all of my content to it, but at the time of this writing, I'm just not sure that I feel like it's worth it.  So for an archive of my postings before this post, please use the link below.</p>
-
-<p>My previous content can be found <a href="http://mwalters8.wordpress.com/">here</a>.</p></div>
-	<script type="text/javascript">
-	    var disqus_shortname = 'mattwalters';
-	    (function () {
-	        var s = document.createElement('script'); s.async = true;
-	        s.type = 'text/javascript';
-	        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-	        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-	    }());
-	</script>
-	<div class="comment-count">
-		<a href="/2012/finding-my-previous-content.html
-#disqus_thread" data-disqus-identifier="7006f87813244ddef653c4a12a972402">Comments</a>
-	</div>
-</div>
 			</div> <!-- span10 -->
 			<div class="span3">
 				<h3>Connect</h3>
@@ -304,7 +338,7 @@
 		<div class="row">
 			<div class="span12">
 				<div class="pagination">
-					<ul><li class="prev"><a href="/">Previous</a></li><li></li></ul>				</div>
+					<ul><li class="prev"><a href="/">Previous</a></li><li class="next"><a href="/archive-2.html">Next Page</a></li></ul>				</div>
 			</div>
 			<div class="span4"></div>
 		</div> <!-- row -->

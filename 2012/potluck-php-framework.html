@@ -62,85 +62,44 @@
 	<div class="content">
 		<div class="row">
 			<div class="span9">
-<div class="post-wrap sitemap type-page">
-	<h2>Pages</h2>		<a href="/">
-		Home		</a>
-	</div>
-<div class="post-wrap sitemap type-page">
-			<a href="/search.html">
-		Search		</a>
-	</div>
-<div class="post-wrap sitemap type-page">
-			<a href="/markd.html">
-		markd		</a>
-	</div>
-<div class="post-wrap sitemap type-">
-	<h2>2012</h2>		February 12th &#150; 
-		<a href="/2012/potluck-php-framework.html
-">
-		Potluck PHP Framework		</a>
-	</div>
-<div class="post-wrap sitemap type-">
-			February 17th &#150; 
-		<a href="/2012/scaling-startups.html
-">
-		Scaling Startups		</a>
-	</div>
-<div class="post-wrap sitemap type-">
-			February 10th &#150; 
-		<a href="/2012/vagrant-and-puppet-are-pretty-fun.html
-">
-		Vagrant and Puppet are pretty fun		</a>
-	</div>
-<div class="post-wrap sitemap type-">
-			February 6th &#150; 
-		<a href="/2012/new-job.html
-">
-		New job		</a>
-	</div>
-<div class="post-wrap sitemap type-">
-			January 31st &#150; 
-		<a href="/2012/scrollorama.html
-">
-		Scrollorama		</a>
-	</div>
-<div class="post-wrap sitemap type-">
-			January 30th &#150; 
-		<a href="/2012/hosted-on-github.html
-">
-		Hosted on github		</a>
-	</div>
-<div class="post-wrap sitemap type-">
-			January 29th &#150; 
-		<a href="/2012/why-are-software-development-task-estimations-regularly-off-by-a-factor-of-2-3.html
-">
-		Why are software development task estimations regularly off by a factor of ...		</a>
-	</div>
-<div class="post-wrap sitemap type-">
-			January 23rd &#150; 
-		<a href="/2012/updates-to-markd.html
-">
-		Updates to markd		</a>
-	</div>
-<div class="post-wrap sitemap type-">
-			January 21st &#150; 
-		<a href="/2012/apparently-pictures-are-needed.html
-">
-		Apparently pictures are needed		</a>
-	</div>
-<div class="post-wrap sitemap type-">
-			January 20th &#150; 
-		<a href="/2012/welcome-to-my-new-site.html
-">
-		Welcome To My New Site		</a>
-	</div>
-<div class="post-wrap sitemap type-">
-			January 20th &#150; 
-		<a href="/2012/finding-my-previous-content.html
-">
-		Finding my previous content		</a>
-	</div>
-			</div> <!-- span10 -->
+				<div class="post-wrap single">
+					<h1 class="post-title">Potluck PHP Framework</h1>
+					<div class="post-meta">
+						Posted <a href="/2012/potluck-php-framework.html
+">February 12th, 2012</a>
+						 in <a href="/category/development-0.html">Development</a>					</div>
+					<div class="post-content"><p>In my free time I've been playing around with some different tools for development and I've sort of come up with a Potluck PHP Framework of sorts.  It's actually not bad and stays pretty lightweight while giving some decent functionality.  Keep in mind, I've not spent extensive time with this setup, but I am liking what I'm encountering so far.  Here's what I've pieced together:</p>
+
+<h3><a href="http://www.slimframework.com/">Slim</a>: PHP5 Micro Framework</h3>
+
+<p>It's pretty lightweight and you're not going to find tons of functionality built into it.  But don't let it fool you.  It is pretty easy to extend or build upon and has some important pieces of functionality that a framework should have already built in.</p>
+
+<p>My only "beef" with Slim is probably that it doesn't give a great Controller structure if you're going to take an MVC approach to things.  But I'm still just starting to play with the framework so I might find a way to build in something more like what I'm expecting.  I typically like the CodeIgniter approach on controllers/routes.  I'd like to see if I can figure out a way to minimally recreate that functionality so I can make a new route just by dropping a file/class/method into the appropriate place(s).  For a small site this would be a non-issue anyhow.</p>
+
+<h3><a href="http://twig.sensiolabs.org/">Twig</a>: Template Engine</h3>
+
+<p>This is rather <a href="https://github.com/codeguy/Slim-Extras/blob/master/Views/TwigView.php">easily integrated</a> into Slim and gives you a nice template engine for your views.  I'm typically not a fan of mustache templating systems but Twig is a pretty robust engine.  In my playing around with it, I am finding myself willing to deal with the mustaches in order to gain the advantages Twig is providing.</p>
+
+<h3><a href="http://phpdatamapper.com/">phpDataMapper</a></h3>
+
+<p>phpDataMapper is more or less a port of the <a href="http://datamapper.org/">Ruby DataMapper</a> project.  This is the one I've had the least time spent with of the 3 items on this list.  But I definitely enjoy not having to worry about escaping things for the database, etc., and being able to quickly establish a database back end for the app I'm using this setup with.  I went from no database connection to pulling data out and displaying it on my page in about 5 minutes with phpDataMapper.</p>
+
+<hr />
+
+<p>Could I have done all of this with something like CodeIgniter?  Sure.  I'm a big fan of CodeIgniter so I'm not making this list as an argument against CI or other PHP frameworks.  I will say that I was able to integrate Slim, Twig, and phpDataMapper in about 15 minutes of Googling and typing.</p>
+
+<p>One advantage I could see to using a setup like this is that you get to very explicitly choose where you want to put weight into the framework you're piecing together for your application.  I'm not sure how light-weight Twig and phpDataMapper would be considered, but Slim is definitely light-weight.  Database interactions and rendering are areas that I was ok with adding weight to the application for because of what they provide me.</p></div>
+					<div id="disqus_thread"></div>
+					<script type="text/javascript">
+					    var disqus_shortname = 'mattwalters';
+						var disqus_identifier = 'd0649c25c728d5b2f6ca02716b28526d';
+					    (function() {
+					        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+					        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+					        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+					    })();
+					</script>
+				</div>			</div> <!-- span10 -->
 			<div class="span3">
 				<h3>Connect</h3>
 				<div class="side-buttons">

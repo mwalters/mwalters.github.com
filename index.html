@@ -62,6 +62,48 @@
 	<div class="content">
 		<div class="row">
 			<div class="span9">
+<div class="post-wrap well">
+	<h2 class="post-title"><a href="/2012/potluck-php-framework.html
+">Potluck PHP Framework</a></h2>
+	<div class="post-meta">
+		Posted <a href="/2012/potluck-php-framework.html
+">February 12th, 2012</a>
+		 in <a href="/category/development-0.html">Development</a>	</div>
+	<div class="post-content"><p>In my free time I've been playing around with some different tools for development and I've sort of come up with a Potluck PHP Framework of sorts.  It's actually not bad and stays pretty lightweight while giving some decent functionality.  Keep in mind, I've not spent extensive time with this setup, but I am liking what I'm encountering so far.  Here's what I've pieced together:</p>
+
+<h3><a href="http://www.slimframework.com/">Slim</a>: PHP5 Micro Framework</h3>
+
+<p>It's pretty lightweight and you're not going to find tons of functionality built into it.  But don't let it fool you.  It is pretty easy to extend or build upon and has some important pieces of functionality that a framework should have already built in.</p>
+
+<p>My only "beef" with Slim is probably that it doesn't give a great Controller structure if you're going to take an MVC approach to things.  But I'm still just starting to play with the framework so I might find a way to build in something more like what I'm expecting.  I typically like the CodeIgniter approach on controllers/routes.  I'd like to see if I can figure out a way to minimally recreate that functionality so I can make a new route just by dropping a file/class/method into the appropriate place(s).  For a small site this would be a non-issue anyhow.</p>
+
+<h3><a href="http://twig.sensiolabs.org/">Twig</a>: Template Engine</h3>
+
+<p>This is rather <a href="https://github.com/codeguy/Slim-Extras/blob/master/Views/TwigView.php">easily integrated</a> into Slim and gives you a nice template engine for your views.  I'm typically not a fan of mustache templating systems but Twig is a pretty robust engine.  In my playing around with it, I am finding myself willing to deal with the mustaches in order to gain the advantages Twig is providing.</p>
+
+<h3><a href="http://phpdatamapper.com/">phpDataMapper</a></h3>
+
+<p>phpDataMapper is more or less a port of the <a href="http://datamapper.org/">Ruby DataMapper</a> project.  This is the one I've had the least time spent with of the 3 items on this list.  But I definitely enjoy not having to worry about escaping things for the database, etc., and being able to quickly establish a database back end for the app I'm using this setup with.  I went from no database connection to pulling data out and displaying it on my page in about 5 minutes with phpDataMapper.</p>
+
+<hr />
+
+<p>Could I have done all of this with something like CodeIgniter?  Sure.  I'm a big fan of CodeIgniter so I'm not making this list as an argument against CI or other PHP frameworks.  I will say that I was able to integrate Slim, Twig, and phpDataMapper in about 15 minutes of Googling and typing.</p>
+
+<p>One advantage I could see to using a setup like this is that you get to very explicitly choose where you want to put weight into the framework you're piecing together for your application.  I'm not sure how light-weight Twig and phpDataMapper would be considered, but Slim is definitely light-weight.  Database interactions and rendering are areas that I was ok with adding weight to the application for because of what they provide me.</p></div>
+	<script type="text/javascript">
+	    var disqus_shortname = 'mattwalters';
+	    (function () {
+	        var s = document.createElement('script'); s.async = true;
+	        s.type = 'text/javascript';
+	        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+	        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+	    }());
+	</script>
+	<div class="comment-count">
+		<a href="/2012/potluck-php-framework.html
+#disqus_thread" data-disqus-identifier="d0649c25c728d5b2f6ca02716b28526d">Comments</a>
+	</div>
+</div>
 <div class="post-wrap well format-link">
 <h2 class="post-title"><a target="_blank" href=" http://blog.chaddickerson.com/2010/08/05/scaling-startups/">Scaling Startups</a></h2>
 	<div class="post-meta">
@@ -176,64 +218,6 @@
 	<div class="comment-count">
 		<a href="/2012/scrollorama.html
 #disqus_thread" data-disqus-identifier="c403aa8fb0eb20478491ffe971187965">Comments</a>
-	</div>
-</div>
-<div class="post-wrap well">
-	<h2 class="post-title"><a href="/2012/hosted-on-github.html
-">Hosted on github</a></h2>
-	<div class="post-meta">
-		Posted <a href="/2012/hosted-on-github.html
-">January 30th, 2012</a>
-		 in <a href="/category/development-0.html">Development</a>	</div>
-	<div class="post-content"><p>One of the side benefits of markd is that I can now just host my site on github since it's just static HTML.  So I've moved my site over.</p>
-
-<p>Speaking of markd, I've added some more features:</p>
-
-<ul>
-<li><p>Post formats</p>
-
-<p>An example would be my <a href="http://mattwalters.net/category/links-0.html">link posts</a> which you can see are formatted slightly differently than normal posts.  Post formats are defined on the fly based on what you specify in the header section of your markdown files.  If you specify a format then the template engine looks for a corresponding content file in the <code>formats</code> directory inside of your theme.</p></li>
-<li><a href="http://code.google.com/p/google-code-prettify/">Google Code Prettify support</a></li>
-<li><p>Subpages are now in subdirectories on the published site</p>
-
-<p>This makes things a little prettier in the published site.</p></li>
-<li><p>Category support</p>
-
-<p>Categories are created while the site is being published from what you specify in the header section of your markdown files.  Listing (e.g. archive) pages are created for each category.  You can see an example by looking at my <a href="http://mattwalters.net/category/development-0.html">Development</a> category.</p></li>
-<li><p>Template files are now PHP</p>
-
-<p>Using basic string replaces with .tpl files for the theme was going to become painful fast so I switched things up to let template files be PHP which means you can dynamically process things when the site is generated.  This also makes the hook system more straight forward to take advantage of.</p></li>
-<li>Now, future dated posts are not published until the date specified in their source markdown file.</li>
-</ul>
-
-<p>Coming up:</p>
-
-<ul>
-<li><p>Tag support</p>
-
-<p>It's possible I may just rename categories to tags and go with the one taxonomy.</p></li>
-<li><p>WordPress importer</p>
-
-<p>Maybe my previous content will make an appearance here :)</p></li>
-<li>Child theme system</li>
-<li><p>FTP Deployments of your site</p>
-
-<p>This is still a maybe.  I'm not sure how useful it will be for the system.</p></li>
-</ul>
-
-<p>Until next time … take care.</p></div>
-	<script type="text/javascript">
-	    var disqus_shortname = 'mattwalters';
-	    (function () {
-	        var s = document.createElement('script'); s.async = true;
-	        s.type = 'text/javascript';
-	        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-	        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-	    }());
-	</script>
-	<div class="comment-count">
-		<a href="/2012/hosted-on-github.html
-#disqus_thread" data-disqus-identifier="2ddc0ad5e96685df95a708ae05ae6f13">Comments</a>
 	</div>
 </div>
 			</div> <!-- span10 -->
