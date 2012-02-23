@@ -2,7 +2,7 @@
 			<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 						<url>
 							<loc>http://mattwalters.net/</loc>
-							<lastmod>2012-02-22</lastmod>
+							<lastmod>2012-02-23</lastmod>
 							<changefreq>hourly</changefreq>
 							<priority>0.4</priority>
 						</url>
@@ -24,7 +24,7 @@
 						<url>
 							<loc>http://mattwalters.net/2012/potluck-php-framework.html
 </loc>
-							<lastmod>2012-02-12</lastmod>
+							<lastmod>2012-02-22</lastmod>
 							<changefreq>daily</changefreq>
 							<priority>0.6</priority>
 						</url>
