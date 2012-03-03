@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width" />
 <title>Matt Walters - Senior Web &amp; PHP Developer in Richmond, VA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="http://mattwalters.net/rss.xml">
 <meta property="og:title" content="Matt Walters" />
 <meta property="og:url" content="http://mattwalters.net" />
@@ -36,7 +37,7 @@
 
 <div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
-		<div class="container">
+		<div class="container-fluid">
 			<a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -46,7 +47,7 @@
 			<div class="nav-collapse">
 				<ul class="nav">
 	<li class="dropdown">
-		<a data-toggle="dropdown" class="dropdown-toggle" href="#">Projects</a>
+		<a data-toggle="dropdown" class="dropdown-toggle" href="#">Projects<b class="caret"></b></a>
 		<ul class="dropdown-menu">
 			<li><a href="/projects/markd.html">markd</a></li>
 		</ul>
@@ -58,10 +59,9 @@
 	</div>
 </div>
 
-<div class="container">
-	<div class="content">
-		<div class="row">
-			<div class="span9">
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span10">
 				<div class="post-wrap single">
 					<h1 class="post-title">Potluck PHP Framework</h1>
 					<div class="post-meta">
@@ -99,9 +99,11 @@
 					        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 					    })();
 					</script>
-				</div>			</div> <!-- span10 -->
-			<div class="span3">
-				<h3>Connect</h3>
+				</div>				<div class="pagination">
+									</div>
+			</div> <!-- span10 -->
+			<div class="span2">
+				<h3 class="connect-header">Connect</h3>
 				<div class="side-buttons">
 					<a target="_blank" href="http://about.me/mattwalters"><img src="/images/me_32.png" alt="Matt Walters on about.me" /></a>
 					<a target="_blank" href="http://twitter.com/mwalters"><img src="/images/twitter_32.png" alt="Matt Walters on twitter" /></a>
@@ -139,14 +141,6 @@
 		</script>
 				</div> <!-- span4 -->
 		</div> <!-- row -->
-		<div class="row">
-			<div class="span12">
-				<div class="pagination">
-									</div>
-			</div>
-			<div class="span4"></div>
-		</div> <!-- row -->
-	</div> <!-- content -->
 
     <footer>
       	<p>&copy; Matt Walters 2012 &#150; <a href="/sitemap.html">Sitemap</a></p>
