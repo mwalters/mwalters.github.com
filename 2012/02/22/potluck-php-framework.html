@@ -63,39 +63,36 @@
 	<div class="row-fluid">
 		<div class="span10">
 				<div class="post-wrap single">
-					<h1 class="post-title">Links for week ending 2012-02-24</h1>
+					<h1 class="post-title">Potluck PHP Framework</h1>
 					<div class="post-meta">
-						Posted <a href="/2012/links-for-week-ending-2012-02-24.html
-">February 24th, 2012</a>
-						 in <a href="/category/links-0.html">Links</a>					</div>
-					<div class="post-content"><p><a href="http://www.wpfunction.me/">WordPress functions.php Snippets</a>: Helpful as a starting place when you're setting up a new theme.</p>
+						Posted <a href="/2012/02/22/potluck-php-framework.html
+">February 22nd, 2012</a>
+						 in <a href="/category/development-0.html">Development</a>					</div>
+					<div class="post-content"><p>In my free time I've been playing around with some different tools for development and I've sort of come up with a Potluck PHP Framework of sorts.  It's actually not bad and stays pretty lightweight while giving some decent functionality.  Keep in mind, I've not spent extensive time with this setup, but I am liking what I'm encountering so far.  Here's what I've pieced together:</p>
 
-<p><a href="http://itunes.apple.com/us/app/osfoora-for-twitter/id502401238?mt=12">Osfoora for Twitter</a>: Client for OSX.  I like that it has tweet marker integration.  I use tweetbot on my iPhone which has this integration as well so I finally have a synced timeline between my laptop and iPhone.</p>
+<h3><a href="http://www.slimframework.com/">Slim</a>: PHP5 Micro Framework</h3>
 
-<p><a href="http://www.smashingmagazine.com/2012/02/17/stop-writing-project-proposals/">Stop Writing Project Proposals</a>: I could probably write a longer blog post about this alone.  I think my opinions on it might change with a client that I had a standing relationship with.  But for new clients, I agree with the basic idea here.</p>
+<p>It's pretty lightweight and you're not going to find tons of functionality built into it.  But don't let it fool you.  It is pretty easy to extend or build upon and has some important pieces of functionality that a framework should have already built in.</p>
 
-<p><a href="http://lifehacker.com/5885881/top-10-downloads-that-enhance-mac-os-xs-built+in-tools">Top 10 Downloads That Enhance Mac OS X's Built-In Tools</a>: Some of these really are nice.  I used unDock, Palua, and Perian.  I can see others on the list as helpful as well.  I will note though that I tried RestoreMeNot and had issues with it slowing things down when I was tabbing between applications.  Not sure why this was, but as soon as I uninstalled it things went back to being snappy.</p>
+<p>My only "beef" with Slim is probably that it doesn't give a great Controller structure if you're going to take an MVC approach to things.  But I'm still just starting to play with the framework so I might find a way to build in something more like what I'm expecting.  I typically like the CodeIgniter approach on controllers/routes.  I'd like to see if I can figure out a way to minimally recreate that functionality so I can make a new route just by dropping a file/class/method into the appropriate place(s).  For a small site this would be a non-issue anyhow.</p>
 
-<p><a href="http://bootswatch.com/">Free themes for Twitter Bootstrap</a>: Obviously if you look at this site in the browser you can tell that I've become a bit of a fan of Twitter Bootstrap :)  I've been thinking about trying to integrate some of these into <a href="https://github.com/mwalters/markd">markd</a>.</p>
+<h3><a href="http://twig.sensiolabs.org/">Twig</a>: Template Engine</h3>
 
-<p><a href="http://theoatmeal.com/comics/game_of_thrones">I tried to watch Game of Thrones and this is what happened - The Oatmeal</a>: heh…</p>
+<p>This is rather <a href="https://github.com/codeguy/Slim-Extras/blob/master/Views/TwigView.php">easily integrated</a> into Slim and gives you a nice template engine for your views.  I'm typically not a fan of mustache templating systems but Twig is a pretty robust engine.  In my playing around with it, I am finding myself willing to deal with the mustaches in order to gain the advantages Twig is providing.</p>
 
-<p><a href="http://arstechnica.com/tech-policy/news/2012/02/secret-service-asks-for-shutdown-of-legit-website-over-user-content-godaddy-complies.ars">Takedowns run amok?</a>: I use JotForms on this site for my contact form and was affected by this.  It's pretty much bullshit if you ask me.</p>
+<h3><a href="http://phpdatamapper.com/">phpDataMapper</a></h3>
 
-<p><a href="http://pagodabox.com/">Pagoda Box | Scaling PHP Cloud Hosting</a>: I hadn't heard of this service previously.  It sounds interesting and I like the methods they have in place to make deploying with git easy as well as post deploy hooks for things.  I might have to try them out.</p>
+<p>phpDataMapper is more or less a port of the <a href="http://datamapper.org/">Ruby DataMapper</a> project.  This is the one I've had the least time spent with of the 3 items on this list.  But I definitely enjoy not having to worry about escaping things for the database, etc., and being able to quickly establish a database back end for the app I'm using this setup with.  I went from no database connection to pulling data out and displaying it on my page in about 5 minutes with phpDataMapper.</p>
 
-<p><a href="http://daringfireball.net/linked/2012/02/21/dell">Dell's Predicament</a>:</p>
+<hr />
 
-<blockquote>
-  <p>Put another way, Dell has no strengths in any 
-  market that’s growing. They’re a relic.</p>
-</blockquote>
+<p>Could I have done all of this with something like CodeIgniter?  Sure.  I'm a big fan of CodeIgniter so I'm not making this list as an argument against CI or other PHP frameworks.  I will say that I was able to integrate Slim, Twig, and phpDataMapper in about 15 minutes of Googling and typing.</p>
 
-<p>Crazy to realize that this is basically true.</p></div>
+<p>One advantage I could see to using a setup like this is that you get to very explicitly choose where you want to put weight into the framework you're piecing together for your application.  I'm not sure how light-weight Twig and phpDataMapper would be considered, but Slim is definitely light-weight.  Database interactions and rendering are areas that I was ok with adding weight to the application for because of what they provide me.</p></div>
 					<div id="disqus_thread"></div>
 					<script type="text/javascript">
 					    var disqus_shortname = 'mattwalters';
-						var disqus_identifier = '42ef442a457de683b7026d06a3f870ab';
+						var disqus_identifier = '11e21d44ae668852620e25a57852cbf9';
 					    (function() {
 					        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 					        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';

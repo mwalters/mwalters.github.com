@@ -14,17 +14,17 @@
 					<atom:link href="http://mattwalters.net/rss.xml" rel="self" type="application/rss+xml" />
 					<link>http://mattwalters.net</link>
 					<description>Senior Web &amp; PHP Developer in Richmond, VA</description>
-					<lastBuildDate>Fri, 2 Mar 2012 22:02:23 +0000</lastBuildDate>
+					<lastBuildDate>Sat, 3 Mar 2012 21:48:04 +0000</lastBuildDate>
 					<language>en</language>
 					<sy:updatePeriod>hourly</sy:updatePeriod>
 					<sy:updateFrequency>1</sy:updateFrequency>
 					<generator>markd</generator>
 						<item>
 							<title>Links for week ending 2012-03-02</title>
-							<link>http://mattwalters.net/2012/links-for-week-ending-2012-03-02.html</link>
+							<link>http://mattwalters.net/2012/03/01/links-for-week-ending-2012-03-02.html</link>
 							<pubDate>March 1st, 2012</pubDate>
 							<dc:creator>Matt</dc:creator>
-							<guid isPermaLink="false">http://mattwalters.net/2012/links-for-week-ending-2012-03-02.html</guid>
+							<guid isPermaLink="false">http://mattwalters.net/2012/03/01/links-for-week-ending-2012-03-02.html</guid>
 							<description><![CDATA[<p><a href="http://www.reddit.com/r/AskReddit/comments/q5jfa/reddit_my_son_is_five_and_he_is_begging_me_to_do/">Reddit: My son is five, and he is begging me to 'do science.' Are there any cool (but inexpensive) experiments we could do at home that would blow his mind?</a>: I'm not a 5 year old, but wouldn't mind doing some of these myself, heh</p>
 
 <p><a href="http://www.aboutlinux.info/2005/10/10-seconds-guide-to-bash-shell.html">Bash Shell Scripting - 10 Seconds Guide</a>: I've been getting into some bash/zsh -fu lately.  These are some good fundamentals here that can help.</p>
@@ -61,10 +61,10 @@
 				
 						<item>
 							<title>Links for week ending 2012-02-24</title>
-							<link>http://mattwalters.net/2012/links-for-week-ending-2012-02-24.html</link>
+							<link>http://mattwalters.net/2012/02/24/links-for-week-ending-2012-02-24.html</link>
 							<pubDate>February 24th, 2012</pubDate>
 							<dc:creator>Matt</dc:creator>
-							<guid isPermaLink="false">http://mattwalters.net/2012/links-for-week-ending-2012-02-24.html</guid>
+							<guid isPermaLink="false">http://mattwalters.net/2012/02/24/links-for-week-ending-2012-02-24.html</guid>
 							<description><![CDATA[<p><a href="http://www.wpfunction.me/">WordPress functions.php Snippets</a>: Helpful as a starting place when you're setting up a new theme.</p>
 
 <p><a href="http://itunes.apple.com/us/app/osfoora-for-twitter/id502401238?mt=12">Osfoora for Twitter</a>: Client for OSX.  I like that it has tweet marker integration.  I use tweetbot on my iPhone which has this integration as well so I finally have a synced timeline between my laptop and iPhone.</p>
@@ -117,10 +117,10 @@
 				
 						<item>
 							<title>Potluck PHP Framework</title>
-							<link>http://mattwalters.net/2012/potluck-php-framework.html</link>
+							<link>http://mattwalters.net/2012/02/22/potluck-php-framework.html</link>
 							<pubDate>February 22nd, 2012</pubDate>
 							<dc:creator>Matt</dc:creator>
-							<guid isPermaLink="false">http://mattwalters.net/2012/potluck-php-framework.html</guid>
+							<guid isPermaLink="false">http://mattwalters.net/2012/02/22/potluck-php-framework.html</guid>
 							<description><![CDATA[<p>In my free time I've been playing around with some different tools for development and I've sort of come up with a Potluck PHP Framework of sorts.  It's actually not bad and stays pretty lightweight while giving some decent functionality.  Keep in mind, I've not spent extensive time with this setup, but I am liking what I'm encountering so far.  Here's what I've pieced together:</p>
 
 <h3><a href="http://www.slimframework.com/">Slim</a>: PHP5 Micro Framework</h3>
@@ -167,10 +167,10 @@
 				
 						<item>
 							<title>Scaling Startups</title>
-							<link>http://mattwalters.net/2012/scaling-startups.html</link>
+							<link>http://mattwalters.net/2012/02/17/scaling-startups.html</link>
 							<pubDate>February 17th, 2012</pubDate>
 							<dc:creator>Matt</dc:creator>
-							<guid isPermaLink="false">http://mattwalters.net/2012/scaling-startups.html</guid>
+							<guid isPermaLink="false">http://mattwalters.net/2012/02/17/scaling-startups.html</guid>
 							<description><![CDATA[<p>Pretty good article about things over at Etsy.  I particularly liked this quote.</p>
 
 <blockquote>
@@ -197,10 +197,10 @@
 				
 						<item>
 							<title>Vagrant and Puppet are pretty fun</title>
-							<link>http://mattwalters.net/2012/vagrant-and-puppet-are-pretty-fun.html</link>
+							<link>http://mattwalters.net/2012/02/10/vagrant-and-puppet-are-pretty-fun.html</link>
 							<pubDate>February 10th, 2012</pubDate>
 							<dc:creator>Matt</dc:creator>
-							<guid isPermaLink="false">http://mattwalters.net/2012/vagrant-and-puppet-are-pretty-fun.html</guid>
+							<guid isPermaLink="false">http://mattwalters.net/2012/02/10/vagrant-and-puppet-are-pretty-fun.html</guid>
 							<description><![CDATA[<p>I had some good times with <a href="http://vagrantup.com/">Vagrant</a> and <a href="http://puppetlabs.com/">Puppet</a> this week.  I would easily recommend checking it out if you typically develop <em>for</em> *nix based systems as it can make setting up a local dev environment pretty nice and easy to manage.  Not only that, but you can then share the dev environment with other developers on your team which is great news for folks that play well with others.</p>
 
 <p>You will probably find it to be a bit of a "slow down in order to speed up" routine.  I had previously played with it a little so I was able to dive in pretty fast this time around and found it pretty straight forward after having wrapped my head around it the first time several weeks back.</p>

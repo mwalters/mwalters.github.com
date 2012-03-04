@@ -2,7 +2,7 @@
 			<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 						<url>
 							<loc>http://mattwalters.net/</loc>
-							<lastmod>2012-03-02</lastmod>
+							<lastmod>2012-03-03</lastmod>
 							<changefreq>hourly</changefreq>
 							<priority>0.4</priority>
 						</url>
@@ -22,7 +22,7 @@
 						</url>
 				
 						<url>
-							<loc>http://mattwalters.net/2012/links-for-week-ending-2012-03-02.html
+							<loc>http://mattwalters.net/2012/03/01/links-for-week-ending-2012-03-02.html
 </loc>
 							<lastmod>2012-03-01</lastmod>
 							<changefreq>daily</changefreq>
@@ -30,7 +30,7 @@
 						</url>
 				
 						<url>
-							<loc>http://mattwalters.net/2012/links-for-week-ending-2012-02-24.html
+							<loc>http://mattwalters.net/2012/02/24/links-for-week-ending-2012-02-24.html
 </loc>
 							<lastmod>2012-02-24</lastmod>
 							<changefreq>daily</changefreq>
@@ -38,7 +38,7 @@
 						</url>
 				
 						<url>
-							<loc>http://mattwalters.net/2012/potluck-php-framework.html
+							<loc>http://mattwalters.net/2012/02/22/potluck-php-framework.html
 </loc>
 							<lastmod>2012-02-22</lastmod>
 							<changefreq>daily</changefreq>
@@ -46,7 +46,7 @@
 						</url>
 				
 						<url>
-							<loc>http://mattwalters.net/2012/scaling-startups.html
+							<loc>http://mattwalters.net/2012/02/17/scaling-startups.html
 </loc>
 							<lastmod>2012-02-17</lastmod>
 							<changefreq>daily</changefreq>
@@ -54,7 +54,7 @@
 						</url>
 				
 						<url>
-							<loc>http://mattwalters.net/2012/vagrant-and-puppet-are-pretty-fun.html
+							<loc>http://mattwalters.net/2012/02/10/vagrant-and-puppet-are-pretty-fun.html
 </loc>
 							<lastmod>2012-02-10</lastmod>
 							<changefreq>daily</changefreq>
@@ -62,7 +62,7 @@
 						</url>
 				
 						<url>
-							<loc>http://mattwalters.net/2012/new-job.html
+							<loc>http://mattwalters.net/2012/02/06/new-job.html
 </loc>
 							<lastmod>2012-02-06</lastmod>
 							<changefreq>daily</changefreq>
@@ -70,7 +70,7 @@
 						</url>
 				
 						<url>
-							<loc>http://mattwalters.net/2012/scrollorama.html
+							<loc>http://mattwalters.net/2012/01/31/scrollorama.html
 </loc>
 							<lastmod>2012-01-31</lastmod>
 							<changefreq>daily</changefreq>
@@ -78,7 +78,7 @@
 						</url>
 				
 						<url>
-							<loc>http://mattwalters.net/2012/hosted-on-github.html
+							<loc>http://mattwalters.net/2012/01/30/hosted-on-github.html
 </loc>
 							<lastmod>2012-01-30</lastmod>
 							<changefreq>daily</changefreq>
@@ -86,7 +86,7 @@
 						</url>
 				
 						<url>
-							<loc>http://mattwalters.net/2012/why-are-software-development-task-estimations-regularly-off-by-a-factor-of-2-3.html
+							<loc>http://mattwalters.net/2012/01/29/why-are-software-development-task-estimations-regularly-off-by-a-factor-of-2-3.html
 </loc>
 							<lastmod>2012-01-29</lastmod>
 							<changefreq>daily</changefreq>
@@ -94,7 +94,7 @@
 						</url>
 				
 						<url>
-							<loc>http://mattwalters.net/2012/updates-to-markd.html
+							<loc>http://mattwalters.net/2012/01/23/updates-to-markd.html
 </loc>
 							<lastmod>2012-01-23</lastmod>
 							<changefreq>daily</changefreq>
@@ -102,7 +102,7 @@
 						</url>
 				
 						<url>
-							<loc>http://mattwalters.net/2012/apparently-pictures-are-needed.html
+							<loc>http://mattwalters.net/2012/01/21/apparently-pictures-are-needed.html
 </loc>
 							<lastmod>2012-01-21</lastmod>
 							<changefreq>daily</changefreq>
@@ -110,7 +110,7 @@
 						</url>
 				
 						<url>
-							<loc>http://mattwalters.net/2012/welcome-to-my-new-site.html
+							<loc>http://mattwalters.net/2012/01/20/welcome-to-my-new-site.html
 </loc>
 							<lastmod>2012-01-20</lastmod>
 							<changefreq>daily</changefreq>
@@ -118,7 +118,7 @@
 						</url>
 				
 						<url>
-							<loc>http://mattwalters.net/2012/finding-my-previous-content.html
+							<loc>http://mattwalters.net/2012/01/20/finding-my-previous-content.html
 </loc>
 							<lastmod>2012-01-20</lastmod>
 							<changefreq>daily</changefreq>
