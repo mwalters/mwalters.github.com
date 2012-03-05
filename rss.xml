@@ -14,11 +14,49 @@
 					<atom:link href="http://mattwalters.net/rss.xml" rel="self" type="application/rss+xml" />
 					<link>http://mattwalters.net</link>
 					<description>Senior Web &amp; PHP Developer in Richmond, VA</description>
-					<lastBuildDate>Sat, 3 Mar 2012 21:48:04 +0000</lastBuildDate>
+					<lastBuildDate>Mon, 5 Mar 2012 13:03:50 +0000</lastBuildDate>
 					<language>en</language>
 					<sy:updatePeriod>hourly</sy:updatePeriod>
 					<sy:updateFrequency>1</sy:updateFrequency>
 					<generator>markd</generator>
+						<item>
+							<title>What does your desk look like?</title>
+							<link>http://mattwalters.net/2012/03/05/what-does-your-desk-look-like.html</link>
+							<pubDate>March 5th, 2012</pubDate>
+							<dc:creator>Matt</dc:creator>
+							<guid isPermaLink="false">http://mattwalters.net/2012/03/05/what-does-your-desk-look-like.html</guid>
+							<description><![CDATA[<p>I sort of find it interesting when I get a glimpse of someone elses workspace.  I figured I would share mine in the hopes that some others might do the same.</p>
+
+<h3>Plain</h3>
+
+<p><a href="https://img.skitch.com/20120305-fbe47tqejwbbtdqy48r3guahce.jpg"><img src="https://img.skitch.com/20120305-fbe47tqejwbbtdqy48r3guahce.jpg" alt="image" /></a></p>
+
+<h3>Annotated</h3>
+
+<p><a href="https://img.skitch.com/20120305-d4ju8tswdwekrnx4g534abypux.jpg"><img src="https://img.skitch.com/20120305-d4ju8tswdwekrnx4g534abypux.jpg" alt="image" /></a></p>
+
+<p>My desk is a simple Ikea desk and I have a Dell 24-inch monitor set up.  I try to keep it pretty minimal.  I used my iPhone to take the picture so you can't see it with the handset to the left of my keyboard, but here's the <a href="http://www.amazon.com/gp/product/B003FMVCRU/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;tag=mattwaltersne-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B003FMVCRU">product on Amazon</a>.  The laptop is a 13-inch MacBook Air.  I also have a <a href="http://www.amazon.com/gp/product/B00125XBHG/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;tag=mattwaltersne-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00125XBHG">Mirra Chair by Herman Miller</a>.</p>
+
+<p>The picture doesn't show it but hanging from the back of the desk is a cable organizer (also from Ikea) that keeps all of my cords mostly out of my way except for where they drop down for power on the lower left.</p>
+
+<p>Note: don't ask me why the cat (Sprocket) likes to sleep in the dog crate.  It doesn't make sense to me either.</p>]]></description>
+							<content:encoded><![CDATA[<p>I sort of find it interesting when I get a glimpse of someone elses workspace.  I figured I would share mine in the hopes that some others might do the same.</p>
+
+<h3>Plain</h3>
+
+<p><a href="https://img.skitch.com/20120305-fbe47tqejwbbtdqy48r3guahce.jpg"><img src="https://img.skitch.com/20120305-fbe47tqejwbbtdqy48r3guahce.jpg" alt="image" /></a></p>
+
+<h3>Annotated</h3>
+
+<p><a href="https://img.skitch.com/20120305-d4ju8tswdwekrnx4g534abypux.jpg"><img src="https://img.skitch.com/20120305-d4ju8tswdwekrnx4g534abypux.jpg" alt="image" /></a></p>
+
+<p>My desk is a simple Ikea desk and I have a Dell 24-inch monitor set up.  I try to keep it pretty minimal.  I used my iPhone to take the picture so you can't see it with the handset to the left of my keyboard, but here's the <a href="http://www.amazon.com/gp/product/B003FMVCRU/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;tag=mattwaltersne-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B003FMVCRU">product on Amazon</a>.  The laptop is a 13-inch MacBook Air.  I also have a <a href="http://www.amazon.com/gp/product/B00125XBHG/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;tag=mattwaltersne-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00125XBHG">Mirra Chair by Herman Miller</a>.</p>
+
+<p>The picture doesn't show it but hanging from the back of the desk is a cable organizer (also from Ikea) that keeps all of my cords mostly out of my way except for where they drop down for power on the lower left.</p>
+
+<p>Note: don't ask me why the cat (Sprocket) likes to sleep in the dog crate.  It doesn't make sense to me either.</p>]]></content:encoded>
+						</item>
+				
 						<item>
 							<title>Links for week ending 2012-03-02</title>
 							<link>http://mattwalters.net/2012/03/01/links-for-week-ending-2012-03-02.html</link>
@@ -193,28 +231,6 @@
   and creative people, you’re in for a tough time getting huge in 
   a world driven by technology.</p>
 </blockquote>]]></content:encoded>
-						</item>
-				
-						<item>
-							<title>Vagrant and Puppet are pretty fun</title>
-							<link>http://mattwalters.net/2012/02/10/vagrant-and-puppet-are-pretty-fun.html</link>
-							<pubDate>February 10th, 2012</pubDate>
-							<dc:creator>Matt</dc:creator>
-							<guid isPermaLink="false">http://mattwalters.net/2012/02/10/vagrant-and-puppet-are-pretty-fun.html</guid>
-							<description><![CDATA[<p>I had some good times with <a href="http://vagrantup.com/">Vagrant</a> and <a href="http://puppetlabs.com/">Puppet</a> this week.  I would easily recommend checking it out if you typically develop <em>for</em> *nix based systems as it can make setting up a local dev environment pretty nice and easy to manage.  Not only that, but you can then share the dev environment with other developers on your team which is great news for folks that play well with others.</p>
-
-<p>You will probably find it to be a bit of a "slow down in order to speed up" routine.  I had previously played with it a little so I was able to dive in pretty fast this time around and found it pretty straight forward after having wrapped my head around it the first time several weeks back.</p>
-
-<p>I originally found out about it by reading the article "<a href="http://phpadvent.org/2011/facilitating-development-environment-consistency-by-jeff-loiselle">Facilitating Development Environment Consistency</a>" over on the <a href="http://phpadvent.org">PHP advent</a> site.  So that might be a good place for you to start if you're interested in the approach.</p>
-
-<p>If you're not already subscribed to PHP Advent or following them on Twitter, I'd highly recommend it.  New articles only come in December of each year but some of them can be pretty stellar.</p>]]></description>
-							<content:encoded><![CDATA[<p>I had some good times with <a href="http://vagrantup.com/">Vagrant</a> and <a href="http://puppetlabs.com/">Puppet</a> this week.  I would easily recommend checking it out if you typically develop <em>for</em> *nix based systems as it can make setting up a local dev environment pretty nice and easy to manage.  Not only that, but you can then share the dev environment with other developers on your team which is great news for folks that play well with others.</p>
-
-<p>You will probably find it to be a bit of a "slow down in order to speed up" routine.  I had previously played with it a little so I was able to dive in pretty fast this time around and found it pretty straight forward after having wrapped my head around it the first time several weeks back.</p>
-
-<p>I originally found out about it by reading the article "<a href="http://phpadvent.org/2011/facilitating-development-environment-consistency-by-jeff-loiselle">Facilitating Development Environment Consistency</a>" over on the <a href="http://phpadvent.org">PHP advent</a> site.  So that might be a good place for you to start if you're interested in the approach.</p>
-
-<p>If you're not already subscribed to PHP Advent or following them on Twitter, I'd highly recommend it.  New articles only come in December of each year but some of them can be pretty stellar.</p>]]></content:encoded>
 						</item>
 				
 				</channel>

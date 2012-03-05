@@ -63,6 +63,34 @@
 	<div class="row-fluid">
 		<div class="span10">
 <div class="post-wrap well">
+	<h2 class="post-title"><a href="/2012/02/10/vagrant-and-puppet-are-pretty-fun.html
+">Vagrant and Puppet are pretty fun</a></h2>
+	<div class="post-meta">
+		Posted <a href="/2012/02/10/vagrant-and-puppet-are-pretty-fun.html
+">February 10th, 2012</a>
+		 in <a href="/category/development-0.html">Development</a>	</div>
+	<div class="post-content"><p>I had some good times with <a href="http://vagrantup.com/">Vagrant</a> and <a href="http://puppetlabs.com/">Puppet</a> this week.  I would easily recommend checking it out if you typically develop <em>for</em> *nix based systems as it can make setting up a local dev environment pretty nice and easy to manage.  Not only that, but you can then share the dev environment with other developers on your team which is great news for folks that play well with others.</p>
+
+<p>You will probably find it to be a bit of a "slow down in order to speed up" routine.  I had previously played with it a little so I was able to dive in pretty fast this time around and found it pretty straight forward after having wrapped my head around it the first time several weeks back.</p>
+
+<p>I originally found out about it by reading the article "<a href="http://phpadvent.org/2011/facilitating-development-environment-consistency-by-jeff-loiselle">Facilitating Development Environment Consistency</a>" over on the <a href="http://phpadvent.org">PHP advent</a> site.  So that might be a good place for you to start if you're interested in the approach.</p>
+
+<p>If you're not already subscribed to PHP Advent or following them on Twitter, I'd highly recommend it.  New articles only come in December of each year but some of them can be pretty stellar.</p></div>
+	<script type="text/javascript">
+	    var disqus_shortname = 'mattwalters';
+	    (function () {
+	        var s = document.createElement('script'); s.async = true;
+	        s.type = 'text/javascript';
+	        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+	        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+	    }());
+	</script>
+	<div class="comment-count">
+		<a href="/2012/02/10/vagrant-and-puppet-are-pretty-fun.html
+#disqus_thread" data-disqus-identifier="2e7eb1eb3ba82b6c7193f0c8ac75628b">Comments</a>
+	</div>
+</div>
+<div class="post-wrap well">
 	<h2 class="post-title"><a href="/2012/02/06/new-job.html
 ">New job</a></h2>
 	<div class="post-meta">
@@ -196,80 +224,6 @@
 	<div class="comment-count">
 		<a href="/2012/01/29/why-are-software-development-task-estimations-regularly-off-by-a-factor-of-2-3.html
 #disqus_thread" data-disqus-identifier="0895fe3f5aa4bae1746da9265b93d315">Comments</a>
-	</div>
-</div>
-<div class="post-wrap well">
-	<h2 class="post-title"><a href="/2012/01/23/updates-to-markd.html
-">Updates to markd</a></h2>
-	<div class="post-meta">
-		Posted <a href="/2012/01/23/updates-to-markd.html
-">January 23rd, 2012</a>
-		 in <a href="/category/development-0.html">Development</a>	</div>
-	<div class="post-content"><p>After releasing the first version of markd over the weekend, I'm following it up with a reasonable amount of changes and new features.  </p>
-
-<p>There is now support for Pages.  They're created from a file/directory hierarchy in your content/pages directory.  Along with this a menu with support to up to 2 levels deep can be generated.  This might be easier to explain by example.  Let's assume you have a directory structure that looks like this:</p>
-
-<ul>
-<li>/content
-
-<ul>
-<li>/pages
-
-<ul>
-<li>/about.md</li>
-<li>/Projects
-
-<ul>
-<li>/markd.md</li>
-</ul></li>
-<li>/contact.md</li>
-</ul></li>
-</ul></li>
-</ul>
-
-<p>This would generate code that looks like this:</p>
-
-<pre class="prettyprint">&lt;ul class="nav"&gt;
-    &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
-    &lt;li class="dropdown" data-dropdown="dropdown"&gt;
-        &lt;a class="dropdown-toggle" href="#"&gt;Projects&lt;/a&gt;
-        &lt;ul class="dropdown-menu"&gt;
-            &lt;li&gt;&lt;a href="markd.html"&gt;markd&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;a href="contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</pre>
-
-<p>The link names are pulled from the directory name (e.g. "Projects") or from the Title in the markdown file (e.g. "About").  Essentially all you need to do is create a structure and markd will take care of making a menu system for it and linking things up properly.</p>
-
-<p>Also with the support of pages comes support for page templates.  If you need a page to look different, then create a corresponding template file with the same file name inside your theme.  For example, if you wanted your "about.md" page to use a special template, then you can create an "about.tpl" inside the theme and alter the HTML for that page only.  If there's not a specific page template in the theme directory, then it will default to using a generic "page.tpl" from the theme directory.</p>
-
-<p>There's also a simple (for the time being) hook system that was introduced which allows themes/plugins to do some manipulation of the generated site.  Along with markd comes a plugin called Twitter Timeline Widget to show how this can be used to add something to the sidebar of posts/pages.  There is another example in the default theme which depending on whether a JotForm ID is provided, it will either add the Contact Me button (that you see on the right hand side of this page) or not.  This is a little crude at the moment, but I hope to flush it out and make things a little smoother as time goes on.</p>
-
-<p>A lot of other tweaks were made along the way with these features, but you can read commits over on github if you really need to know about that boring stuff :)</p>
-
-<p>Up next:</p>
-
-<ul>
-<li>Support for categories</li>
-<li>Restructuring of pages in the published site (need to build a directory structure rather than cramming it all into the site root)</li>
-<li>Child theme system (mainly for me to be able to apply customizations to the default theme)</li>
-<li>Post formats (make things like Links or Tweets look different)</li>
-<li>Future dated posts won't be published until the proper time even if their published status is set to true</li>
-</ul></div>
-	<script type="text/javascript">
-	    var disqus_shortname = 'mattwalters';
-	    (function () {
-	        var s = document.createElement('script'); s.async = true;
-	        s.type = 'text/javascript';
-	        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-	        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-	    }());
-	</script>
-	<div class="comment-count">
-		<a href="/2012/01/23/updates-to-markd.html
-#disqus_thread" data-disqus-identifier="4a09432bdf397981b7954f740a629949">Comments</a>
 	</div>
 </div>
 				<div class="pagination">
