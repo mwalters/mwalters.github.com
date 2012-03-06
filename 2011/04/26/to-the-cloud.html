@@ -63,22 +63,38 @@
 	<div class="row-fluid">
 		<div class="span10">
 				<div class="post-wrap single">
-					<h1 class="post-title">New job</h1>
+					<h1 class="post-title">To the cloud</h1>
 					<div class="post-meta">
-						Posted <a href="/2012/02/06/new-job.html
-">February 6th, 2012</a>
-						 in <a href="/category/personal-0.html">Personal</a>					</div>
-					<div class="post-content"><p>Today I started a new job with <a href="http://www.macrumors.com/">MacRumors</a> where I'll be working on that site and others.</p>
+						Posted <a href="/2011/04/26/to-the-cloud.html
+">April 26th, 2011</a>
+						 in <a href="/category/articles-0.html">Articles</a>					</div>
+					<div class="post-content"><p><img src="http://mwalters8.files.wordpress.com/2011/04/cloud-heart.jpg" alt="image" /></p>
 
-<p>It was a tough decision to leave Snagajob.  I got to do a lot of fun things there and helping folks find jobs definitely felt nice.  I was doing a <strong>lot</strong> of WordPress work there along with a healthy serving of straight up front end web development.  </p>
+<p>After last weeks Amazon Web Services (AWS) issues, everyone is talking a lot about "The Cloud" and whether it's the right answer for many companies.  I'm a pretty big fan of virtual servers, but I can't say that they are for everyone.  When designing any sort of environment I would say there are some, what should seem simple, ideas to keep in mind:  <!--more--></p>
 
-<p>Those are good lead-in's to what I'm excited about with MacRumors.  I'll still be doing some WordPress work I'm sure, and I'm fairly certain I'll be doing plenty of front end web development as well.  But it also sounds like there will be a good bit of opportunity for me to get back to my roots as a PHP developer.  Rather than working primarily in a niche of PHP (e.g. WordPress), I'll get the opportunity to branch back out into more general PHP applications as well as wear many other hats I'm sure.</p>
+<h3>Know your uptime requirements:</h3>
 
-<p>So here's to new beginnings and the opportunities they bring.</p></div>
+<p>Can your business/website withstand being down for 6-12 hours?  I would say most can, probably far more than think they could.  Some organizations over architect their environments because brief amounts of downtime are unpalatable to them when the simple fact is their users will forgive temporary downtime as long as it doesn't become the norm.  Regardless, your organization needs to figure out what your uptime requirements are and architect to those requirements.  If you need extreme amounts of uptime then you need servers/services spread across multiple availability zones if you're with a single provider, and you possibly need to have services in place across multiple providers so you can recover as quickly as possible if something does go wrong.  How far you need to take this will all be determined by your requirements and help you create your Plan B for when things take a turn for the worse.</p>
+
+<h3>Have a Plan B:</h3>
+
+<p>Once you have your uptime requirements in place, you can start formulating a Plan B.  This might include using your load balancer to point at a different availability zone, or it might mean quick DNS changes to point your site to a back-up provider.  Short of that though you need to test failures at a lower level.  What if just one of your UI servers dies, what happens?  Hopefully your application can easily sustain something like this and requests quickly re-route to another server.  Similarly, hopefully the services that your UI servers talk to can easily handle single failures like this.</p>
+
+<h3>Test your Plan B:</h3>
+
+<p><strong>This is important.</strong>  Make sure that things behave how you expect them to.  Shut down one of your UI servers, or your back-end services.  Do things react how you planned?  If not, then fix it so that they do.  What you do not want to have happen is you end up in a situation where your server has failed and brought your site down or your provider starts having cascading failures and you are at the mercy of their email support.  If your plan does all work as planned then great!  Test it periodically and fix things when they come up (you will need to make corrections to your plan as your service grows!), then you can rest easier at night.</p>
+
+<p>At this point you might find yourself wondering about cost, complexity, etc.  I saw a tweet recently that I related to these thoughts:</p>
+
+<p>http://twitter.com/#!/kylecordes/status/61540471767449601</p>
+
+<p>I'm not sure of his exact meaning here but how I interpreted it brings me back to my first point, knowing your requirements.  The cloud is not necessarily inexpensive and is often more complex then having a simpler set up with a dedicated server or two hosted with your favorite provider.  Design for your needs at the time and adapt as they change over time.  You might be just fine hosting in a small environment and keeping good backups that you can restore to another server and/or provider if needed.</p>
+
+<p>You are keeping backups of your data, aren't you?</p></div>
 					<div id="disqus_thread"></div>
 					<script type="text/javascript">
 					    var disqus_shortname = 'mattwalters';
-						var disqus_identifier = '2304ae913a0d342af45ac6293702e45b';
+						var disqus_identifier = 'bb6f0b028624e810666bdbb06eba4ee3';
 					    (function() {
 					        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 					        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';

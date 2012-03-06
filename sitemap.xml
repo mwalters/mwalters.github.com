@@ -94,25 +94,9 @@
 						</url>
 				
 						<url>
-							<loc>http://mattwalters.net/2012/01/29/why-are-software-development-task-estimations-regularly-off-by-a-factor-of-2-3.html
-</loc>
-							<lastmod>2012-01-29</lastmod>
-							<changefreq>daily</changefreq>
-							<priority>0.6</priority>
-						</url>
-				
-						<url>
 							<loc>http://mattwalters.net/2012/01/23/updates-to-markd.html
 </loc>
 							<lastmod>2012-01-23</lastmod>
-							<changefreq>daily</changefreq>
-							<priority>0.6</priority>
-						</url>
-				
-						<url>
-							<loc>http://mattwalters.net/2012/01/21/apparently-pictures-are-needed.html
-</loc>
-							<lastmod>2012-01-21</lastmod>
 							<changefreq>daily</changefreq>
 							<priority>0.6</priority>
 						</url>
@@ -126,9 +110,185 @@
 						</url>
 				
 						<url>
-							<loc>http://mattwalters.net/2012/01/20/finding-my-previous-content.html
+							<loc>http://mattwalters.net/2011/12/23/2011-year-in-review.html
 </loc>
-							<lastmod>2012-01-20</lastmod>
+							<lastmod>2011-12-23</lastmod>
+							<changefreq>daily</changefreq>
+							<priority>0.6</priority>
+						</url>
+				
+						<url>
+							<loc>http://mattwalters.net/2011/10/06/wedding.html
+</loc>
+							<lastmod>2011-10-06</lastmod>
+							<changefreq>daily</changefreq>
+							<priority>0.6</priority>
+						</url>
+				
+						<url>
+							<loc>http://mattwalters.net/2011/10/05/steve-jobs.html
+</loc>
+							<lastmod>2011-10-05</lastmod>
+							<changefreq>daily</changefreq>
+							<priority>0.6</priority>
+						</url>
+				
+						<url>
+							<loc>http://mattwalters.net/2011/05/26/my-language.html
+</loc>
+							<lastmod>2011-05-26</lastmod>
+							<changefreq>daily</changefreq>
+							<priority>0.6</priority>
+						</url>
+				
+						<url>
+							<loc>http://mattwalters.net/2011/04/26/to-the-cloud.html
+</loc>
+							<lastmod>2011-04-26</lastmod>
+							<changefreq>daily</changefreq>
+							<priority>0.6</priority>
+						</url>
+				
+						<url>
+							<loc>http://mattwalters.net/2010/12/31/2010-year-in-review.html
+</loc>
+							<lastmod>2010-12-31</lastmod>
+							<changefreq>daily</changefreq>
+							<priority>0.6</priority>
+						</url>
+				
+						<url>
+							<loc>http://mattwalters.net/2010/08/26/five-online-services-for-your-at-home-business.html
+</loc>
+							<lastmod>2010-08-26</lastmod>
+							<changefreq>daily</changefreq>
+							<priority>0.6</priority>
+						</url>
+				
+						<url>
+							<loc>http://mattwalters.net/2010/08/24/five-of-my-must-have-tools.html
+</loc>
+							<lastmod>2010-08-24</lastmod>
+							<changefreq>daily</changefreq>
+							<priority>0.6</priority>
+						</url>
+				
+						<url>
+							<loc>http://mattwalters.net/2009/12/27/2009-year-in-review.html
+</loc>
+							<lastmod>2009-12-27</lastmod>
+							<changefreq>daily</changefreq>
+							<priority>0.6</priority>
+						</url>
+				
+						<url>
+							<loc>http://mattwalters.net/2009/05/09/wordcamp-richmond.html
+</loc>
+							<lastmod>2009-05-09</lastmod>
+							<changefreq>daily</changefreq>
+							<priority>0.6</priority>
+						</url>
+				
+						<url>
+							<loc>http://mattwalters.net/2009/03/03/webhosting-advice.html
+</loc>
+							<lastmod>2009-03-03</lastmod>
+							<changefreq>daily</changefreq>
+							<priority>0.6</priority>
+						</url>
+				
+						<url>
+							<loc>http://mattwalters.net/2009/02/25/name-in-the-wall-street-journal.html
+</loc>
+							<lastmod>2009-02-25</lastmod>
+							<changefreq>daily</changefreq>
+							<priority>0.6</priority>
+						</url>
+				
+						<url>
+							<loc>http://mattwalters.net/2009/02/19/wordcamp-richmond-va.html
+</loc>
+							<lastmod>2009-02-19</lastmod>
+							<changefreq>daily</changefreq>
+							<priority>0.6</priority>
+						</url>
+				
+						<url>
+							<loc>http://mattwalters.net/2009/01/16/on-being-green.html
+</loc>
+							<lastmod>2009-01-16</lastmod>
+							<changefreq>daily</changefreq>
+							<priority>0.6</priority>
+						</url>
+				
+						<url>
+							<loc>http://mattwalters.net/2008/12/23/2008-year-in-review.html
+</loc>
+							<lastmod>2008-12-23</lastmod>
+							<changefreq>daily</changefreq>
+							<priority>0.6</priority>
+						</url>
+				
+						<url>
+							<loc>http://mattwalters.net/2008/12/18/backup-strategy.html
+</loc>
+							<lastmod>2008-12-18</lastmod>
+							<changefreq>daily</changefreq>
+							<priority>0.6</priority>
+						</url>
+				
+						<url>
+							<loc>http://mattwalters.net/2008/08/30/the-interview-continued.html
+</loc>
+							<lastmod>2008-08-30</lastmod>
+							<changefreq>daily</changefreq>
+							<priority>0.6</priority>
+						</url>
+				
+						<url>
+							<loc>http://mattwalters.net/2008/08/29/the-interview.html
+</loc>
+							<lastmod>2008-08-29</lastmod>
+							<changefreq>daily</changefreq>
+							<priority>0.6</priority>
+						</url>
+				
+						<url>
+							<loc>http://mattwalters.net/2007/06/17/my-dad.html
+</loc>
+							<lastmod>2007-06-17</lastmod>
+							<changefreq>daily</changefreq>
+							<priority>0.6</priority>
+						</url>
+				
+						<url>
+							<loc>http://mattwalters.net/2007/06/06/my-language-is-better-then-yours-2.html
+</loc>
+							<lastmod>2007-06-06</lastmod>
+							<changefreq>daily</changefreq>
+							<priority>0.6</priority>
+						</url>
+				
+						<url>
+							<loc>http://mattwalters.net/2007/05/22/my-language-is-better-then-yours.html
+</loc>
+							<lastmod>2007-05-22</lastmod>
+							<changefreq>daily</changefreq>
+							<priority>0.6</priority>
+						</url>
+				
+						<url>
+							<loc>http://mattwalters.net/2007/03/20/five-great-albums.html
+</loc>
+							<lastmod>2007-03-20</lastmod>
+							<changefreq>daily</changefreq>
+							<priority>0.6</priority>
+						</url>
+				
+						<url>
+							<loc>http://mattwalters.net/2006/05/27/management-and-geeks.html
+</loc>
+							<lastmod>2006-05-27</lastmod>
 							<changefreq>daily</changefreq>
 							<priority>0.6</priority>
 						</url>
