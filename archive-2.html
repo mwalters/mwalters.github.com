@@ -63,6 +63,80 @@
 	<div class="row-fluid">
 		<div class="span10">
 <div class="post-wrap well">
+	<h2 class="post-title"><a href="/2012/01/23/updates-to-markd.html
+">Updates to markd</a></h2>
+	<div class="post-meta">
+		Posted <a href="/2012/01/23/updates-to-markd.html
+">January 23rd, 2012</a>
+		 in <a href="/category/development-0.html">Development</a>	</div>
+	<div class="post-content"><p>After releasing the first version of markd over the weekend, I'm following it up with a reasonable amount of changes and new features.  </p>
+
+<p>There is now support for Pages.  They're created from a file/directory hierarchy in your content/pages directory.  Along with this a menu with support to up to 2 levels deep can be generated.  This might be easier to explain by example.  Let's assume you have a directory structure that looks like this:</p>
+
+<ul>
+<li>/content
+
+<ul>
+<li>/pages
+
+<ul>
+<li>/about.md</li>
+<li>/Projects
+
+<ul>
+<li>/markd.md</li>
+</ul></li>
+<li>/contact.md</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>This would generate code that looks like this:</p>
+
+<pre class="prettyprint">&lt;ul class="nav"&gt;
+    &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="dropdown" data-dropdown="dropdown"&gt;
+        &lt;a class="dropdown-toggle" href="#"&gt;Projects&lt;/a&gt;
+        &lt;ul class="dropdown-menu"&gt;
+            &lt;li&gt;&lt;a href="markd.html"&gt;markd&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href="contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<p>The link names are pulled from the directory name (e.g. "Projects") or from the Title in the markdown file (e.g. "About").  Essentially all you need to do is create a structure and markd will take care of making a menu system for it and linking things up properly.</p>
+
+<p>Also with the support of pages comes support for page templates.  If you need a page to look different, then create a corresponding template file with the same file name inside your theme.  For example, if you wanted your "about.md" page to use a special template, then you can create an "about.tpl" inside the theme and alter the HTML for that page only.  If there's not a specific page template in the theme directory, then it will default to using a generic "page.tpl" from the theme directory.</p>
+
+<p>There's also a simple (for the time being) hook system that was introduced which allows themes/plugins to do some manipulation of the generated site.  Along with markd comes a plugin called Twitter Timeline Widget to show how this can be used to add something to the sidebar of posts/pages.  There is another example in the default theme which depending on whether a JotForm ID is provided, it will either add the Contact Me button (that you see on the right hand side of this page) or not.  This is a little crude at the moment, but I hope to flush it out and make things a little smoother as time goes on.</p>
+
+<p>A lot of other tweaks were made along the way with these features, but you can read commits over on github if you really need to know about that boring stuff :)</p>
+
+<p>Up next:</p>
+
+<ul>
+<li>Support for categories</li>
+<li>Restructuring of pages in the published site (need to build a directory structure rather than cramming it all into the site root)</li>
+<li>Child theme system (mainly for me to be able to apply customizations to the default theme)</li>
+<li>Post formats (make things like Links or Tweets look different)</li>
+<li>Future dated posts won't be published until the proper time even if their published status is set to true</li>
+</ul></div>
+	<script type="text/javascript">
+	    var disqus_shortname = 'mattwalters';
+	    (function () {
+	        var s = document.createElement('script'); s.async = true;
+	        s.type = 'text/javascript';
+	        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+	        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+	    }());
+	</script>
+	<div class="comment-count">
+		<a href="/2012/01/23/updates-to-markd.html
+#disqus_thread" data-disqus-identifier="4a09432bdf397981b7954f740a629949">Comments</a>
+	</div>
+</div>
+<div class="post-wrap well">
 	<h2 class="post-title"><a href="/2012/01/20/welcome-to-my-new-site.html
 ">Welcome To My New Site</a></h2>
 	<div class="post-meta">
@@ -180,7 +254,7 @@
 	<div class="post-meta">
 		Posted <a href="/2011/10/05/steve-jobs.html
 ">October 5th, 2011</a>
-		 in <a href="/category/personal-0.html">Personal</a>	</div>
+		 in <a href="/category/miscellaneous-0.html">Miscellaneous</a>	</div>
 	<div class="post-content"><p><img src="http://mwalters8.files.wordpress.com/2011/10/apple-logo-black-xsan1.jpg" alt="image" /></p>
 
 <p>I find myself surprisingly saddened about the death of Steve Jobs. I feel sort of hokey saying that, but the main reason I feel sad is that he didn't get more time to spend with his family after leaving Apple.</p>
@@ -200,36 +274,6 @@
 	<div class="comment-count">
 		<a href="/2011/10/05/steve-jobs.html
 #disqus_thread" data-disqus-identifier="063cba786c70aaf42b082a423ecf58e9">Comments</a>
-	</div>
-</div>
-<div class="post-wrap well">
-	<h2 class="post-title"><a href="/2011/05/26/my-language.html
-">My language</a></h2>
-	<div class="post-meta">
-		Posted <a href="/2011/05/26/my-language.html
-">May 26th, 2011</a>
-		 in <a href="/category/articles-0.html">Articles</a>	</div>
-	<div class="post-content"><p>I have had programming language debates in the past.  I've recently been having similar discussions and realized some things.  Arguing one language against another is a religious debate that will never be won.  I realized it wasn't about #winning.  It would be more valuable to change the discussion to why I chose PHP and continue developing with it to this day.<!--more--></p>
-
-<p>Total disclosure, one of the key reasons I chose PHP originally was because it was easy to find an inexpensive web host that supported it.  In fact the web host I was using at the time already supported it.  I didn't have to worry about licensing fee's, there were many hosts supporting it, and I was already using web applications built on it.  Those are pretty simple reasons, and certainly reasons that could have changed over time.  For instance, unlike when I was 20 and learning PHP, these days I could afford the licensing fee's if I chose to.  The key thing that has kept me with PHP is the documentation and community.</p>
-
-<p>The documentation for PHP itself is unrivaled with other languages from what I've seen.  PHP.net is a fantastic learning resource and was a huge help when I was getting started.  I could easily browse available functions, and didn't need to search across tons of blogs for likely out of date information.  If I needed to sort an array I could look up sort() and as well as providing me the syntax/parameters, at the bottom of the page it would list other array sorting functions which I could check to see if they better met my needs based on what I was doing in my application.  This matured documentation also exists in other places within PHP.  For example in WordPress, the documentation is fairly strong.  It's not always completely up to date, but the fact it's as comprehensive as it is places it head and shoulders above many other open source programs.</p>
-
-<p>The community is definitely the key feature for me with PHP.  I find it both welcoming and accepting of various skill levels.  I find folks in the PHP community commonly focus on getting stuff done and eagerly teach and share with each other.  There's not much meaningless focus on academic debates or pontificating to boost one's own ego.  That's not to say those things never happens in the PHP community, but I find it happening less often in the world of PHP.</p>
-
-<p>I'm not entirely sure why lots of folks like to consider PHP the red-headed stepchild of web development, but they do.  When developers of other languages do start attacking PHP or my use of it, they're usually just reminding me of why I like my choice of PHP in the first place.  It would probably be a more meaningful discussion for all of us if they'd instead try to show me why they chose their preferred language instead of trying to compare it feature for feature with PHP and simply answering my questions while respectfully understanding if I don't agree about whether I should be using their preferred language.</p></div>
-	<script type="text/javascript">
-	    var disqus_shortname = 'mattwalters';
-	    (function () {
-	        var s = document.createElement('script'); s.async = true;
-	        s.type = 'text/javascript';
-	        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-	        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-	    }());
-	</script>
-	<div class="comment-count">
-		<a href="/2011/05/26/my-language.html
-#disqus_thread" data-disqus-identifier="88ca95896897f365b77458bb21fbe082">Comments</a>
 	</div>
 </div>
 				<div class="pagination">

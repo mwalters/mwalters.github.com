@@ -63,6 +63,75 @@
 	<div class="row-fluid">
 		<div class="span10">
 <div class="post-wrap well">
+	<h2 class="post-title"><a href="/2009/03/03/webhosting-advice.html
+">Webhosting Advice</a></h2>
+	<div class="post-meta">
+		Posted <a href="/2009/03/03/webhosting-advice.html
+">March 3rd, 2009</a>
+		 in <a href="/category/articles-0.html">Articles</a>	</div>
+	<div class="post-content"><p>Webhosting is something I am frequently asked about.  I've had a site hosted in some fashion since the late 90's, so dealing with the in's and out's of hosting is something I've become quite familiar with.  These days I've even moved towards configuring my own servers to host my sites.  But this article isn't going to get into that side of things.</p>
+
+<p>I decided it was time that I finally chronicle what I've learned over the years and what my current setup is along with the reasons I like it how it is.  To the average user, my setup might seem complex, but even if you only put a couple of these practices to work, I think you'll find yourself well on the way to having a pleasant experience.</p>
+
+<p>I practice a fairly modular setup for my array of websites and it has its benefits.  By splitting things up I can get the most bang for the buck by putting critical systems on providers that provide mission critical support, and other things on more inexpensive solutions (yes, even in hosting you largely get what you pay for).</p>
+
+<p>Moving on to my recommended setup:</p>
+
+<p><strong>Registering your domain</strong>
+This is the first step in setting up a website for yourself.  I highly recommend <a href="http://enom.com/">eNom.com</a> as a registrar.  I've been using them for nearly 5 years now and they're a pretty solid registrar.  Even if you have already registered your domain somewhere else, I'd recommend considering a transfer of your domain to eNom.</p>
+
+<p>The main reason I like eNom as a registrar is the free DNS hosting, which is crucial to my setup.  However, in general they're a good registrar.  Their prices are competitive, managing your domain is easy with their web interface, and they aren't always trying to push additional services on you.  Don't get me wrong, additional services are there but they don't shove them on you.</p>
+
+<p>Allowing them to host my DNS is the linchpin of my setup.  Many webhosts ask you to set the DNS servers for your domain to theirs.  Unfortunately changing nameservers is still a drawn out process, sometimes taking up to 24-48 hours to complete.  Compounding the issue, many times you can't setup the DNS records on your new nameservers until the domain servers have changed.  This can mean even more hours, potentially of downtime, for your site.  Since my DNS is with eNom, if I change webhosts or email providers, I can just update the zonefile for my domain and usually within an hour or two everything has changed over.</p>
+
+<p>If you REALLY like your current registrar, then you can look into other third party DNS hosting services that will still allow you the benefits I'll be describing below.  I just happen to prefer eNom.</p>
+
+<p><strong>Choosing an email provider</strong>
+Many folks will choose to host their email with their current webhost.  That's fine, but I'd argue there are other solutions, better solutions, available to you.  The one I use is GMail.  Google's interface for GMail is pretty top notch and the fact that you can get <a href="http://www.google.com/a/cpanel/domain/new">Google Apps</a> for your domain for free, why not choose them?  Their downtime is extremely low, and you can use the web interface when you're not around your computer.  If you do like the feel of a desktop client though, you can still access your email via IMAP or POP3.</p>
+
+<p>Google Apps is also a scalable solution.  You can start off on the free version and add up to 50 users on your domain.  If you outgrow 50 users, or you start running into storage concerns with your archived email you can always convert to the paid version at $50 per year per user.  That's really not that bad of an option unless you have a spare exchange server sitting around (but really, if you have that kind of infrastructure already in place why aren't you just hosting your own website?).</p>
+
+<p>Also, by sourcing your email to a third party like this you also ease transitioning between webhosts should you ever need to.  Since your DNS is hosted by a central party, you never have to change your MX records (the DNS settings that tell your email where to go) when you change your website from one host to another.  This means no concerns over some email getting left on your old host, or losing emails in the transition, etc.</p>
+
+<p>See how hosting your DNS on your own is starting to fit together in the plan?</p>
+
+<p><strong>Choosing a webhost</strong>
+This is probably where 90% of my friends that have problems make their mistake.  Webhosting is a low margin business.  They make their money by hosting as many people on as few servers as possible.  The sheer number of competitors in the industry make it almost problematic.  You have everyone from high school (maybe even middle school these days) kids that buy a reseller account with a webhost and then offer plans at $1.99/mo, promising 99.999% uptime and unlimited disk space/bandwidth.  Then on the other end of the spectrum, there are folks offering webhosting for $50/mo and you don't necessarily get $50 of service per month.</p>
+
+<p>Let me be clear, you do not want to host with someone promising unlimited services and extremely high uptime guarantees.  If they're an industry giant, like Yahoo perhaps, you will probably be fine but there will usually be catches involved in the plan.  There are a couple things you should be aware of though between the those two possible scenarios.</p>
+
+<p><em>Scenario 1 - The fly by nighter</em>
+In this case, you're definitely in trouble.  They'll soon get bored, or start wondering why they aren't making any money and chances are they'll just shut the server down, leaving you without access to your website (possibly email), etc.  It could take you days to recover.  The whole time your website is down.  Don't even get me started on how these folks tend to like advertising 99.999% uptime.  They often have trouble achieving 80% uptime.</p>
+
+<p><em>Scenario 2 - The industry giant</em>
+You're in a slightly better situation here, but keep in mind these companies are in it to make money.  Usually the small print of those agreements you're making during sign up include text saying that if you start to use too much disk space, bandwidth, or processor time, they have the right to shut your site down.  They'll put up all kinds of walls to keep you from actually storing terabytes of data on their servers.  They can't make money on you if they do allow it.  If you plan on using reasonable resources though, you're probably fine, but an industry giant selling unlimited disk space, etc, likely isn't going to do that for $1.99/mo.</p>
+
+<p>So if your website is even the least bit important to you, I recommend you plan on spending around $10-$20 per month on your hosting.  You can find some rock solid providers in that price range and it's really not that expensive.</p>
+
+<p>As for my personal hosting plans, I currently have plans with two separate providers, but that's not something the average user is going to need.</p>
+
+<p>My primary hosting plan is a (dv) server with <a href="http://mediatemple.net/">Media Temple</a>.  It hosts mattwalters.net and <a href="http://snipit.me/">SnipIt.me</a> along with some other small sites I have setup mainly for testing purposes.</p>
+
+<p>My other hosting plan is with <a href="http://www.slicehost.com/">slicehost</a>.  This plan is where <a href="http://WordPressEasily.com/">WordPressEasily.com</a> and its hosted blogs reside.  WordPress Easily is quite the complicated setup though.  The nature of the service dictates needing to be able to bring new servers online quickly or swap out servers, etc.</p>
+
+<p>Just to finish tying in the modular concept, by having all 3 of these services sourced to different providers, it leaves me in an agile position.  If I need to move to a different webhost for some reason, I can easily change the DNS records for my domain and have my site moved over quickly.  Or if I need to point a subdomain to a different server for whatever reason, it's a quick change.  Same goes for email, if I wanted to change to a different provider, I could do so without affecting my websites.  Really, the only catch to this setup is I can't easily change registrars ;)</p>
+
+<p>Hope you've found this informative and maybe even taken away something good from it.  If you have any tips you'd like to share, by all means feel free to do so in the comments :)</p></div>
+	<script type="text/javascript">
+	    var disqus_shortname = 'mattwalters';
+	    (function () {
+	        var s = document.createElement('script'); s.async = true;
+	        s.type = 'text/javascript';
+	        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+	        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+	    }());
+	</script>
+	<div class="comment-count">
+		<a href="/2009/03/03/webhosting-advice.html
+#disqus_thread" data-disqus-identifier="edb0afb5cad950d743aaddde38c13068">Comments</a>
+	</div>
+</div>
+<div class="post-wrap well">
 	<h2 class="post-title"><a href="/2009/01/16/on-being-green.html
 ">On Being Green</a></h2>
 	<div class="post-meta">
@@ -244,78 +313,6 @@ Then the script is very similar to rsync from my first gen MacBook to Bingodisk.
 	<div class="comment-count">
 		<a href="/2008/08/29/the-interview.html
 #disqus_thread" data-disqus-identifier="bf9cba25d8a884cab8d044b1322edbef">Comments</a>
-	</div>
-</div>
-<div class="post-wrap well">
-	<h2 class="post-title"><a href="/2007/06/06/my-language-is-better-then-yours-2.html
-">My language is better then yours 2</a></h2>
-	<div class="post-meta">
-		Posted <a href="/2007/06/06/my-language-is-better-then-yours-2.html
-">June 6th, 2007</a>
-		 in <a href="/category/articles-0.html">Articles</a>	</div>
-	<div class="post-content"><p>Jim decided <a href="http://cvreg.org/2007/6/6/my-language-is-better-then-yours-php-edition">to respond</a> to my post regarding <a href="http://mattwalters.net/2007/05/22/my-language-is-better-then-yours/">language vs. language debates</a>, specifically looking at PHP and Ruby / Ruby on Rails. He makes some good points, but there is some stuff that I'd like to respond to and clarify...</p>
-
-<blockquote>
-  <p>To say that one language is better than the other is meaningless. Better 
-  in what way? The question should always be asked in a particular context.</p>
-</blockquote>
-
-<p>I definitely agree, in general, I'm just tired of language vs. language debates ... more on that in a moment.</p>
-
-<blockquote>
-  <p>I don’t want to talk about the ads, though, because they have 
-  their own agenda and it certainly doesn’t match mine.</p>
-</blockquote>
-
-<p>Works for me, but keep in mind that most of my original post was working towards making the point that the video's were doing an apples to oranges comparison of PHP (minus framework) to Ruby on Rails.  Jeremy and I disagreed on the validity of this comparison.</p>
-
-<blockquote>
-  <p>For me, that’s why I am using open-source tools in the first place 
-  ...
-  For me, the bulk of my language preference comes from language philosophy.
-  ...
-  but for my tastes, I appreciate the additional power that Ruby 
-  metaprogramming allows.</p>
-</blockquote>
-
-<p>These are some key points that I can agree with, but again, more on that in a moment...</p>
-
-<blockquote>
-  <p>PHP =~ COBOL is not an analogy I would make, but at the same time I’d 
-  urge you to consider your claim “You’ll always be taking over a Java 
-  project or a .NET project or a PHP in light of COBOL, or FORTRAN, or 
-  VAX or any other platform that’s been a dominant success in the past. 
-  Current popularity is no guarantee of future popularity. In our 
-  industry, better mousetraps are ruthlessly adopted.</p>
-</blockquote>
-
-<p>I totally agree, as I even said, I can see PHP going by the wayside one day, but today is not that day, and I still believe it's extremely premature to be concerning myself with but so much.  It seemed Jeremy was arguing that Ruby on Rails projects are more easily taken over,  so my counterpoint was simply that RoR, like any other language, is not likely to be so widely adopted that his point would ever really become something you could rely on.  Just to be sure I'm clear, I'm saying that it is unlikely that RoR will become so widespread that you can count on commonly taking over other RoR projects.  This is not me slamming RoR, the same statement could be made in the direction of PHP, .NET, etc.  You'll always be taking over projects built on other platforms.  Even as a PHP developer I experience this commonly.  Just the other day I had to take over a .NET project and we chose to redo it in PHP for various reasons.  I hope that's clear, and if it's not I wish someone would ask the questions I need to answer to make it clear.</p>
-
-<blockquote>
-  <p>If your focus, like in your last paragraph, is only on user experience 
-  (by which I think you mean developer experience), then language preference 
-  may truly not matter. But if your focus as a developer is on avoiding 
-  future “forced” language changes, then it might make more sense to attempt 
-  to determine which new technologies might eventually usurp the old. My 
-  claim is that Ruby and Rails are better positioned to do so that PHP
-  and its framework set.</p>
-</blockquote>
-
-<p>Ok, finally to the point I kept putting off above.  I actually was not speaking of developer experience.  I was speaking of end-user experience, the folks that visit our websites.  THEIR experience is what matters in the end.  PHP, RoR, .NET, etc are all capable of providing similar, if not identical user experiences.  So if I prefer to provide that user experience with PHP, using mainly procedural based programming, then why not?  If you want to do so with RoR, or any other platform, then more power to you.  As you indicated, there are things about RoR that make you prefer it over PHP.  I see no problem with that.  But to say those ways are better then mine, if achieving a particular user experience is the ultimate measure, is sort of pointless, unless you disagree that the languages are capable of producing similar/identical experiences.</p>
-
-<p>I also want to comment on the fact that it seems in these conversations I keep getting pegged as being resistant to change, not eager to learn new languages, etc.  To be blunt, it's pissing me off.  I've lost count of the languages that at some point I've been well-versed in, let alone the languages I've "dabbled" in.  Just because I'm not actively learning RoR at the moment, does not mean that I think PHP is Gods gift to programming nor does it mean that I am resistant to new languages as a whole.  PHP has its flaws.  One day it will be replaced (just like .NET, RoR, and even Java) but I don't think that day is tomorrow or the day after, so I don't feel pressure to move on yet.  I think RoR is doing some great things for the development community as a whole.  Some things I see in RoR, I adopt in PHP.  That kind of thing is good for all of us.  But <strong>again</strong>, just because I don't choose to use RoR, doesn't mean that if something else came along I wouldn't take the time to consider how it might could benefit me.  At some point I'm sure I'll re-assess RoR, and who knows, maybe I'll dive in.  Right now, it just doesn't make sense for me to.</p></div>
-	<script type="text/javascript">
-	    var disqus_shortname = 'mattwalters';
-	    (function () {
-	        var s = document.createElement('script'); s.async = true;
-	        s.type = 'text/javascript';
-	        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-	        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-	    }());
-	</script>
-	<div class="comment-count">
-		<a href="/2007/06/06/my-language-is-better-then-yours-2.html
-#disqus_thread" data-disqus-identifier="1604c6f68be8346576b5f6c0d39df998">Comments</a>
 	</div>
 </div>
 				<div class="pagination">

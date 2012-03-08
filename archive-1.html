@@ -62,6 +62,41 @@
 <div class="container-fluid">
 	<div class="row-fluid">
 		<div class="span10">
+<div class="post-wrap well format-link">
+<h2 class="post-title"><a target="_blank" href=" http://blog.chaddickerson.com/2010/08/05/scaling-startups/">Scaling Startups</a></h2>
+	<div class="post-meta">
+		Posted <a href="/2012/02/17/scaling-startups.html
+">February 17th, 2012</a>
+		 in <a href="/category/links-0.html">Links</a>	</div>
+	<div class="post-content">
+		<p>Pretty good article about things over at Etsy.  I particularly liked this quote.</p>
+
+<blockquote>
+  <p>If you’re building a technology-driven company, you better have 
+  a culture that loves engineers, and I mean love. All too often, 
+  I see entrepreneurs who say they "just need engineers" to "bang 
+  out the code" for this great idea of theirs. If you view 
+  engineers as interchangeable factory workers instead of partners 
+  and creative people, you’re in for a tough time getting huge in 
+  a world driven by technology.</p>
+</blockquote>		<p>
+			<small><a target="_blank" href=" http://blog.chaddickerson.com/2010/08/05/scaling-startups/">Scaling Startups</a></small>
+		</p>
+	</div>
+	<script type="text/javascript">
+	    var disqus_shortname = 'mattwalters';
+	    (function () {
+	        var s = document.createElement('script'); s.async = true;
+	        s.type = 'text/javascript';
+	        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+	        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+	    }());
+	</script>
+	<div class="comment-count">
+		<a href="/2012/02/17/scaling-startups.html
+#disqus_thread" data-disqus-identifier="ca4f16021d869351e652c91b3e28e6eb">Comments</a>
+	</div>
+</div>
 <div class="post-wrap well">
 	<h2 class="post-title"><a href="/2012/02/10/vagrant-and-puppet-are-pretty-fun.html
 ">Vagrant and Puppet are pretty fun</a></h2>
@@ -199,80 +234,6 @@
 	<div class="comment-count">
 		<a href="/2012/01/30/hosted-on-github.html
 #disqus_thread" data-disqus-identifier="2ddc0ad5e96685df95a708ae05ae6f13">Comments</a>
-	</div>
-</div>
-<div class="post-wrap well">
-	<h2 class="post-title"><a href="/2012/01/23/updates-to-markd.html
-">Updates to markd</a></h2>
-	<div class="post-meta">
-		Posted <a href="/2012/01/23/updates-to-markd.html
-">January 23rd, 2012</a>
-		 in <a href="/category/development-0.html">Development</a>	</div>
-	<div class="post-content"><p>After releasing the first version of markd over the weekend, I'm following it up with a reasonable amount of changes and new features.  </p>
-
-<p>There is now support for Pages.  They're created from a file/directory hierarchy in your content/pages directory.  Along with this a menu with support to up to 2 levels deep can be generated.  This might be easier to explain by example.  Let's assume you have a directory structure that looks like this:</p>
-
-<ul>
-<li>/content
-
-<ul>
-<li>/pages
-
-<ul>
-<li>/about.md</li>
-<li>/Projects
-
-<ul>
-<li>/markd.md</li>
-</ul></li>
-<li>/contact.md</li>
-</ul></li>
-</ul></li>
-</ul>
-
-<p>This would generate code that looks like this:</p>
-
-<pre class="prettyprint">&lt;ul class="nav"&gt;
-    &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
-    &lt;li class="dropdown" data-dropdown="dropdown"&gt;
-        &lt;a class="dropdown-toggle" href="#"&gt;Projects&lt;/a&gt;
-        &lt;ul class="dropdown-menu"&gt;
-            &lt;li&gt;&lt;a href="markd.html"&gt;markd&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;a href="contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</pre>
-
-<p>The link names are pulled from the directory name (e.g. "Projects") or from the Title in the markdown file (e.g. "About").  Essentially all you need to do is create a structure and markd will take care of making a menu system for it and linking things up properly.</p>
-
-<p>Also with the support of pages comes support for page templates.  If you need a page to look different, then create a corresponding template file with the same file name inside your theme.  For example, if you wanted your "about.md" page to use a special template, then you can create an "about.tpl" inside the theme and alter the HTML for that page only.  If there's not a specific page template in the theme directory, then it will default to using a generic "page.tpl" from the theme directory.</p>
-
-<p>There's also a simple (for the time being) hook system that was introduced which allows themes/plugins to do some manipulation of the generated site.  Along with markd comes a plugin called Twitter Timeline Widget to show how this can be used to add something to the sidebar of posts/pages.  There is another example in the default theme which depending on whether a JotForm ID is provided, it will either add the Contact Me button (that you see on the right hand side of this page) or not.  This is a little crude at the moment, but I hope to flush it out and make things a little smoother as time goes on.</p>
-
-<p>A lot of other tweaks were made along the way with these features, but you can read commits over on github if you really need to know about that boring stuff :)</p>
-
-<p>Up next:</p>
-
-<ul>
-<li>Support for categories</li>
-<li>Restructuring of pages in the published site (need to build a directory structure rather than cramming it all into the site root)</li>
-<li>Child theme system (mainly for me to be able to apply customizations to the default theme)</li>
-<li>Post formats (make things like Links or Tweets look different)</li>
-<li>Future dated posts won't be published until the proper time even if their published status is set to true</li>
-</ul></div>
-	<script type="text/javascript">
-	    var disqus_shortname = 'mattwalters';
-	    (function () {
-	        var s = document.createElement('script'); s.async = true;
-	        s.type = 'text/javascript';
-	        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-	        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-	    }());
-	</script>
-	<div class="comment-count">
-		<a href="/2012/01/23/updates-to-markd.html
-#disqus_thread" data-disqus-identifier="4a09432bdf397981b7954f740a629949">Comments</a>
 	</div>
 </div>
 				<div class="pagination">

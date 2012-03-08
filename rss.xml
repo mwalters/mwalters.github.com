@@ -14,11 +14,69 @@
 					<atom:link href="http://mattwalters.net/rss.xml" rel="self" type="application/rss+xml" />
 					<link>http://mattwalters.net</link>
 					<description>Senior Web &amp; PHP Developer in Richmond, VA</description>
-					<lastBuildDate>Tue, 6 Mar 2012 08:31:05 +0000</lastBuildDate>
+					<lastBuildDate>Thu, 8 Mar 2012 11:12:56 +0000</lastBuildDate>
 					<language>en</language>
 					<sy:updatePeriod>hourly</sy:updatePeriod>
 					<sy:updateFrequency>1</sy:updateFrequency>
 					<generator>markd</generator>
+						<item>
+							<title>Hi Company, have my wallet</title>
+							<link>http://mattwalters.net/2012/03/08/hi-company-have-my-wallet.html</link>
+							<pubDate>March 8th, 2012</pubDate>
+							<dc:creator>Matt</dc:creator>
+							<guid isPermaLink="false">http://mattwalters.net/2012/03/08/hi-company-have-my-wallet.html</guid>
+							<description><![CDATA[<p>Earlier today I tweeted:</p>
+
+<blockquote class="twitter-tweet"><p>I don't understand why companies think they should be allowed to ETF my checking acct when they won't let me do the same to theirs</p>&mdash; Matt Walters (@mwalters) <a href="https://twitter.com/mwalters/status/177773804632813568" data-datetime="2012-03-08T15:12:32+00:00">March 8, 2012</a></blockquote>
+
+<p><script src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+<p>I think it's pretty obvious why a company would want this from their perspective.  Many Americans keep their mortgage payment, car payment, etc… in their checking account.  It's sort of the purpose for the account after all and they know the consumer will try to keep the account padded.  So companies want access because they know it's one of their best chances at getting cash from you reliably.</p>
+
+<p><img src="https://img.skitch.com/20120308-kbh9ibyh7ambhfbse1qs7kir9x.jpg" align="left" alt="Cash Wallet" style="margin: 0 10px 10px 0;" />I say giving a company access to auto-draft your checking account is tantamount to opening your wallet toward them and saying, "here, take what you need."  </p>
+
+<p>The very reasons that companies want this sort of unfettered access to your money are the same exact reasons that you should be protecting it like it's your own personal Fort Knox.</p>
+
+<p>What if the company has a billing error?  Who hasn't experienced that before?  With access to your checking account it could leave you strapped to pay other bills.  By the time you deal with their over-sea's billing department or whatever absurd processes they have in place, it could take a long period of time to get things straightened out.</p>
+
+<p>I'm not saying all automatic recurring payments are bad.  But if you want to bill me like that, have a credit card payment as an option.  I understand it means you have to pay processing fees, but honestly, I don't care.</p>
+
+<p>At least then the consumer has a buffer between their checking account and the company.  As a consumer it's good too because your credit card company should be someone you can at least reason with if you have a record of being responsible with them, and they might even go to bat with the other company if you need them to and you can prove that it was an error on the part of the billing party.  Worst case, you have the option to pay off the credit card over time and not have it impact your personal cash flow as seriously.</p>
+
+<p><strong>Here's a somewhat cautionary tail</strong></p>
+
+<p>Once I had a DSL provider (Verizon) charge me for 2 months service when connecting me.  This wasn't standard.  It was an <strong>admitted</strong> error on the part of their billing department.  Straigtening it out involved me having to talk to someone in another country, and the best they could offer me was putting it as a credit toward my future service.  They absolutely refused to reverse all or part of the transaction to put my cash back in my account and there was nothing I could do about it.</p>
+
+<p>Luckily this was just a low dollar DSL service payment.  But what if it was something larger?  Or what if they'd billed me for a years worth of service?  Mistakes happen at large companies, and leaving the consumer holding the bag over a company error is horrible.</p>
+
+<p>This happened years ago.  But I learned my lesson and I urge you to learn from it too.  Outside of extraordinary circumstances, stop letting companies have such easy access to your cash.</p>]]></description>
+							<content:encoded><![CDATA[<p>Earlier today I tweeted:</p>
+
+<blockquote class="twitter-tweet"><p>I don't understand why companies think they should be allowed to ETF my checking acct when they won't let me do the same to theirs</p>&mdash; Matt Walters (@mwalters) <a href="https://twitter.com/mwalters/status/177773804632813568" data-datetime="2012-03-08T15:12:32+00:00">March 8, 2012</a></blockquote>
+
+<p><script src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+<p>I think it's pretty obvious why a company would want this from their perspective.  Many Americans keep their mortgage payment, car payment, etc… in their checking account.  It's sort of the purpose for the account after all and they know the consumer will try to keep the account padded.  So companies want access because they know it's one of their best chances at getting cash from you reliably.</p>
+
+<p><img src="https://img.skitch.com/20120308-kbh9ibyh7ambhfbse1qs7kir9x.jpg" align="left" alt="Cash Wallet" style="margin: 0 10px 10px 0;" />I say giving a company access to auto-draft your checking account is tantamount to opening your wallet toward them and saying, "here, take what you need."  </p>
+
+<p>The very reasons that companies want this sort of unfettered access to your money are the same exact reasons that you should be protecting it like it's your own personal Fort Knox.</p>
+
+<p>What if the company has a billing error?  Who hasn't experienced that before?  With access to your checking account it could leave you strapped to pay other bills.  By the time you deal with their over-sea's billing department or whatever absurd processes they have in place, it could take a long period of time to get things straightened out.</p>
+
+<p>I'm not saying all automatic recurring payments are bad.  But if you want to bill me like that, have a credit card payment as an option.  I understand it means you have to pay processing fees, but honestly, I don't care.</p>
+
+<p>At least then the consumer has a buffer between their checking account and the company.  As a consumer it's good too because your credit card company should be someone you can at least reason with if you have a record of being responsible with them, and they might even go to bat with the other company if you need them to and you can prove that it was an error on the part of the billing party.  Worst case, you have the option to pay off the credit card over time and not have it impact your personal cash flow as seriously.</p>
+
+<p><strong>Here's a somewhat cautionary tail</strong></p>
+
+<p>Once I had a DSL provider (Verizon) charge me for 2 months service when connecting me.  This wasn't standard.  It was an <strong>admitted</strong> error on the part of their billing department.  Straigtening it out involved me having to talk to someone in another country, and the best they could offer me was putting it as a credit toward my future service.  They absolutely refused to reverse all or part of the transaction to put my cash back in my account and there was nothing I could do about it.</p>
+
+<p>Luckily this was just a low dollar DSL service payment.  But what if it was something larger?  Or what if they'd billed me for a years worth of service?  Mistakes happen at large companies, and leaving the consumer holding the bag over a company error is horrible.</p>
+
+<p>This happened years ago.  But I learned my lesson and I urge you to learn from it too.  Outside of extraordinary circumstances, stop letting companies have such easy access to your cash.</p>]]></content:encoded>
+						</item>
+				
 						<item>
 							<title>What does your desk look like?</title>
 							<link>http://mattwalters.net/2012/03/05/what-does-your-desk-look-like.html</link>
@@ -201,36 +259,6 @@
 <p>Could I have done all of this with something like CodeIgniter?  Sure.  I'm a big fan of CodeIgniter so I'm not making this list as an argument against CI or other PHP frameworks.  I will say that I was able to integrate Slim, Twig, and phpDataMapper in about 15 minutes of Googling and typing.</p>
 
 <p>One advantage I could see to using a setup like this is that you get to very explicitly choose where you want to put weight into the framework you're piecing together for your application.  I'm not sure how light-weight Twig and phpDataMapper would be considered, but Slim is definitely light-weight.  Database interactions and rendering are areas that I was ok with adding weight to the application for because of what they provide me.</p>]]></content:encoded>
-						</item>
-				
-						<item>
-							<title>Scaling Startups</title>
-							<link>http://mattwalters.net/2012/02/17/scaling-startups.html</link>
-							<pubDate>February 17th, 2012</pubDate>
-							<dc:creator>Matt</dc:creator>
-							<guid isPermaLink="false">http://mattwalters.net/2012/02/17/scaling-startups.html</guid>
-							<description><![CDATA[<p>Pretty good article about things over at Etsy.  I particularly liked this quote.</p>
-
-<blockquote>
-  <p>If you’re building a technology-driven company, you better have 
-  a culture that loves engineers, and I mean love. All too often, 
-  I see entrepreneurs who say they "just need engineers" to "bang 
-  out the code" for this great idea of theirs. If you view 
-  engineers as interchangeable factory workers instead of partners 
-  and creative people, you’re in for a tough time getting huge in 
-  a world driven by technology.</p>
-</blockquote>]]></description>
-							<content:encoded><![CDATA[<p>Pretty good article about things over at Etsy.  I particularly liked this quote.</p>
-
-<blockquote>
-  <p>If you’re building a technology-driven company, you better have 
-  a culture that loves engineers, and I mean love. All too often, 
-  I see entrepreneurs who say they "just need engineers" to "bang 
-  out the code" for this great idea of theirs. If you view 
-  engineers as interchangeable factory workers instead of partners 
-  and creative people, you’re in for a tough time getting huge in 
-  a world driven by technology.</p>
-</blockquote>]]></content:encoded>
 						</item>
 				
 				</channel>
