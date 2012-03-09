@@ -14,11 +14,69 @@
 					<atom:link href="http://mattwalters.net/rss.xml" rel="self" type="application/rss+xml" />
 					<link>http://mattwalters.net</link>
 					<description>Senior Web &amp; PHP Developer in Richmond, VA</description>
-					<lastBuildDate>Thu, 8 Mar 2012 11:12:56 +0000</lastBuildDate>
+					<lastBuildDate>Fri, 9 Mar 2012 08:26:24 +0000</lastBuildDate>
 					<language>en</language>
 					<sy:updatePeriod>hourly</sy:updatePeriod>
 					<sy:updateFrequency>1</sy:updateFrequency>
 					<generator>markd</generator>
+						<item>
+							<title>Links for week ending 2012-03-09</title>
+							<link>http://mattwalters.net/2012/03/09/links-for-week-ending-2012-03-09.html</link>
+							<pubDate>March 9th, 2012</pubDate>
+							<dc:creator>Matt</dc:creator>
+							<guid isPermaLink="false">http://mattwalters.net/2012/03/09/links-for-week-ending-2012-03-09.html</guid>
+							<description><![CDATA[<p><a href="http://us2.php.net/traits">PHP Traits</a>: I'm glad to see this make its way in to PHP 5.4.</p>
+
+<p><a href="http://us2.php.net/manual/en/features.commandline.webserver.php">PHP Built-in web server</a>: Sort of interesting that this was packaged into PHP 5.4.  I'm not sure that I'll ever use it since I already have a development environment that allows me a lot more control.  But perhaps folks new to the language will use since they won't have the investment in their dev environment yet?  I'll keep it in mind in case I ever find a niche case where it would be helpful though.</p>
+
+<p><a href="http://browserling.com/">browserling: interactive cross-browser testing</a>: It doesn't seem you can do very intensive testing, but it does look good enough to take a quick look at a page in different browsers (and versions).</p>
+
+<p><a href="http://alexking.org/blog/2012/03/05/git-submodules-vs-svn-externals">Git Submodules are not SVN Externals</a>: I need to learn Submodules in Git at some point (sooner rather than later).  I think there are some areas they could help me out in.</p>
+
+<p><a href="http://www.docracy.com/">Docracy - Free Legal Documents</a>: "Community provided and curated."</p>
+
+<p><a href="http://stabyourself.net/mari0/">Mari0</a>: Heh, awesome.</p>
+
+<p><a href="http://shiflett.org/blog/2012/mar/hacking-rails-and-github">Hacking Rails (and GitHub)</a>: Nice write-up of what went on here.  Seems every framework has these quirks you have to protect yourself from.</p>
+
+<p><a href="http://whatblag.com/2012/03/07/pinterest-we-have-a-problem/">Pinterest, We Have a Problem</a>: Hmm.</p>
+
+<blockquote>
+  <p>According to the company’s terms of service, when a user 
+  pins something, she is claiming to be the “sole and exclusive 
+  owner” of that content, and she is granting Pinterest the right 
+  to use it on their website (alternatively, she is claiming to 
+  have the consent necessary to grant Pinterest said right).</p>
+</blockquote>
+
+<p><a href="http://www.dollarshaveclub.com/">Dollar Shave Club</a>: The video cracked me up :)</p>]]></description>
+							<content:encoded><![CDATA[<p><a href="http://us2.php.net/traits">PHP Traits</a>: I'm glad to see this make its way in to PHP 5.4.</p>
+
+<p><a href="http://us2.php.net/manual/en/features.commandline.webserver.php">PHP Built-in web server</a>: Sort of interesting that this was packaged into PHP 5.4.  I'm not sure that I'll ever use it since I already have a development environment that allows me a lot more control.  But perhaps folks new to the language will use since they won't have the investment in their dev environment yet?  I'll keep it in mind in case I ever find a niche case where it would be helpful though.</p>
+
+<p><a href="http://browserling.com/">browserling: interactive cross-browser testing</a>: It doesn't seem you can do very intensive testing, but it does look good enough to take a quick look at a page in different browsers (and versions).</p>
+
+<p><a href="http://alexking.org/blog/2012/03/05/git-submodules-vs-svn-externals">Git Submodules are not SVN Externals</a>: I need to learn Submodules in Git at some point (sooner rather than later).  I think there are some areas they could help me out in.</p>
+
+<p><a href="http://www.docracy.com/">Docracy - Free Legal Documents</a>: "Community provided and curated."</p>
+
+<p><a href="http://stabyourself.net/mari0/">Mari0</a>: Heh, awesome.</p>
+
+<p><a href="http://shiflett.org/blog/2012/mar/hacking-rails-and-github">Hacking Rails (and GitHub)</a>: Nice write-up of what went on here.  Seems every framework has these quirks you have to protect yourself from.</p>
+
+<p><a href="http://whatblag.com/2012/03/07/pinterest-we-have-a-problem/">Pinterest, We Have a Problem</a>: Hmm.</p>
+
+<blockquote>
+  <p>According to the company’s terms of service, when a user 
+  pins something, she is claiming to be the “sole and exclusive 
+  owner” of that content, and she is granting Pinterest the right 
+  to use it on their website (alternatively, she is claiming to 
+  have the consent necessary to grant Pinterest said right).</p>
+</blockquote>
+
+<p><a href="http://www.dollarshaveclub.com/">Dollar Shave Club</a>: The video cracked me up :)</p>]]></content:encoded>
+						</item>
+				
 						<item>
 							<title>Hi Company, have my wallet</title>
 							<link>http://mattwalters.net/2012/03/08/hi-company-have-my-wallet.html</link>
@@ -209,56 +267,6 @@
 </blockquote>
 
 <p>Crazy to realize that this is basically true.</p>]]></content:encoded>
-						</item>
-				
-						<item>
-							<title>Potluck PHP Framework</title>
-							<link>http://mattwalters.net/2012/02/22/potluck-php-framework.html</link>
-							<pubDate>February 22nd, 2012</pubDate>
-							<dc:creator>Matt</dc:creator>
-							<guid isPermaLink="false">http://mattwalters.net/2012/02/22/potluck-php-framework.html</guid>
-							<description><![CDATA[<p>In my free time I've been playing around with some different tools for development and I've sort of come up with a Potluck PHP Framework of sorts.  It's actually not bad and stays pretty lightweight while giving some decent functionality.  Keep in mind, I've not spent extensive time with this setup, but I am liking what I'm encountering so far.  Here's what I've pieced together:</p>
-
-<h3><a href="http://www.slimframework.com/">Slim</a>: PHP5 Micro Framework</h3>
-
-<p>It's pretty lightweight and you're not going to find tons of functionality built into it.  But don't let it fool you.  It is pretty easy to extend or build upon and has some important pieces of functionality that a framework should have already built in.</p>
-
-<p>My only "beef" with Slim is probably that it doesn't give a great Controller structure if you're going to take an MVC approach to things.  But I'm still just starting to play with the framework so I might find a way to build in something more like what I'm expecting.  I typically like the CodeIgniter approach on controllers/routes.  I'd like to see if I can figure out a way to minimally recreate that functionality so I can make a new route just by dropping a file/class/method into the appropriate place(s).  For a small site this would be a non-issue anyhow.</p>
-
-<h3><a href="http://twig.sensiolabs.org/">Twig</a>: Template Engine</h3>
-
-<p>This is rather <a href="https://github.com/codeguy/Slim-Extras/blob/master/Views/TwigView.php">easily integrated</a> into Slim and gives you a nice template engine for your views.  I'm typically not a fan of mustache templating systems but Twig is a pretty robust engine.  In my playing around with it, I am finding myself willing to deal with the mustaches in order to gain the advantages Twig is providing.</p>
-
-<h3><a href="http://phpdatamapper.com/">phpDataMapper</a></h3>
-
-<p>phpDataMapper is more or less a port of the <a href="http://datamapper.org/">Ruby DataMapper</a> project.  This is the one I've had the least time spent with of the 3 items on this list.  But I definitely enjoy not having to worry about escaping things for the database, etc., and being able to quickly establish a database back end for the app I'm using this setup with.  I went from no database connection to pulling data out and displaying it on my page in about 5 minutes with phpDataMapper.</p>
-
-<hr />
-
-<p>Could I have done all of this with something like CodeIgniter?  Sure.  I'm a big fan of CodeIgniter so I'm not making this list as an argument against CI or other PHP frameworks.  I will say that I was able to integrate Slim, Twig, and phpDataMapper in about 15 minutes of Googling and typing.</p>
-
-<p>One advantage I could see to using a setup like this is that you get to very explicitly choose where you want to put weight into the framework you're piecing together for your application.  I'm not sure how light-weight Twig and phpDataMapper would be considered, but Slim is definitely light-weight.  Database interactions and rendering are areas that I was ok with adding weight to the application for because of what they provide me.</p>]]></description>
-							<content:encoded><![CDATA[<p>In my free time I've been playing around with some different tools for development and I've sort of come up with a Potluck PHP Framework of sorts.  It's actually not bad and stays pretty lightweight while giving some decent functionality.  Keep in mind, I've not spent extensive time with this setup, but I am liking what I'm encountering so far.  Here's what I've pieced together:</p>
-
-<h3><a href="http://www.slimframework.com/">Slim</a>: PHP5 Micro Framework</h3>
-
-<p>It's pretty lightweight and you're not going to find tons of functionality built into it.  But don't let it fool you.  It is pretty easy to extend or build upon and has some important pieces of functionality that a framework should have already built in.</p>
-
-<p>My only "beef" with Slim is probably that it doesn't give a great Controller structure if you're going to take an MVC approach to things.  But I'm still just starting to play with the framework so I might find a way to build in something more like what I'm expecting.  I typically like the CodeIgniter approach on controllers/routes.  I'd like to see if I can figure out a way to minimally recreate that functionality so I can make a new route just by dropping a file/class/method into the appropriate place(s).  For a small site this would be a non-issue anyhow.</p>
-
-<h3><a href="http://twig.sensiolabs.org/">Twig</a>: Template Engine</h3>
-
-<p>This is rather <a href="https://github.com/codeguy/Slim-Extras/blob/master/Views/TwigView.php">easily integrated</a> into Slim and gives you a nice template engine for your views.  I'm typically not a fan of mustache templating systems but Twig is a pretty robust engine.  In my playing around with it, I am finding myself willing to deal with the mustaches in order to gain the advantages Twig is providing.</p>
-
-<h3><a href="http://phpdatamapper.com/">phpDataMapper</a></h3>
-
-<p>phpDataMapper is more or less a port of the <a href="http://datamapper.org/">Ruby DataMapper</a> project.  This is the one I've had the least time spent with of the 3 items on this list.  But I definitely enjoy not having to worry about escaping things for the database, etc., and being able to quickly establish a database back end for the app I'm using this setup with.  I went from no database connection to pulling data out and displaying it on my page in about 5 minutes with phpDataMapper.</p>
-
-<hr />
-
-<p>Could I have done all of this with something like CodeIgniter?  Sure.  I'm a big fan of CodeIgniter so I'm not making this list as an argument against CI or other PHP frameworks.  I will say that I was able to integrate Slim, Twig, and phpDataMapper in about 15 minutes of Googling and typing.</p>
-
-<p>One advantage I could see to using a setup like this is that you get to very explicitly choose where you want to put weight into the framework you're piecing together for your application.  I'm not sure how light-weight Twig and phpDataMapper would be considered, but Slim is definitely light-weight.  Database interactions and rendering are areas that I was ok with adding weight to the application for because of what they provide me.</p>]]></content:encoded>
 						</item>
 				
 				</channel>
