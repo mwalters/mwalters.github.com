@@ -63,6 +63,60 @@
 	<div class="row-fluid">
 		<div class="span9">
 <div class="post-wrap well">
+	<h2 class="post-title"><a href="/2008/12/18/backup-strategy.html
+">Backup Strategy</a></h2>
+	<div class="post-meta">
+		Posted <a href="/2008/12/18/backup-strategy.html
+">December 18th, 2008</a>
+		 in <a href="/category/articles-0.html">Articles</a>	</div>
+	<div class="post-content"><p>Over the past weeks/months I've become more interested in making sure my systems are properly backed up.  Recently <a href="/2008/12/13/home-work-space/?phpMyAdmin=544c4b4bff4ct2249f7e0#comment-100173">I mentioned</a> I wanted to detail my setup in a post.  It's been awhile since I've suffered a significant hardware failure (knock on wood) so part of me thinks I'm "due" for one.  Here is my basic process and my current setup:</p>
+
+<p>Setup:</p>
+
+<ul>
+<li>2008 MacBook (Main System) - 320GB internal drive</li>
+<li>First Gen black MacBook (Media Center / File Server) 80GB internal drive</li>
+<li>3x250GB external HDD</li>
+<li><a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16820220246">2GB</a>, <a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16820220247">4GB</a>, <a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16820220301">8GB</a> thumb drives (these particular ones are <em>tiny</em>)</li>
+<li>Account with <a href="http://www.bingodisk.com/">BingoDisk</a> (100GB Plan)</li>
+<li>Amazon S3 Account</li>
+<li>MobileMe Account</li>
+</ul>
+
+<p>Process:
+<ol>
+* My main system has a TimeMachine (250GB external USB) drive connected to it almost constantly.  It's certainly connected when I'm working, and is usually only not connected when I retire to the sofa to watch TV or go to a friends house and am just goofing off on it.  I travel with the external drive.
+* Periodically (I try to do this at least once per week) I use <a href="http://www.shirt-pocket.com/SuperDuper/SuperDuperDescription.html">SuperDuper!</a> to clone my main system to a second drive (250GB external USB) which is also carried with me when I travel.
+* Less periodically then in Step 2 I do a SuperDuper! clone to the third drive (250GB external USB).  This so that if my typical HDD clone is for some reason bad, I can step further back in time in hopes that it will be ok.  This drive does not travel with me.
+* OSX Install Disk has been cloned to a 8GB thumb drive and travels with me.
+* I haven't received it yet, but I ordered <a href="http://www.alsoft.com/DiskWarrior/">Disk Warrior 4</a> which I also plan to clone to a thumb drive, and it will travel with me.
+* My main system has a copy of the music from my iTunes library and some random videos.  I typically purchase new content on my main system and download to it.  Weekly I perform an rsync backup of my iTunes library from my main system to my first gen MacBook iTunes library.
+* My first gen MacBook weekly (or whenever I add a substantial amount of content to it) performs an rsync of its iTunes library to Bingodisk.  Its iTunes library has my full collection -- music, TV shows, movies, etc.
+* S3 is used sparsely.  I know it's supposed to be supremely reliable, but I have lots of issues with it timing out when copying large amounts of data to it.
+* MobileMe account is used to store things like online receipts and various documents I like to keep handy.
+</ol>
+All things considered, I view this as a fairly comprehensive backup strategy, and it is fairly easy to maintain.  For instance, to rsync from my main system to my first gen MacBook, I quickly mount the volume on my main system and then run this shell script:
+<pre>rsync -a -u -v -F --exclude="<em>DS_Store</em>" /Users/username/music/itunes/"iTunes Music"/ /Volumes/Media/iTunes/</pre>
+Then the script is very similar to rsync from my first gen MacBook to Bingodisk.  It also keeps it from transferring annoying DS_Store files on Mac systems.</p>
+
+<p>I'm hoping to get a <a href="http://www.drobo.com/Products/drobo.html">Drobo system</a> in the near future to connect to my first gen MacBook and use it for most of my file serving needs and further simplify my backup process.</p>
+
+<p>Anyone see something I'm missing or have any further tips to give me a better safety net?</p></div>
+	<script type="text/javascript">
+	    var disqus_shortname = 'mattwalters';
+	    (function () {
+	        var s = document.createElement('script'); s.async = true;
+	        s.type = 'text/javascript';
+	        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+	        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+	    }());
+	</script>
+	<div class="comment-count">
+		<a href="/2008/12/18/backup-strategy.html
+#disqus_thread" data-disqus-identifier="302e79e79cbf2452e82b56990551e0b1">Comments</a>
+	</div>
+</div>
+<div class="post-wrap well">
 	<h2 class="post-title"><a href="/2008/08/30/the-interview-continued.html
 ">The Interview continued</a></h2>
 	<div class="post-meta">
@@ -246,48 +300,6 @@
 	<div class="comment-count">
 		<a href="/2007/06/06/my-language-is-better-then-yours-2.html
 #disqus_thread" data-disqus-identifier="1604c6f68be8346576b5f6c0d39df998">Comments</a>
-	</div>
-</div>
-<div class="post-wrap well">
-	<h2 class="post-title"><a href="/2007/05/22/my-language-is-better-then-yours.html
-">My language is better then yours</a></h2>
-	<div class="post-meta">
-		Posted <a href="/2007/05/22/my-language-is-better-then-yours.html
-">May 22nd, 2007</a>
-		 in <a href="/category/articles-0.html">Articles</a>	</div>
-	<div class="post-content"><p>(Fair warning, if you aren't a nerd, you might want to skip this post)</p>
-
-<p>Are we (programmers, developers, engineers) still really having these debates?  Give me a break.  Java vs. .NET, Java vs. PHP, .NET vs. PHP, now Ruby on Rails vs. PHP.</p>
-
-<p>The other day, <a href="http://blog.6thdensity.net/">Jeremy</a>, <a href="http://www.railsenvy.com/2007/5/15/hi-i-m-ruby-on-rails-part-2">sent</a> <a href="http://www.railsenvy.com/2007/5/16/hi-i-m-ruby-on-rails-part-3">me</a> <a href="http://www.railsenvy.com/2007/5/21/hi-i-m-ruby-on-rails-part-4">these</a>.  They're a series of videos created by Ruby on Rails fans, basically comparing PHP vs. Rails.  I watched the videos and told Jeremy something along the lines of, "they're funny, but they're not really a valid comparison of the languages."  I'll be honest, I'm too lazy to look up his initial response, but at some point he told me, "they're entirely valid comparisons."</p>
-
-<p>My main point was that if you only compare based on what the video's show, PHP is capable of doing everything Rails is, although the videos, if you knew nothing about the two languages, would lead you to believe that wasn't the case.  I conceded the point that at least to some extent, Rails would win when it comes to Migrations.  But even that, you can mimic in some way for PHP, but it might not be QUITE as easily done.  You can, without much trouble in fact, abstract your database from your code, you can do MVC,  you can do OOP (in fact PHP5 has greatly extended OOP in PHP).</p>
-
-<p>Then I allowed myself to be pulled into the language vs. language debate (although he will most likely claim that somehow we weren't having a language vs. language debate).  It was all quite silly ... on both sides if I'm being entirely honest.</p>
-
-<p>I like the fact that PHP will let me put together a quick script without having to go through MVC/OOP/etc etc if that's all I want to do.  I like that it doesn't make assumptions about how I'm going to set things up, I also like that if I want to get very structured, or even apply a framework, I can.  He believes that the fact that Rails forces (force is my word, he would most likely say it just makes a certain way so easy why would you choose another) you into a structure is a plus for the language/framework.  He even went on to say/imply that a language that didn't force that was inferior.</p>
-
-<p>Some of the silliness came in to play later.  For instance I think some of the helpers and whatnot available in Rails, while lowering the entrance barrier for new programmers, also create lazy programmers that don't actually know how things are actually being done, or why it is being done that way.  It was silly because earlier in the discussion I had argued that just because PHP allows sloppy code to be written, doesn't mean the language is at fault, the programmer is at fault.  I still don't really back off of either of my points, I guess that line is just a little fuzzy for me.  But I will admit that I could see how me arguing it one direction in one instance then flipping could be seen as odd.</p>
-
-<p>Then later he made the comment that one of the problems in our discussions was we were comparing PHP (the language) to Rails (a framework).  That being silly because everything up to that point, and past that point was and continued to be comparing PHP to Rails.  Somewhere along the lines I asked if we were comparing PHP to Ruby or PHP to Ruby on Rails.  Because if we were comparing PHP to Ruby, the videos were just nonsense.  If we were comparing to Rails then we'd need to introduce Cake or Code Igniter on the PHP side, which would again make the videos invalid.  He, in some fashion, agreed.  Not sure why we continued from there, but we did.</p>
-
-<p>He argued that the great thing about working within the framework and doing things the easiest/forced way was good for when picking up projects from others.  My opinion is, you can easily setup standards and processes to create maintainable code within your organization regardless of your chosen language.  So that leaves us with having to deal with picking up projects from outside developers.  If you think that enough development firms are going to pick up one language so that when acquiring projects from another development firm that it will be easier because it's written in your language, you're living in a dream world.</p>
-
-<p>Somewhere he brought up that he thinks PHP programmers are eventually going to go the way of the mainframe programmer, using COBOL as an example.  Honestly, one day, that will probably be the case, but good grief that is a premature statement.  There are organizations that would label PHP as cutting edge (I wouldn't agree, but regardless, me myself and I are not the majority), not to mention the large number of large sites running PHP (Wikipedia, Digg, Facebook just to name a few), and Yahoo's involvement in the community.  I would say PHP is still growing, if not exploding.  It's hardly the time to be making funeral arrangements.</p>
-
-<p>So anyhow, I think I'm done ranting about this, but needed to throw it out there.  Just to be clear, I think Ruby and Ruby on Rails are great.  I consider them powerful tools for development and have not and will not ever consider someone silly for wanting to learn them, nor will I think that my tool-set (PHP + framework or no framework) are somehow superior. I know the language vs. language debate is not going to end here and now.  It never will.  But, GAH!  I'm sick of it.  Use what you want to use.  User experience is what ultimately matters and they're all capable of providing similar if not exactly alike experiences.  Anyone who disagrees with that needs to come out of their cave.</p></div>
-	<script type="text/javascript">
-	    var disqus_shortname = 'mattwalters';
-	    (function () {
-	        var s = document.createElement('script'); s.async = true;
-	        s.type = 'text/javascript';
-	        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-	        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-	    }());
-	</script>
-	<div class="comment-count">
-		<a href="/2007/05/22/my-language-is-better-then-yours.html
-#disqus_thread" data-disqus-identifier="c1f4aede6f70f64635a57b44897fa538">Comments</a>
 	</div>
 </div>
 				<div class="pagination">

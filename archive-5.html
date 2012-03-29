@@ -63,6 +63,75 @@
 	<div class="row-fluid">
 		<div class="span9">
 <div class="post-wrap well">
+	<h2 class="post-title"><a href="/2009/03/03/webhosting-advice.html
+">Webhosting Advice</a></h2>
+	<div class="post-meta">
+		Posted <a href="/2009/03/03/webhosting-advice.html
+">March 3rd, 2009</a>
+		 in <a href="/category/articles-0.html">Articles</a>	</div>
+	<div class="post-content"><p>Webhosting is something I am frequently asked about.  I've had a site hosted in some fashion since the late 90's, so dealing with the in's and out's of hosting is something I've become quite familiar with.  These days I've even moved towards configuring my own servers to host my sites.  But this article isn't going to get into that side of things.</p>
+
+<p>I decided it was time that I finally chronicle what I've learned over the years and what my current setup is along with the reasons I like it how it is.  To the average user, my setup might seem complex, but even if you only put a couple of these practices to work, I think you'll find yourself well on the way to having a pleasant experience.</p>
+
+<p>I practice a fairly modular setup for my array of websites and it has its benefits.  By splitting things up I can get the most bang for the buck by putting critical systems on providers that provide mission critical support, and other things on more inexpensive solutions (yes, even in hosting you largely get what you pay for).</p>
+
+<p>Moving on to my recommended setup:</p>
+
+<p><strong>Registering your domain</strong>
+This is the first step in setting up a website for yourself.  I highly recommend <a href="http://enom.com/">eNom.com</a> as a registrar.  I've been using them for nearly 5 years now and they're a pretty solid registrar.  Even if you have already registered your domain somewhere else, I'd recommend considering a transfer of your domain to eNom.</p>
+
+<p>The main reason I like eNom as a registrar is the free DNS hosting, which is crucial to my setup.  However, in general they're a good registrar.  Their prices are competitive, managing your domain is easy with their web interface, and they aren't always trying to push additional services on you.  Don't get me wrong, additional services are there but they don't shove them on you.</p>
+
+<p>Allowing them to host my DNS is the linchpin of my setup.  Many webhosts ask you to set the DNS servers for your domain to theirs.  Unfortunately changing nameservers is still a drawn out process, sometimes taking up to 24-48 hours to complete.  Compounding the issue, many times you can't setup the DNS records on your new nameservers until the domain servers have changed.  This can mean even more hours, potentially of downtime, for your site.  Since my DNS is with eNom, if I change webhosts or email providers, I can just update the zonefile for my domain and usually within an hour or two everything has changed over.</p>
+
+<p>If you REALLY like your current registrar, then you can look into other third party DNS hosting services that will still allow you the benefits I'll be describing below.  I just happen to prefer eNom.</p>
+
+<p><strong>Choosing an email provider</strong>
+Many folks will choose to host their email with their current webhost.  That's fine, but I'd argue there are other solutions, better solutions, available to you.  The one I use is GMail.  Google's interface for GMail is pretty top notch and the fact that you can get <a href="http://www.google.com/a/cpanel/domain/new">Google Apps</a> for your domain for free, why not choose them?  Their downtime is extremely low, and you can use the web interface when you're not around your computer.  If you do like the feel of a desktop client though, you can still access your email via IMAP or POP3.</p>
+
+<p>Google Apps is also a scalable solution.  You can start off on the free version and add up to 50 users on your domain.  If you outgrow 50 users, or you start running into storage concerns with your archived email you can always convert to the paid version at $50 per year per user.  That's really not that bad of an option unless you have a spare exchange server sitting around (but really, if you have that kind of infrastructure already in place why aren't you just hosting your own website?).</p>
+
+<p>Also, by sourcing your email to a third party like this you also ease transitioning between webhosts should you ever need to.  Since your DNS is hosted by a central party, you never have to change your MX records (the DNS settings that tell your email where to go) when you change your website from one host to another.  This means no concerns over some email getting left on your old host, or losing emails in the transition, etc.</p>
+
+<p>See how hosting your DNS on your own is starting to fit together in the plan?</p>
+
+<p><strong>Choosing a webhost</strong>
+This is probably where 90% of my friends that have problems make their mistake.  Webhosting is a low margin business.  They make their money by hosting as many people on as few servers as possible.  The sheer number of competitors in the industry make it almost problematic.  You have everyone from high school (maybe even middle school these days) kids that buy a reseller account with a webhost and then offer plans at $1.99/mo, promising 99.999% uptime and unlimited disk space/bandwidth.  Then on the other end of the spectrum, there are folks offering webhosting for $50/mo and you don't necessarily get $50 of service per month.</p>
+
+<p>Let me be clear, you do not want to host with someone promising unlimited services and extremely high uptime guarantees.  If they're an industry giant, like Yahoo perhaps, you will probably be fine but there will usually be catches involved in the plan.  There are a couple things you should be aware of though between the those two possible scenarios.</p>
+
+<p><em>Scenario 1 - The fly by nighter</em>
+In this case, you're definitely in trouble.  They'll soon get bored, or start wondering why they aren't making any money and chances are they'll just shut the server down, leaving you without access to your website (possibly email), etc.  It could take you days to recover.  The whole time your website is down.  Don't even get me started on how these folks tend to like advertising 99.999% uptime.  They often have trouble achieving 80% uptime.</p>
+
+<p><em>Scenario 2 - The industry giant</em>
+You're in a slightly better situation here, but keep in mind these companies are in it to make money.  Usually the small print of those agreements you're making during sign up include text saying that if you start to use too much disk space, bandwidth, or processor time, they have the right to shut your site down.  They'll put up all kinds of walls to keep you from actually storing terabytes of data on their servers.  They can't make money on you if they do allow it.  If you plan on using reasonable resources though, you're probably fine, but an industry giant selling unlimited disk space, etc, likely isn't going to do that for $1.99/mo.</p>
+
+<p>So if your website is even the least bit important to you, I recommend you plan on spending around $10-$20 per month on your hosting.  You can find some rock solid providers in that price range and it's really not that expensive.</p>
+
+<p>As for my personal hosting plans, I currently have plans with two separate providers, but that's not something the average user is going to need.</p>
+
+<p>My primary hosting plan is a (dv) server with <a href="http://mediatemple.net/">Media Temple</a>.  It hosts mattwalters.net and <a href="http://snipit.me/">SnipIt.me</a> along with some other small sites I have setup mainly for testing purposes.</p>
+
+<p>My other hosting plan is with <a href="http://www.slicehost.com/">slicehost</a>.  This plan is where <a href="http://WordPressEasily.com/">WordPressEasily.com</a> and its hosted blogs reside.  WordPress Easily is quite the complicated setup though.  The nature of the service dictates needing to be able to bring new servers online quickly or swap out servers, etc.</p>
+
+<p>Just to finish tying in the modular concept, by having all 3 of these services sourced to different providers, it leaves me in an agile position.  If I need to move to a different webhost for some reason, I can easily change the DNS records for my domain and have my site moved over quickly.  Or if I need to point a subdomain to a different server for whatever reason, it's a quick change.  Same goes for email, if I wanted to change to a different provider, I could do so without affecting my websites.  Really, the only catch to this setup is I can't easily change registrars ;)</p>
+
+<p>Hope you've found this informative and maybe even taken away something good from it.  If you have any tips you'd like to share, by all means feel free to do so in the comments :)</p></div>
+	<script type="text/javascript">
+	    var disqus_shortname = 'mattwalters';
+	    (function () {
+	        var s = document.createElement('script'); s.async = true;
+	        s.type = 'text/javascript';
+	        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+	        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+	    }());
+	</script>
+	<div class="comment-count">
+		<a href="/2009/03/03/webhosting-advice.html
+#disqus_thread" data-disqus-identifier="edb0afb5cad950d743aaddde38c13068">Comments</a>
+	</div>
+</div>
+<div class="post-wrap well">
 	<h2 class="post-title"><a href="/2009/02/25/name-in-the-wall-street-journal.html
 ">Name in the Wall Street Journal</a></h2>
 	<div class="post-meta">
@@ -198,60 +267,6 @@
 	<div class="comment-count">
 		<a href="/2008/12/23/2008-year-in-review.html
 #disqus_thread" data-disqus-identifier="9c1adfb8ed7890af60449daa3e9ebff3">Comments</a>
-	</div>
-</div>
-<div class="post-wrap well">
-	<h2 class="post-title"><a href="/2008/12/18/backup-strategy.html
-">Backup Strategy</a></h2>
-	<div class="post-meta">
-		Posted <a href="/2008/12/18/backup-strategy.html
-">December 18th, 2008</a>
-		 in <a href="/category/articles-0.html">Articles</a>	</div>
-	<div class="post-content"><p>Over the past weeks/months I've become more interested in making sure my systems are properly backed up.  Recently <a href="/2008/12/13/home-work-space/?phpMyAdmin=544c4b4bff4ct2249f7e0#comment-100173">I mentioned</a> I wanted to detail my setup in a post.  It's been awhile since I've suffered a significant hardware failure (knock on wood) so part of me thinks I'm "due" for one.  Here is my basic process and my current setup:</p>
-
-<p>Setup:</p>
-
-<ul>
-<li>2008 MacBook (Main System) - 320GB internal drive</li>
-<li>First Gen black MacBook (Media Center / File Server) 80GB internal drive</li>
-<li>3x250GB external HDD</li>
-<li><a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16820220246">2GB</a>, <a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16820220247">4GB</a>, <a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16820220301">8GB</a> thumb drives (these particular ones are <em>tiny</em>)</li>
-<li>Account with <a href="http://www.bingodisk.com/">BingoDisk</a> (100GB Plan)</li>
-<li>Amazon S3 Account</li>
-<li>MobileMe Account</li>
-</ul>
-
-<p>Process:
-<ol>
-* My main system has a TimeMachine (250GB external USB) drive connected to it almost constantly.  It's certainly connected when I'm working, and is usually only not connected when I retire to the sofa to watch TV or go to a friends house and am just goofing off on it.  I travel with the external drive.
-* Periodically (I try to do this at least once per week) I use <a href="http://www.shirt-pocket.com/SuperDuper/SuperDuperDescription.html">SuperDuper!</a> to clone my main system to a second drive (250GB external USB) which is also carried with me when I travel.
-* Less periodically then in Step 2 I do a SuperDuper! clone to the third drive (250GB external USB).  This so that if my typical HDD clone is for some reason bad, I can step further back in time in hopes that it will be ok.  This drive does not travel with me.
-* OSX Install Disk has been cloned to a 8GB thumb drive and travels with me.
-* I haven't received it yet, but I ordered <a href="http://www.alsoft.com/DiskWarrior/">Disk Warrior 4</a> which I also plan to clone to a thumb drive, and it will travel with me.
-* My main system has a copy of the music from my iTunes library and some random videos.  I typically purchase new content on my main system and download to it.  Weekly I perform an rsync backup of my iTunes library from my main system to my first gen MacBook iTunes library.
-* My first gen MacBook weekly (or whenever I add a substantial amount of content to it) performs an rsync of its iTunes library to Bingodisk.  Its iTunes library has my full collection -- music, TV shows, movies, etc.
-* S3 is used sparsely.  I know it's supposed to be supremely reliable, but I have lots of issues with it timing out when copying large amounts of data to it.
-* MobileMe account is used to store things like online receipts and various documents I like to keep handy.
-</ol>
-All things considered, I view this as a fairly comprehensive backup strategy, and it is fairly easy to maintain.  For instance, to rsync from my main system to my first gen MacBook, I quickly mount the volume on my main system and then run this shell script:
-<pre>rsync -a -u -v -F --exclude="<em>DS_Store</em>" /Users/username/music/itunes/"iTunes Music"/ /Volumes/Media/iTunes/</pre>
-Then the script is very similar to rsync from my first gen MacBook to Bingodisk.  It also keeps it from transferring annoying DS_Store files on Mac systems.</p>
-
-<p>I'm hoping to get a <a href="http://www.drobo.com/Products/drobo.html">Drobo system</a> in the near future to connect to my first gen MacBook and use it for most of my file serving needs and further simplify my backup process.</p>
-
-<p>Anyone see something I'm missing or have any further tips to give me a better safety net?</p></div>
-	<script type="text/javascript">
-	    var disqus_shortname = 'mattwalters';
-	    (function () {
-	        var s = document.createElement('script'); s.async = true;
-	        s.type = 'text/javascript';
-	        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-	        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-	    }());
-	</script>
-	<div class="comment-count">
-		<a href="/2008/12/18/backup-strategy.html
-#disqus_thread" data-disqus-identifier="302e79e79cbf2452e82b56990551e0b1">Comments</a>
 	</div>
 </div>
 				<div class="pagination">
