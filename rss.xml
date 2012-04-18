@@ -14,11 +14,21 @@
 					<atom:link href="http://mattwalters.net/rss.xml" rel="self" type="application/rss+xml" />
 					<link>http://mattwalters.net</link>
 					<description>Senior Web &amp; PHP Developer in Richmond, VA</description>
-					<lastBuildDate>Thu, 29 Mar 2012 12:09:25 +0000</lastBuildDate>
+					<lastBuildDate>Wed, 18 Apr 2012 08:38:03 +0000</lastBuildDate>
 					<language>en</language>
 					<sy:updatePeriod>hourly</sy:updatePeriod>
 					<sy:updateFrequency>1</sy:updateFrequency>
 					<generator>markd</generator>
+						<item>
+							<title>I'm old(er)!</title>
+							<link>http://mattwalters.net/2012/04/18/i-m-old-er.html</link>
+							<pubDate>April 18th, 2012</pubDate>
+							<dc:creator>Matt</dc:creator>
+							<guid isPermaLink="false">http://mattwalters.net/2012/04/18/i-m-old-er.html</guid>
+							<description><![CDATA[<p>Yay me :)</p>]]></description>
+							<content:encoded><![CDATA[<p>Yay me :)</p>]]></content:encoded>
+						</item>
+				
 						<item>
 							<title>The New iPad</title>
 							<link>http://mattwalters.net/2012/03/29/the-new-ipad.html</link>
@@ -201,44 +211,6 @@
 <p>Luckily this was just a low dollar DSL service payment.  But what if it was something larger?  Or what if they'd billed me for a years worth of service?  Mistakes happen at large companies, and leaving the consumer holding the bag over a company error is horrible.</p>
 
 <p>This happened years ago.  But I learned my lesson and I urge you to learn from it too.  Outside of extraordinary circumstances, stop letting companies have such easy access to your cash.</p>]]></content:encoded>
-						</item>
-				
-						<item>
-							<title>What does your desk look like?</title>
-							<link>http://mattwalters.net/2012/03/05/what-does-your-desk-look-like.html</link>
-							<pubDate>March 5th, 2012</pubDate>
-							<dc:creator>Matt</dc:creator>
-							<guid isPermaLink="false">http://mattwalters.net/2012/03/05/what-does-your-desk-look-like.html</guid>
-							<description><![CDATA[<p>I sort of find it interesting when I get a glimpse of someone elses workspace.  I figured I would share mine in the hopes that some others might do the same.</p>
-
-<h3>Plain</h3>
-
-<p><a href="https://img.skitch.com/20120305-fbe47tqejwbbtdqy48r3guahce.jpg"><img src="https://img.skitch.com/20120305-fbe47tqejwbbtdqy48r3guahce.jpg" alt="image" /></a></p>
-
-<h3>Annotated</h3>
-
-<p><a href="https://img.skitch.com/20120305-d4ju8tswdwekrnx4g534abypux.jpg"><img src="https://img.skitch.com/20120305-d4ju8tswdwekrnx4g534abypux.jpg" alt="image" /></a></p>
-
-<p>My desk is a simple Ikea desk and I have a Dell 24-inch monitor set up.  I try to keep it pretty minimal.  I used my iPhone to take the picture so you can't see it with the handset to the left of my keyboard, but here's the <a href="http://www.amazon.com/gp/product/B003FMVCRU/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;tag=mattwaltersne-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B003FMVCRU">product on Amazon</a>.  The laptop is a 13-inch MacBook Air.  I also have a <a href="http://www.amazon.com/gp/product/B00125XBHG/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;tag=mattwaltersne-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00125XBHG">Mirra Chair by Herman Miller</a>.</p>
-
-<p>The picture doesn't show it but hanging from the back of the desk is a cable organizer (also from Ikea) that keeps all of my cords mostly out of my way except for where they drop down for power on the lower left.</p>
-
-<p>Note: don't ask me why the cat (Sprocket) likes to sleep in the dog crate.  It doesn't make sense to me either.</p>]]></description>
-							<content:encoded><![CDATA[<p>I sort of find it interesting when I get a glimpse of someone elses workspace.  I figured I would share mine in the hopes that some others might do the same.</p>
-
-<h3>Plain</h3>
-
-<p><a href="https://img.skitch.com/20120305-fbe47tqejwbbtdqy48r3guahce.jpg"><img src="https://img.skitch.com/20120305-fbe47tqejwbbtdqy48r3guahce.jpg" alt="image" /></a></p>
-
-<h3>Annotated</h3>
-
-<p><a href="https://img.skitch.com/20120305-d4ju8tswdwekrnx4g534abypux.jpg"><img src="https://img.skitch.com/20120305-d4ju8tswdwekrnx4g534abypux.jpg" alt="image" /></a></p>
-
-<p>My desk is a simple Ikea desk and I have a Dell 24-inch monitor set up.  I try to keep it pretty minimal.  I used my iPhone to take the picture so you can't see it with the handset to the left of my keyboard, but here's the <a href="http://www.amazon.com/gp/product/B003FMVCRU/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;tag=mattwaltersne-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B003FMVCRU">product on Amazon</a>.  The laptop is a 13-inch MacBook Air.  I also have a <a href="http://www.amazon.com/gp/product/B00125XBHG/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;tag=mattwaltersne-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00125XBHG">Mirra Chair by Herman Miller</a>.</p>
-
-<p>The picture doesn't show it but hanging from the back of the desk is a cable organizer (also from Ikea) that keeps all of my cords mostly out of my way except for where they drop down for power on the lower left.</p>
-
-<p>Note: don't ask me why the cat (Sprocket) likes to sleep in the dog crate.  It doesn't make sense to me either.</p>]]></content:encoded>
 						</item>
 				
 				</channel>

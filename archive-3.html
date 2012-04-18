@@ -63,6 +63,58 @@
 	<div class="row-fluid">
 		<div class="span9">
 <div class="post-wrap well">
+	<h2 class="post-title"><a href="/2012/01/20/welcome-to-my-new-site.html
+">Welcome To My New Site</a></h2>
+	<div class="post-meta">
+		Posted <a href="/2012/01/20/welcome-to-my-new-site.html
+">January 20th, 2012</a>
+		 in <a href="/category/development-0.html">Development</a>	</div>
+	<div class="post-content"><p><img src="https://sites.google.com/site/mwalters8/home/Screen%20Shot%202012-01-21%20at%2011.36.54%20AM.png" alt="Complete" /></p>
+
+<p>So here it is.  I've been working on a static site generator for the past couple of weeks and I finally have things put together enough to start running my site off of it.  The project is called <a href="https://github.com/mwalters/markd">markd</a> and it's hosted on <a href="https://github.com/">github</a>.</p>
+
+<p>The overview of how the system works is you create files (posts) that are written in <a href="http://daringfireball.net/projects/markdown/">Markdown</a> syntax.  markd will then generate a static HTML version of your blog from those files.  It makes everything you see here.</p>
+
+<p>I would say it's still very alpha at the moment, and even when it is stable it will still be something of more interest to developers rather than the average blogger.  The installation and setup instructions basically don't exist, but will be coming in the future.</p>
+
+<p>Here are the basic reasons why I wrote it:</p>
+
+<ul>
+<li>I needed a new hobby project :)</li>
+<li>Having a static HTML site just seemed to make sense for various reasons</li>
+<li>It was a bit of an exercise in some development areas that I wanted to work out</li>
+<li>Creating Markdown files is so easy and the way I have this all set up, makes writing a new post both simple and something I can easily enjoy in my favorite text editor</li>
+<li>Really, it's just something that I had a strong interest in and decided to run with it.  I'm happy with how it's turned out.</li>
+</ul>
+
+<p>If you're curious how it works, here is how I have things set up:</p>
+
+<ul>
+<li>I write blog posts in a text editor, with the Markdown syntax.  They're saved on Dropbox so I can access them from any computer.</li>
+<li>I run markd which is a PHP-CLI set of scripts that generates the HTML for my home page, single post pages, archives, etc.</li>
+<li>Those files are then automatically published to my web server using a set of not-included shell scripting.</li>
+</ul>
+
+<p>I'm enjoying working on it and have <a href="https://github.com/mwalters/markd/issues?labels=&amp;milestone=&amp;page=1&amp;state=open">plans for things to do in the future</a> like enhancing the theme engine, adding hooks for a plugin system and support for some different post formats.  At this point you might be thinking this is starting to sound a lot like <a href="http://wordpress.org/">WordPress</a>, or many of the other blogging engines, including the others that create static sites.  Well, you'd be correct.</p>
+
+<p>I wanted this project to do things the way <em>I</em> wanted them done.  It's definitely taking hints from WordPress, and I also intend to take some hints from the <a href="http://carringtontheme.com/">Carrington Theme Framework</a> for the theme engine.</p>
+
+<p>I'm looking forward to where this might go.  Who knows, maybe working on markd might get me blogging frequently again since I'll be developing it and want to try things out.</p></div>
+	<script type="text/javascript">
+	    var disqus_shortname = 'mattwalters';
+	    (function () {
+	        var s = document.createElement('script'); s.async = true;
+	        s.type = 'text/javascript';
+	        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+	        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+	    }());
+	</script>
+	<div class="comment-count">
+		<a href="/2012/01/20/welcome-to-my-new-site.html
+#disqus_thread" data-disqus-identifier="f40e3d1df9f78c375601e81757481d15">Comments</a>
+	</div>
+</div>
+<div class="post-wrap well">
 	<h2 class="post-title"><a href="/2011/12/23/2011-year-in-review.html
 ">2011 Year in Review</a></h2>
 	<div class="post-meta">
@@ -180,50 +232,6 @@
 #disqus_thread" data-disqus-identifier="88ca95896897f365b77458bb21fbe082">Comments</a>
 	</div>
 </div>
-<div class="post-wrap well">
-	<h2 class="post-title"><a href="/2011/04/26/to-the-cloud.html
-">To the cloud</a></h2>
-	<div class="post-meta">
-		Posted <a href="/2011/04/26/to-the-cloud.html
-">April 26th, 2011</a>
-		 in <a href="/category/articles-0.html">Articles</a>	</div>
-	<div class="post-content"><p><img src="http://mwalters8.files.wordpress.com/2011/04/cloud-heart.jpg" alt="image" /></p>
-
-<p>After last weeks Amazon Web Services (AWS) issues, everyone is talking a lot about "The Cloud" and whether it's the right answer for many companies.  I'm a pretty big fan of virtual servers, but I can't say that they are for everyone.  When designing any sort of environment I would say there are some, what should seem simple, ideas to keep in mind:  <!--more--></p>
-
-<h3>Know your uptime requirements:</h3>
-
-<p>Can your business/website withstand being down for 6-12 hours?  I would say most can, probably far more than think they could.  Some organizations over architect their environments because brief amounts of downtime are unpalatable to them when the simple fact is their users will forgive temporary downtime as long as it doesn't become the norm.  Regardless, your organization needs to figure out what your uptime requirements are and architect to those requirements.  If you need extreme amounts of uptime then you need servers/services spread across multiple availability zones if you're with a single provider, and you possibly need to have services in place across multiple providers so you can recover as quickly as possible if something does go wrong.  How far you need to take this will all be determined by your requirements and help you create your Plan B for when things take a turn for the worse.</p>
-
-<h3>Have a Plan B:</h3>
-
-<p>Once you have your uptime requirements in place, you can start formulating a Plan B.  This might include using your load balancer to point at a different availability zone, or it might mean quick DNS changes to point your site to a back-up provider.  Short of that though you need to test failures at a lower level.  What if just one of your UI servers dies, what happens?  Hopefully your application can easily sustain something like this and requests quickly re-route to another server.  Similarly, hopefully the services that your UI servers talk to can easily handle single failures like this.</p>
-
-<h3>Test your Plan B:</h3>
-
-<p><strong>This is important.</strong>  Make sure that things behave how you expect them to.  Shut down one of your UI servers, or your back-end services.  Do things react how you planned?  If not, then fix it so that they do.  What you do not want to have happen is you end up in a situation where your server has failed and brought your site down or your provider starts having cascading failures and you are at the mercy of their email support.  If your plan does all work as planned then great!  Test it periodically and fix things when they come up (you will need to make corrections to your plan as your service grows!), then you can rest easier at night.</p>
-
-<p>At this point you might find yourself wondering about cost, complexity, etc.  I saw a tweet recently that I related to these thoughts:</p>
-
-<p>http://twitter.com/#!/kylecordes/status/61540471767449601</p>
-
-<p>I'm not sure of his exact meaning here but how I interpreted it brings me back to my first point, knowing your requirements.  The cloud is not necessarily inexpensive and is often more complex then having a simpler set up with a dedicated server or two hosted with your favorite provider.  Design for your needs at the time and adapt as they change over time.  You might be just fine hosting in a small environment and keeping good backups that you can restore to another server and/or provider if needed.</p>
-
-<p>You are keeping backups of your data, aren't you?</p></div>
-	<script type="text/javascript">
-	    var disqus_shortname = 'mattwalters';
-	    (function () {
-	        var s = document.createElement('script'); s.async = true;
-	        s.type = 'text/javascript';
-	        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-	        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-	    }());
-	</script>
-	<div class="comment-count">
-		<a href="/2011/04/26/to-the-cloud.html
-#disqus_thread" data-disqus-identifier="bb6f0b028624e810666bdbb06eba4ee3">Comments</a>
-	</div>
-</div>
 				<div class="pagination">
 					<ul><li class="prev"><a href="/archive-2.html">Previous</a></li><li class="next"><a href="/archive-4.html">Next Page</a></li></ul>				</div>
 			</div> <!-- span10 -->
@@ -270,21 +278,21 @@
     <footer>
       	<p>&copy; Matt Walters 2012 &#150; <a href="/sitemap.html">Sitemap</a></p>
 		
-                <script src="http://www.jotform.us/min/g=feedback" type="text/javascript">
-                  new JotformFeedback({
-                     formId             : "20201232841",
-                     buttonText : "Contact Me",
-                     base               : "http://www.jotform.us/",
-                     background : "#0064CD",
-                     fontColor  : "#FFFFFF",
-                     buttonSide : "right",
-                     buttonAlign        : "center",
-                     type               : 2,
-                     width              : 700,
-                     height             : 500
-                  });
-                </script>
-            </footer>
+		<script src="http://www.jotform.us/min/g=feedback" type="text/javascript">
+		  new JotformFeedback({
+		     formId		: "20201232841",
+		     buttonText	: "Contact Me",
+		     base		: "http://www.jotform.us/",
+		     background	: "#0064CD",
+		     fontColor	: "#FFFFFF",
+		     buttonSide	: "right",
+		     buttonAlign	: "center",
+		     type		: 2,
+		     width		: 700,
+		     height		: 500
+		  });
+		</script>
+	    </footer>
 
 </div> <!-- container -->
 

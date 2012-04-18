@@ -63,6 +63,50 @@
 	<div class="row-fluid">
 		<div class="span9">
 <div class="post-wrap well">
+	<h2 class="post-title"><a href="/2011/04/26/to-the-cloud.html
+">To the cloud</a></h2>
+	<div class="post-meta">
+		Posted <a href="/2011/04/26/to-the-cloud.html
+">April 26th, 2011</a>
+		 in <a href="/category/articles-0.html">Articles</a>	</div>
+	<div class="post-content"><p><img src="http://mwalters8.files.wordpress.com/2011/04/cloud-heart.jpg" alt="image" /></p>
+
+<p>After last weeks Amazon Web Services (AWS) issues, everyone is talking a lot about "The Cloud" and whether it's the right answer for many companies.  I'm a pretty big fan of virtual servers, but I can't say that they are for everyone.  When designing any sort of environment I would say there are some, what should seem simple, ideas to keep in mind:  <!--more--></p>
+
+<h3>Know your uptime requirements:</h3>
+
+<p>Can your business/website withstand being down for 6-12 hours?  I would say most can, probably far more than think they could.  Some organizations over architect their environments because brief amounts of downtime are unpalatable to them when the simple fact is their users will forgive temporary downtime as long as it doesn't become the norm.  Regardless, your organization needs to figure out what your uptime requirements are and architect to those requirements.  If you need extreme amounts of uptime then you need servers/services spread across multiple availability zones if you're with a single provider, and you possibly need to have services in place across multiple providers so you can recover as quickly as possible if something does go wrong.  How far you need to take this will all be determined by your requirements and help you create your Plan B for when things take a turn for the worse.</p>
+
+<h3>Have a Plan B:</h3>
+
+<p>Once you have your uptime requirements in place, you can start formulating a Plan B.  This might include using your load balancer to point at a different availability zone, or it might mean quick DNS changes to point your site to a back-up provider.  Short of that though you need to test failures at a lower level.  What if just one of your UI servers dies, what happens?  Hopefully your application can easily sustain something like this and requests quickly re-route to another server.  Similarly, hopefully the services that your UI servers talk to can easily handle single failures like this.</p>
+
+<h3>Test your Plan B:</h3>
+
+<p><strong>This is important.</strong>  Make sure that things behave how you expect them to.  Shut down one of your UI servers, or your back-end services.  Do things react how you planned?  If not, then fix it so that they do.  What you do not want to have happen is you end up in a situation where your server has failed and brought your site down or your provider starts having cascading failures and you are at the mercy of their email support.  If your plan does all work as planned then great!  Test it periodically and fix things when they come up (you will need to make corrections to your plan as your service grows!), then you can rest easier at night.</p>
+
+<p>At this point you might find yourself wondering about cost, complexity, etc.  I saw a tweet recently that I related to these thoughts:</p>
+
+<p>http://twitter.com/#!/kylecordes/status/61540471767449601</p>
+
+<p>I'm not sure of his exact meaning here but how I interpreted it brings me back to my first point, knowing your requirements.  The cloud is not necessarily inexpensive and is often more complex then having a simpler set up with a dedicated server or two hosted with your favorite provider.  Design for your needs at the time and adapt as they change over time.  You might be just fine hosting in a small environment and keeping good backups that you can restore to another server and/or provider if needed.</p>
+
+<p>You are keeping backups of your data, aren't you?</p></div>
+	<script type="text/javascript">
+	    var disqus_shortname = 'mattwalters';
+	    (function () {
+	        var s = document.createElement('script'); s.async = true;
+	        s.type = 'text/javascript';
+	        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+	        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+	    }());
+	</script>
+	<div class="comment-count">
+		<a href="/2011/04/26/to-the-cloud.html
+#disqus_thread" data-disqus-identifier="bb6f0b028624e810666bdbb06eba4ee3">Comments</a>
+	</div>
+</div>
+<div class="post-wrap well">
 	<h2 class="post-title"><a href="/2010/12/31/2010-year-in-review.html
 ">2010 Year In Review</a></h2>
 	<div class="post-meta">
@@ -212,36 +256,6 @@
 #disqus_thread" data-disqus-identifier="c3056df10f45e8f8070ef079e4112a4f">Comments</a>
 	</div>
 </div>
-<div class="post-wrap well">
-	<h2 class="post-title"><a href="/2009/05/09/wordcamp-richmond.html
-">WordCamp Richmond</a></h2>
-	<div class="post-meta">
-		Posted <a href="/2009/05/09/wordcamp-richmond.html
-">May 9th, 2009</a>
-		 in <a href="/category/miscellaneous-0.html">Miscellaneous</a>	</div>
-	<div class="post-content"><p><img src="http://mwalters8.files.wordpress.com/2009/05/xt2.jpg" alt="image" /></p>
-
-<p>So WordCamp RVA was today and I was really pleased with how well it turned out.  There were periods today where I was nervous about my presentation, then other periods where I figured it would be fine.  There were times (in the morning) where I was worried if eveything would work out well and whether or not enough people were coming, but in the end I think it turned out great.  Folks seemed to be happy with the content and attendance was just about perfect I think.</p>
-
-<p>It really blew me away that we had folks traveling up from Georgia for the event.  I mean ... wow.  Guys, if you read this blog, let's get a WordCamp Atlanta going on.  I'll help.  There's no reason Georgia shouldn't be able to support it's own WordCamp.</p>
-
-<p>As I said at the event, and have mentioned on twitter, etc, I'm really hoping to organize some follow up events to the main WordCamp Richmond (/RVA) event.  I'd like to focus them on real in depth topics like theme development where we actually take some time and build a theme from scratch.  I'd also like to do the same with plugins.  Plugin development was something I was reluctant to cut from my presentation, but I knew there just wasn't going to be time for it, and it's also a topic that would be really hard to present without giving so many code examples that a lot of the crowd would have been put to sleep.</p>
-
-<p>Anyhow, I would like to give a huge thanks, once again, to <a href="http://www.yoursearchadvisor.com/">Andrew Miller</a>, <a href="http://twitter.com/gatewood5000">Chris Gatewood</a>, and <a href="http://businessbullpen.com/">Business Bullpen</a> along with all the other that helped make today happen.  I may have been in the middle of it all, but they made it easy on me and I really can't thank them all enough.</p></div>
-	<script type="text/javascript">
-	    var disqus_shortname = 'mattwalters';
-	    (function () {
-	        var s = document.createElement('script'); s.async = true;
-	        s.type = 'text/javascript';
-	        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-	        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-	    }());
-	</script>
-	<div class="comment-count">
-		<a href="/2009/05/09/wordcamp-richmond.html
-#disqus_thread" data-disqus-identifier="d049000e2e9e45d1eef36c2f5e4f5d85">Comments</a>
-	</div>
-</div>
 				<div class="pagination">
 					<ul><li class="prev"><a href="/archive-3.html">Previous</a></li><li class="next"><a href="/archive-5.html">Next Page</a></li></ul>				</div>
 			</div> <!-- span10 -->
@@ -288,21 +302,21 @@
     <footer>
       	<p>&copy; Matt Walters 2012 &#150; <a href="/sitemap.html">Sitemap</a></p>
 		
-                <script src="http://www.jotform.us/min/g=feedback" type="text/javascript">
-                  new JotformFeedback({
-                     formId             : "20201232841",
-                     buttonText : "Contact Me",
-                     base               : "http://www.jotform.us/",
-                     background : "#0064CD",
-                     fontColor  : "#FFFFFF",
-                     buttonSide : "right",
-                     buttonAlign        : "center",
-                     type               : 2,
-                     width              : 700,
-                     height             : 500
-                  });
-                </script>
-            </footer>
+		<script src="http://www.jotform.us/min/g=feedback" type="text/javascript">
+		  new JotformFeedback({
+		     formId		: "20201232841",
+		     buttonText	: "Contact Me",
+		     base		: "http://www.jotform.us/",
+		     background	: "#0064CD",
+		     fontColor	: "#FFFFFF",
+		     buttonSide	: "right",
+		     buttonAlign	: "center",
+		     type		: 2,
+		     width		: 700,
+		     height		: 500
+		  });
+		</script>
+	    </footer>
 
 </div> <!-- container -->
 
