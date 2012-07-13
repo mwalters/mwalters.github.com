@@ -14,11 +14,21 @@
 					<atom:link href="http://mattwalters.net/rss.xml" rel="self" type="application/rss+xml" />
 					<link>http://mattwalters.net</link>
 					<description>Senior Web &amp; PHP Developer in Richmond, VA</description>
-					<lastBuildDate>Wed, 4 Jul 2012 20:10:24 +0000</lastBuildDate>
+					<lastBuildDate>Fri, 13 Jul 2012 12:15:55 +0000</lastBuildDate>
 					<language>en</language>
 					<sy:updatePeriod>hourly</sy:updatePeriod>
 					<sy:updateFrequency>1</sy:updateFrequency>
 					<generator>markd</generator>
+						<item>
+							<title>Cats And Dogs</title>
+							<link>http://mattwalters.net/2012/07/13/cats-and-dogs.html</link>
+							<pubDate>July 13th, 2012</pubDate>
+							<dc:creator>Matt</dc:creator>
+							<guid isPermaLink="false">http://mattwalters.net/2012/07/13/cats-and-dogs.html</guid>
+							<description><![CDATA[<p><img src="http://f.cl.ly/items/3c1E070i3S452F0H0z3U/2ebd3278ccff11e1a23c22000a1c9e05_7.jpg" alt="image" /></p>]]></description>
+							<content:encoded><![CDATA[<p><img src="http://f.cl.ly/items/3c1E070i3S452F0H0z3U/2ebd3278ccff11e1a23c22000a1c9e05_7.jpg" alt="image" /></p>]]></content:encoded>
+						</item>
+				
 						<item>
 							<title>Marco With Missing Toy - Part 2</title>
 							<link>http://mattwalters.net/2012/07/04/marco-with-missing-toy-part-2.html</link>
@@ -105,64 +115,6 @@
   fact, chewing gum is mostly indigestible, but passes through 
   the digestive system at the same rate as other matter.</p>
 </blockquote>]]></content:encoded>
-						</item>
-				
-						<item>
-							<title>Links for week ending 2012-03-09</title>
-							<link>http://mattwalters.net/2012/03/09/links-for-week-ending-2012-03-09.html</link>
-							<pubDate>March 9th, 2012</pubDate>
-							<dc:creator>Matt</dc:creator>
-							<guid isPermaLink="false">http://mattwalters.net/2012/03/09/links-for-week-ending-2012-03-09.html</guid>
-							<description><![CDATA[<p><a href="http://us2.php.net/traits">PHP Traits</a>: I'm glad to see this make its way in to PHP 5.4.</p>
-
-<p><a href="http://us2.php.net/manual/en/features.commandline.webserver.php">PHP Built-in web server</a>: Sort of interesting that this was packaged into PHP 5.4.  I'm not sure that I'll ever use it since I already have a development environment that allows me a lot more control.  But perhaps folks new to the language will use since they won't have the investment in their dev environment yet?  I'll keep it in mind in case I ever find a niche case where it would be helpful though.</p>
-
-<p><a href="http://browserling.com/">browserling: interactive cross-browser testing</a>: It doesn't seem you can do very intensive testing, but it does look good enough to take a quick look at a page in different browsers (and versions).</p>
-
-<p><a href="http://alexking.org/blog/2012/03/05/git-submodules-vs-svn-externals">Git Submodules are not SVN Externals</a>: I need to learn Submodules in Git at some point (sooner rather than later).  I think there are some areas they could help me out in.</p>
-
-<p><a href="http://www.docracy.com/">Docracy - Free Legal Documents</a>: "Community provided and curated."</p>
-
-<p><a href="http://stabyourself.net/mari0/">Mari0</a>: Heh, awesome.</p>
-
-<p><a href="http://shiflett.org/blog/2012/mar/hacking-rails-and-github">Hacking Rails (and GitHub)</a>: Nice write-up of what went on here.  Seems every framework has these quirks you have to protect yourself from.</p>
-
-<p><a href="http://whatblag.com/2012/03/07/pinterest-we-have-a-problem/">Pinterest, We Have a Problem</a>: Hmm.</p>
-
-<blockquote>
-  <p>According to the company’s terms of service, when a user 
-  pins something, she is claiming to be the “sole and exclusive 
-  owner” of that content, and she is granting Pinterest the right 
-  to use it on their website (alternatively, she is claiming to 
-  have the consent necessary to grant Pinterest said right).</p>
-</blockquote>
-
-<p><a href="http://www.dollarshaveclub.com/">Dollar Shave Club</a>: The video cracked me up :)</p>]]></description>
-							<content:encoded><![CDATA[<p><a href="http://us2.php.net/traits">PHP Traits</a>: I'm glad to see this make its way in to PHP 5.4.</p>
-
-<p><a href="http://us2.php.net/manual/en/features.commandline.webserver.php">PHP Built-in web server</a>: Sort of interesting that this was packaged into PHP 5.4.  I'm not sure that I'll ever use it since I already have a development environment that allows me a lot more control.  But perhaps folks new to the language will use since they won't have the investment in their dev environment yet?  I'll keep it in mind in case I ever find a niche case where it would be helpful though.</p>
-
-<p><a href="http://browserling.com/">browserling: interactive cross-browser testing</a>: It doesn't seem you can do very intensive testing, but it does look good enough to take a quick look at a page in different browsers (and versions).</p>
-
-<p><a href="http://alexking.org/blog/2012/03/05/git-submodules-vs-svn-externals">Git Submodules are not SVN Externals</a>: I need to learn Submodules in Git at some point (sooner rather than later).  I think there are some areas they could help me out in.</p>
-
-<p><a href="http://www.docracy.com/">Docracy - Free Legal Documents</a>: "Community provided and curated."</p>
-
-<p><a href="http://stabyourself.net/mari0/">Mari0</a>: Heh, awesome.</p>
-
-<p><a href="http://shiflett.org/blog/2012/mar/hacking-rails-and-github">Hacking Rails (and GitHub)</a>: Nice write-up of what went on here.  Seems every framework has these quirks you have to protect yourself from.</p>
-
-<p><a href="http://whatblag.com/2012/03/07/pinterest-we-have-a-problem/">Pinterest, We Have a Problem</a>: Hmm.</p>
-
-<blockquote>
-  <p>According to the company’s terms of service, when a user 
-  pins something, she is claiming to be the “sole and exclusive 
-  owner” of that content, and she is granting Pinterest the right 
-  to use it on their website (alternatively, she is claiming to 
-  have the consent necessary to grant Pinterest said right).</p>
-</blockquote>
-
-<p><a href="http://www.dollarshaveclub.com/">Dollar Shave Club</a>: The video cracked me up :)</p>]]></content:encoded>
 						</item>
 				
 				</channel>
