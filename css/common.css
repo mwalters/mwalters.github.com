@@ -777,6 +777,7 @@ footer, .side-buttons {
 		margin-top: -60px;
 	}
 }
+
 @media (min-width: 768px) and (max-width: 979px) {
 	.navbar {
 		margin-top: -60px;
