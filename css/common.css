@@ -771,3 +771,14 @@ footer, .side-buttons {
 		margin-bottom: 30px;
 	}
 }
+
+@media (max-width: 767px) { 
+	.navbar {
+		margin-top: -60px;
+	}
+}
+@media (min-width: 768px) and (max-width: 979px) {
+	.navbar {
+		margin-top: -60px;
+	}
+}
