@@ -732,6 +732,14 @@ body {
 	padding-bottom: 40px;
 }
 
+ul.nav li {
+	margin-top: 3px;
+}
+
+.blogcontainer h2 i, .photocontainer h2 i, .tweetcontainer h2 i {
+	margin-top: 7px;
+}
+
 .tweet_list {
 	-webkit-border-radius: 0.5em;
 	-moz-border-radius: 0.5em;
@@ -761,6 +769,23 @@ body {
 
 footer, .side-buttons {
 	text-align: center;
+}
+
+#footer-icons {
+	font-size: 24px;
+}
+
+#footer-icons i {
+	margin: 0 5px;
+}
+
+#footer-icons a:link, #footer-icons a:hover, #footer-icons a:visited, #footer-icons a:active {
+	color: #000;
+}
+
+#footer-icons a:hover, #footer-icons a:active {
+	cursor: pointer;
+	text-decoration: none;
 }
 
 @media (max-width: 480px) {
