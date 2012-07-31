@@ -732,6 +732,15 @@ body {
 	padding-bottom: 40px;
 }
 
+.navbar .nav li {
+	padding-top: 3px;
+}
+
+.brand:link i, .brand:visited i {
+	display: inline-block;
+	margin-top: 5px;
+}
+
 .tweet_list {
 	-webkit-border-radius: 0.5em;
 	-moz-border-radius: 0.5em;
