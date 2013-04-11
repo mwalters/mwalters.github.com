@@ -637,6 +637,10 @@ footer, .side-buttons {
 	text-align: center;
 }
 
+footer {
+	margin-top: 40px;
+}
+
 footer i {
 	color: #000;
 	font-size: 30px;
