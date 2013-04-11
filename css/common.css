@@ -611,13 +611,17 @@ body {
 	padding: 0;
 	overflow-y: hidden;
 }
-	
+
 .tweet_list li, .rssBody li {
 	overflow-y: auto;
 	overflow-x: hidden;
 	padding: 0.5em;
 	list-style-type: circle;
+}
+
+.tweet_list li.even, .rssBody li.even {
 	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
 }
 
 .rssHeader {
@@ -651,21 +655,21 @@ footer a:hover i, footer a:active i {
 	.navbar {
 		margin-top: -60px;
 	}
-	.blogcontainer, .photocontainer {
+	.blogcontainer {
 		margin-bottom: 30px;
 	}
 }
 
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
 	.navbar {
 		margin-top: -60px;
 	}
-	
+
 	.brand:link i, .brand:visited i {
 		display: inline-block;
 		margin-top: 5px;
 	}
-	
+
 	.navbar .btn-navbar {
 		margin-top: 10px;
 	}
