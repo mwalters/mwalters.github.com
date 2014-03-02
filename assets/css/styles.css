@@ -82,6 +82,10 @@ body {
 	padding-left: 20px;
 }
 
+.jumbotron :last-child {
+  margin-bottom: 0;
+}
+
 .social-links p {
   text-align: center;
 }
