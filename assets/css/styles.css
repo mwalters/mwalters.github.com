@@ -78,14 +78,20 @@ body {
 }
 
 
-.jumbotron p {
-	padding-left: 20px;
-}
-
-.jumbotron :last-child {
-  margin-bottom: 0;
+.well {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .social-links p {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 26px;
+}
+
+.avatar {
   text-align: center;
 }
