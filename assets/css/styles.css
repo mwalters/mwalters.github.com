@@ -83,6 +83,11 @@ body {
   margin: 0 auto;
 }
 
+.nav-pills a:hover, .nav-pills a:active {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 .social-links p {
   margin-top: 15px;
   text-align: center;
@@ -90,6 +95,7 @@ body {
 
 .header h1 {
   font-size: 26px;
+  margin-bottom: 12px;
 }
 
 .avatar {
