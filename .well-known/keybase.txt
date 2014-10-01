@@ -1,0 +1,66 @@
+==================================================================
+https://keybase.io/mwalters
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://mattwalters.net
+  * I am mwalters (https://keybase.io/mwalters) on keybase.
+  * I have a public key with fingerprint 230E 8337 F1FB 2228 BB16  BE7A 91C3 0045 CE4A D956
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "230e8337f1fb2228bb16be7a91c30045ce4ad956",
+            "host": "keybase.io",
+            "key_id": "91c30045ce4ad956",
+            "uid": "55eb1a39f88ad1f0c2ff99a6c007a000",
+            "username": "mwalters"
+        },
+        "service": {
+            "hostname": "mattwalters.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1412126998,
+    "expire_in": 157680000,
+    "prev": "c9d61bab43918252a1a09ef43d96950cc65f7dc038fb8d1ec2954b418870450f",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v1.0.5
+Comment: https://keybase.io/crypto
+
+yMHiAnicbZFbSBRRGMfXdLU2pQiSECI6ipCanbnPbIk9RaaRdxKl7czMGZ3UmXV3
+XBXxITTcQoPoJSx8KCkKEy3DCspFhCBJkgqFViEIw+wmCa3aYmdE33o6nO/7/f/f
+bTwp1uGKqYot9wu/0otjJkLLjY7SzIrkViCbagtwt4JavPFoulGNfV6fbljADWgG
+YpFhBI3SZJqmRVmmeBkLSKIUBkKWUzCLVInjQRaoMf22gtjIyI+zdZPEyMejqyT6
+H75xI8FxWKYQI2miiFRKgwqtaZKEeAVCAUEIbdCPfQaqx4Sub0J1Fvb5QVsWINGA
+rmC7Z7v0FoEsaxPKNrBF5F6faZmKWUeSNZblddtaq8Vrw01Y9mzaeGTdUMnoRBAg
+Wt00gJsipGLpti/FUjRF85IkZgHc7NV92KPbBCfwIukS2mVwgFgqkspTMpJZRqJE
+mqMRhaCENZZRJV7ioKLwnCaoCmRETRZVCiu0xLEyS4miQNYDNWAP1mCYwM2QNlE1
+sfTr1QayGn0YtI2FquIcMS5HvHObfTyHa8furZOeVBPWnK3frs12gaO9N269mblC
+K3ejCUtR58OVJ3+CZibz+0vGntXBQFIqPxjXPFxQUfVpJWnk89kLb4/dER4nhh85
+rjrjY0+t+RamZlIWA4Ndh/sjY6VnHKepvt7h3uC51NrR79bHfUOskdMeLgsWdjXe
+vlf0vmz+3flD08MfPO1p3WnRaPf60wPT6cUTOfHR65Xjsz3tyUcu9mTsTxlpGdg+
+N5RRgyqLZucTaxuSwc/7heGJ3INzPy7V7Zz6+8LT3xdSKiKRZ66+4OpUZLETrn5d
+P1H6PL28AOTlysbk6M0S83X+g/ylzpLLofCYYVQOwI69y0ZaTt6C9Op4x67yl5P/
+AHRwFus=
+=+igA
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mwalters
+
+==================================================================
+
