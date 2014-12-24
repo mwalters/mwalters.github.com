@@ -101,3 +101,45 @@ body {
 .avatar {
   text-align: center;
 }
+
+.nav>li>a.selected {
+  text-decoration: none;
+  background-color: #ecf0f1;
+}
+
+form label {
+  width: 15%;
+  vertical-align: top;
+  min-width: 90px;
+}
+
+form input {
+  margin: 0 0 15px 2px;
+  margin-left: 2px;
+  width: 84%
+}
+
+form textarea {
+  width: 84%;
+  height: 150px;
+}
+
+.btn-send {
+  margin-top: 20px;
+  margin-left: 102px;
+  width: 20%;
+  min-width: 75px;
+}
+
+@media (max-width: 700px) {
+
+    form input, form textarea {
+        width: 100%;
+    }
+
+    .btn-send {
+      width: 100%;
+      margin: 20px 0;
+    }
+
+}

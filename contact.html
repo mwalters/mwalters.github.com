@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,22 +19,26 @@
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li><a class="selected" href="/">Home</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a class="selected" href="/contact.html">Contact</a></li>
         </ul>
         <h1 class="text-muted">Matt Walters</h1>
       </div>
 
       <div class="row well">
-        <div class="col-md-2 avatar">
-          <img src="//2.gravatar.com/avatar/370cd456367bfc5a40f7ad96e32c9d19?size=100">
-        </div>
-
-        <div class="col-md-10">
-          <p>I am a Senior Web Developer with extensive experience in PHP, Mobile-Web, and WordPress.  Feel free to <a href="http://www.pragmatticode.com/">get in touch</a> if you'd like to discuss a project with me.</p>
-        </div>
-
+          <div class="col-md-12">
+              <form method="POST" action="//formspree.io/h1@mattwalters.net.com">
+                  <input type="hidden" name="_next" value="//mattwalters.net/thanks.html" />
+                  <label for="contact-name">Your name:</label><input id="contact-name" type="text" name="name"><br>
+                  <label for="contact-email">Email:</label><input id="contact-email" type="email" name="_replyto"><br>
+                  <label for="contact-subject">Subject:</label><input id="contact-subject" type="text" name="subject"><br>
+                  <label for="contact-message">Message:</label>
+                  <textarea id="contact-message" name="message"></textarea><br>
+                  <input id="contact-submit" type="submit" value="Send" class="btn btn-primary btn-send">
+              </form>
+          </div>
       </div>
+      <script type="text/javascript" src="./assets/js/scripts.js"></script>
 
       <div class="row">
         <div class="col-md-12 social-links">
